@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sereen — Tratamento de depressão em casa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#fff;--bg2:#F7F8FA;--dark:#0B1120;--dark2:#141C2E;--dark3:#1E2A42;
+  --accent:#3D8B6E;--accent-l:#E8F5EE;--accent-d:#2D6B52;
+  --t:#0B1120;--t2:#4A5568;--t3:#8896AB;--t4:#B0BCCD;
+  --brd:#E8ECF1;--warm:#F9F5F0;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:var(--t);background:var(--bg);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .4s}
+nav.s{background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--brd)}
+.ni{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:700;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:14px;color:var(--t2);text-decoration:none;font-weight:500;transition:color .2s}
+.nr a:hover{color:var(--t)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:100px;font-size:14px;
+  font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s;text-decoration:none;border:none}
+.bp{background:var(--accent);color:#fff;padding:12px 28px}
+.bp:hover{background:var(--accent-d);transform:translateY(-1px);box-shadow:0 4px 16px rgba(61,139,110,.25)}
+.bo{background:0;color:var(--t);padding:12px 28px;border:1.5px solid var(--brd)}
+.bo:hover{border-color:var(--t3);background:var(--bg2)}
+
+/* HERO */
+.hero{padding:120px 40px 0;max-width:1240px;margin:0 auto;overflow:hidden}
+.hero-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;min-height:560px}
+.hero-left{padding:20px 0}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--accent-l);
+  color:var(--accent-d);border-radius:100px;padding:8px 20px 8px 12px;font-size:13px;
+  font-weight:600;margin-bottom:28px}
+.hero-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:clamp(36px,4.5vw,58px);font-weight:700;line-height:1.08;
+  letter-spacing:-2px;max-width:560px;margin-bottom:24px}
+.hero h1 span{background:linear-gradient(135deg,var(--accent),#2AAF7A);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:clamp(15px,1.6vw,18px);color:var(--t2);max-width:440px;
+  margin-bottom:36px;line-height:1.65;font-weight:400}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
+.hero-proof{font-size:13px;color:var(--t3);display:flex;align-items:center;
+  gap:16px;flex-wrap:wrap}
+.hero-proof-i{display:flex;align-items:center;gap:6px}
+.hero-right{position:relative;display:flex;align-items:center;justify-content:center}
+.hero-img{width:100%;max-width:520px;height:auto;display:block;object-fit:contain}
+
+/* Phone mockup (used in app section) */
+.phone{background:#1A2540;border-radius:28px;padding:8px;width:220px;box-shadow:0 40px 80px rgba(0,0,0,.25)}
+.ps{background:#fff;border-radius:22px;overflow:hidden}
+.ph{background:var(--accent);padding:32px 16px 16px;color:#fff}
+.ph-top{font-size:10px;opacity:.7;margin-bottom:4px}
+.ph h3{font-size:15px;font-weight:600;margin-bottom:2px}
+.ph p{font-size:11px;opacity:.8}
+.pb{padding:14px}
+.pc{background:var(--bg2);border-radius:12px;padding:12px;margin-bottom:8px}
+.pc-l{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.8px;font-weight:600;margin-bottom:6px}
+.pc-v{font-size:20px;font-weight:700}
+.pc-s{font-size:10px;color:var(--accent);font-weight:600;margin-top:2px}
+.pc-bar{height:4px;background:var(--brd);border-radius:2px;margin-top:8px}
+.pc-fill{height:100%;background:var(--accent);border-radius:2px}
+.pc-row{display:flex;gap:6px}
+.pc-row .pc{flex:1;text-align:center}
+.p-sess{display:flex;align-items:center;gap:8px;padding:10px;background:var(--accent-l);
+  border-radius:10px;margin-top:8px}
+.p-sess-ic{width:32px;height:32px;border-radius:50%;background:var(--accent);
+  display:flex;align-items:center;justify-content:center}
+.p-sess-t p{font-size:10px;font-weight:600}.p-sess-t span{font-size:9px;color:var(--t3)}
+
+/* App showcase section */
+.app-show{padding:100px 40px;background:var(--bg)}
+.app-show-in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center}
+.app-show-phones{display:flex;gap:24px;align-items:flex-end}
+
+/* PAGE TABS */
+.tabs{display:flex;justify-content:center;gap:0;border-bottom:1px solid var(--brd);
+  position:sticky;top:56px;background:var(--bg);z-index:50;padding:0 40px}
+.tab{padding:16px 28px;font-size:14px;font-weight:600;color:var(--t3);cursor:pointer;
+  border-bottom:2px solid transparent;transition:all .2s;background:0;border-top:0;border-left:0;border-right:0;font-family:inherit}
+.tab:hover{color:var(--t)}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* PAGES */
+.page{display:none}
+.page.active{display:block}
+
+/* SECTIONS */
+.sec{padding:100px 40px;max-width:1240px;margin:0 auto}
+.sec-full{padding:100px 40px}
+.sl{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.sh{font-size:clamp(28px,3.5vw,44px);font-weight:700;line-height:1.12;letter-spacing:-1px;max-width:640px;margin-bottom:20px}
+.sp{font-size:17px;color:var(--t2);max-width:540px;line-height:1.65;margin-bottom:48px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.vis{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* CHALLENGE */
+.sc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.sc{background:var(--bg);border-radius:20px;padding:40px 32px;border:1px solid var(--brd);transition:all .3s}
+.sc:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.06)}
+.sc-n{font-size:clamp(36px,4vw,52px);font-weight:700;letter-spacing:-1.5px;margin-bottom:8px}
+.sc-n span{color:var(--accent)}
+.sc-l{font-size:15px;color:var(--t2);line-height:1.5}
+.sc-src{font-size:11px;color:var(--t3);margin-top:12px}
+
+/* FEATURE */
+.feat{padding:100px 40px}
+.feat-in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.feat.rev .feat-in{direction:rtl}.feat.rev .feat-in>*{direction:ltr}
+.feat-txt h2{font-size:clamp(26px,3vw,38px);font-weight:700;line-height:1.15;letter-spacing:-.5px;margin-bottom:16px}
+.feat-txt p{font-size:16px;color:var(--t2);line-height:1.65;margin-bottom:24px}
+.fl{list-style:none;display:flex;flex-direction:column;gap:12px}
+.fl li{display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--t2);line-height:1.5}
+.fl-ic{width:22px;height:22px;border-radius:50%;background:var(--accent-l);display:flex;
+  align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+
+/* Feature visual */
+.fv{background:var(--dark);border-radius:20px;aspect-ratio:4/3;display:flex;
+  align-items:center;justify-content:center;padding:40px;overflow:hidden}
+.fv.light{background:var(--bg2);border:1px solid var(--brd)}
+.app{width:100%;max-width:360px;background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.15)}
+.app-top{height:6px;background:var(--accent);width:100%}
+.app-h{padding:20px 20px 16px;border-bottom:1px solid var(--brd)}
+.app-h h4{font-size:14px;font-weight:600;margin-bottom:2px}
+.app-h span{font-size:12px;color:var(--t3)}
+.app-b{padding:16px 20px}
+.app-tl{display:flex;flex-direction:column;gap:10px}
+.app-tl-i{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--bg2);border-radius:10px}
+.app-tl-d{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.app-tl-d.g{background:var(--accent)}.app-tl-d.b{background:#4A7BF7}.app-tl-d.a{background:#E5A530}
+.app-tl-t{font-size:12px;color:var(--t2);flex:1}
+.app-tl-time{font-size:11px;color:var(--t3)}
+
+/* Dashboard */
+.dash{width:100%;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15)}
+.dash-top{display:flex;align-items:center;gap:6px;padding:12px 16px;border-bottom:1px solid var(--brd)}
+.dd{width:8px;height:8px;border-radius:50%}
+.dd.r{background:#FF6058}.dd.y{background:#FFC02E}.dd.g{background:#27CA40}
+.dash-b{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dc{background:var(--bg2);border-radius:10px;padding:14px}
+.dc-l{font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;font-weight:600;margin-bottom:4px}
+.dc-v{font-size:22px;font-weight:700}
+.dc-v.up{color:var(--accent)}
+.dc-s{font-size:10px;color:var(--t3);margin-top:2px}
+.dc-f{grid-column:1/-1;background:var(--bg2);border-radius:10px;padding:14px}
+.dc-f-l{font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;font-weight:600;margin-bottom:10px}
+.dg{height:60px;display:flex;align-items:flex-end;gap:3px}
+.dg-b{flex:1;border-radius:3px 3px 0 0;min-height:4px}
+
+/* HOW */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.hc{border:1px solid var(--brd);border-radius:20px;padding:36px 28px;transition:all .35s;
+  position:relative;overflow:hidden;background:var(--bg)}
+.hc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);
+  transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.hc:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(0,0,0,.07);border-color:var(--accent-l)}
+.hc:hover::before{transform:scaleX(1)}
+.hc-n{font-size:48px;font-weight:700;color:var(--brd);margin-bottom:16px;line-height:1;transition:color .3s}
+.hc:hover .hc-n{color:var(--accent-l)}
+.hc h3{font-size:18px;font-weight:600;margin-bottom:8px}
+.hc p{font-size:14px;color:var(--t2);line-height:1.6}
+.hc-d{margin-top:16px;padding-top:14px;border-top:1px solid var(--brd);font-size:13px;
+  color:var(--accent);font-weight:600;display:flex;align-items:center;gap:6px}
+
+/* OUTCOMES */
+.out{padding:100px 40px;background:var(--dark);color:#fff;overflow:hidden;position:relative}
+.out::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(61,139,110,.15),transparent 70%);top:-200px;right:-100px}
+.out-in{max-width:1240px;margin:0 auto;position:relative}
+.out .sl{color:var(--accent)}.out .sh{color:#fff}.out .sp{color:rgba(255,255,255,.55)}
+.og{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.oc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:20px;
+  padding:40px 28px;text-align:center;transition:all .3s}
+.oc:hover{background:rgba(255,255,255,.08);transform:translateY(-4px)}
+.oc-n{font-size:clamp(40px,5vw,56px);font-weight:700;letter-spacing:-1.5px;margin-bottom:8px;
+  background:linear-gradient(135deg,#fff,rgba(255,255,255,.7));-webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;background-clip:text}
+.oc-l{font-size:14px;color:rgba(255,255,255,.5);line-height:1.5}
+
+/* TESTIMONIAL */
+.testi{padding:100px 40px;background:var(--bg2)}
+.testi-in{max-width:800px;margin:0 auto;text-align:center}
+.testi-q{font-size:clamp(20px,2.5vw,28px);font-weight:400;line-height:1.5;
+  color:var(--t);margin-bottom:32px;font-style:italic}
+.testi-q::before{content:'\201C';display:block;font-size:64px;color:var(--accent);
+  line-height:1;margin-bottom:-8px;font-style:normal}
+.testi-auth{display:inline-flex;align-items:center;gap:12px}
+.testi-av{width:40px;height:40px;border-radius:50%;background:var(--accent-l);display:flex;
+  align-items:center;justify-content:center;font-weight:700;font-size:14px;color:var(--accent)}
+.testi-name{font-size:14px;font-weight:600;text-align:left}
+.testi-det{font-size:13px;color:var(--t3);text-align:left}
+.testi-note{margin-top:20px;font-size:12px;color:var(--t3)}
+
+/* FAQ */
+.faq-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start}
+.faq-list{display:flex;flex-direction:column}
+.faq-i{border-bottom:1px solid var(--brd)}
+.faq-q{padding:22px 0;font-weight:600;font-size:15px;cursor:pointer;display:flex;
+  justify-content:space-between;align-items:center;gap:16px;transition:color .2s;
+  background:0;border:0;width:100%;text-align:left;font-family:inherit;color:var(--t)}
+.faq-q:hover{color:var(--accent)}
+.faq-ic{width:28px;height:28px;border-radius:50%;background:var(--bg2);display:flex;
+  align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.faq-i.open .faq-ic{background:var(--accent);transform:rotate(180deg)}
+.faq-i.open .faq-ic svg{stroke:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .4s}
+.faq-i.open .faq-a{max-height:260px;padding-bottom:22px}
+.faq-a p{font-size:14px;color:var(--t2);line-height:1.7}
+
+/* CTA */
+.cta-f{padding:100px 40px}
+.cta-f-in{max-width:1240px;margin:0 auto;background:var(--dark);border-radius:24px;
+  padding:80px 40px;text-align:center;position:relative;overflow:hidden}
+.cta-f-in::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(61,139,110,.12),transparent 70%);bottom:-200px;left:-100px}
+.cta-f h2{font-size:clamp(28px,3.5vw,44px);font-weight:700;color:#fff;letter-spacing:-1px;
+  margin-bottom:16px;position:relative}
+.cta-f p{font-size:17px;color:rgba(255,255,255,.5);max-width:440px;margin:0 auto 36px;position:relative}
+.cta-form{display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto;position:relative}
+.cta-form .cta-row{display:flex;gap:10px}
+.cta-form input{flex:1;padding:16px 22px;border:1.5px solid rgba(255,255,255,.12);border-radius:14px;
+  font-size:15px;font-family:inherit;background:rgba(255,255,255,.06);color:#fff;outline:none;transition:all .3s}
+.cta-form input::placeholder{color:rgba(255,255,255,.25)}
+.cta-form input:focus{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
+.cta-form button{background:var(--accent);color:#fff;border:none;border-radius:14px;
+  padding:16px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;
+  white-space:nowrap;transition:all .3s;width:100%}
+.cta-form button:hover{background:var(--accent-d);transform:translateY(-1px)}
+.cta-ok{display:none;text-align:center;padding:24px;color:#fff}
+.cta-ok h3{font-size:20px;margin-bottom:8px}
+.cta-ok p{font-size:14px;opacity:.6}
+
+/* ══ SCIENCE PAGE ══ */
+.sci-hero{padding:120px 40px 60px;text-align:center;background:var(--bg2)}
+.sci-hero h1{font-size:clamp(32px,4vw,52px);font-weight:700;letter-spacing:-1.5px;margin-bottom:16px}
+.sci-hero p{font-size:18px;color:var(--t2);max-width:560px;margin:0 auto 40px}
+.sci-stats{display:flex;justify-content:center;gap:48px;flex-wrap:wrap}
+.sci-stat{text-align:center}
+.sci-stat-n{font-size:36px;font-weight:700;color:var(--accent)}
+.sci-stat-l{font-size:13px;color:var(--t3)}
+
+/* Filters */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+.filter-btn{padding:8px 18px;border-radius:100px;font-size:13px;font-weight:600;
+  cursor:pointer;font-family:inherit;border:1.5px solid var(--brd);background:var(--bg);
+  color:var(--t2);transition:all .2s}
+.filter-btn:hover{border-color:var(--t3)}
+.filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* Publication cards */
+.pub-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.pub{background:var(--bg);border:1px solid var(--brd);border-radius:16px;padding:24px 28px;
+  transition:all .3s;cursor:pointer;text-decoration:none;color:inherit;display:block}
+.pub:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.05);border-color:var(--accent-l)}
+.pub-meta{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.pub-date{font-size:12px;color:var(--t3)}
+.pub-tag{font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;
+  text-transform:uppercase;letter-spacing:.5px}
+.pub-tag.dep{background:var(--accent-l);color:var(--accent-d)}
+.pub-tag.mech{background:#EEF0FF;color:#4A5ACD}
+.pub-tag.pain{background:#FFF5E5;color:#B87A1A}
+.pub-tag.other{background:#F5F0FF;color:#7A5AC8}
+.pub-tag.high{background:#FFF0F0;color:#C85A5A}
+.pub h3{font-size:16px;font-weight:600;line-height:1.4;margin-bottom:4px}
+.pub p{font-size:13px;color:var(--t3)}
+.pub-arrow{font-size:13px;color:var(--accent);font-weight:600;margin-top:8px;
+  display:flex;align-items:center;gap:4px;opacity:0;transition:opacity .2s}
+.pub:hover .pub-arrow{opacity:1}
+
+/* FOOTER */
+footer{padding:48px 40px;border-top:1px solid var(--brd)}
+.ft-in{max-width:1240px;margin:0 auto}
+.ft-top{display:flex;justify-content:space-between;align-items:flex-start;
+  padding-bottom:32px;flex-wrap:wrap;gap:32px}
+.ft-brand p{font-size:13px;color:var(--t3);margin-top:8px;max-width:260px}
+.ft-cols{display:flex;gap:56px}
+.ft-col h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--t3);margin-bottom:14px}
+.ft-col a{display:block;font-size:13px;color:var(--t2);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.ft-col a:hover{color:var(--t)}
+.ft-bot{padding-top:24px;border-top:1px solid var(--brd);display:flex;
+  justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:12px;color:var(--t3)}
+.ft-crisis{font-size:12px;color:var(--accent-d);background:var(--accent-l);
+  padding:6px 14px;border-radius:8px;font-weight:500}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .nr a:not(.btn){display:none}.ni{padding:16px 24px}
+  .hero{padding:100px 24px 40px}
+  .hero-split{grid-template-columns:1fr;gap:32px;min-height:auto}
+  .hero-left{text-align:center}.hero-sub{margin-left:auto;margin-right:auto}
+  .hero-actions{justify-content:center}.hero-proof{justify-content:center}
+  .hero-img{max-width:320px;margin:0 auto}
+  .app-show-in{grid-template-columns:1fr;justify-items:center;gap:40px;text-align:center}
+  .app-show-in .sp{margin-left:auto;margin-right:auto}
+  .phone{width:180px}
+  .feat-in,.faq-wrap{grid-template-columns:1fr;gap:40px}
+  .feat.rev .feat-in{direction:ltr}
+  .sc-grid,.og,.how-grid{grid-template-columns:1fr}
+  .cta-f-in{padding:64px 24px}
+  .cta-form .cta-row{flex-direction:column}
+  .ft-top{flex-direction:column}.ft-cols{flex-direction:column;gap:24px}
+  .tabs{overflow-x:auto;justify-content:flex-start}
+  .sci-stats{gap:24px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="ni">
+    <a href="#" class="logo" onclick="showPage('home');return false">sereen</a>
+    <div class="nr">
+      <a href="#como" onclick="showPage('home')">Como funciona</a>
+      <a href="#" onclick="showPage('science');return false">Ciência</a>
+      <a href="#faq" onclick="showPage('home')">FAQ</a>
+      <button class="btn bp" onclick="document.getElementById('hero-email').focus();showPage('home')">Lista de espera</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════ HOME PAGE ═══════════ -->
+<div class="page active" id="page-home">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-split">
+    <div class="hero-left">
+      <div class="hero-badge"><span class="hero-dot"></span>Programa piloto aberto</div>
+      <h1>Sinta-se bem outra vez, <span>a partir de casa</span></h1>
+      <p class="hero-sub">Neuroestimulação cerebral com acompanhamento clínico remoto. Sem medicação adicional, sem preocupações.</p>
+      <div class="hero-actions">
+        <button class="btn bp" style="padding:16px 32px;font-size:16px" onclick="document.getElementById('hero-email').focus()">Quero saber mais</button>
+        <a href="#como" class="btn bo" style="padding:16px 32px;font-size:16px">Como funciona</a>
+      </div>
+      <div class="hero-proof">
+        <span class="hero-proof-i"><svg width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M8 15s5.5-3 5.5-7.5V3.5L8 1.5 2.5 3.5v4C2.5 12 8 15 8 15z"/></svg>Marcação CE</span>
+        <span class="hero-proof-i"><svg width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M8 1.5 2.5 4.5l5.5 3 5.5-3L8 1.5z"/><path d="M2.5 11.5l5.5 3 5.5-3"/><path d="M2.5 8l5.5 3 5.5-3"/></svg>+50 estudos</span>
+        <span class="hero-proof-i"><svg width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="2.5" y="6.5" width="11" height="8" rx="1.5"/><path d="M5.5 6.5v-2a2.5 2.5 0 015 0v2"/></svg>Dados encriptados</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="hero-device.png" alt="Paciente com dispositivo de neuroestimulação" class="hero-img">
+    </div>
+  </div>
+</div>
+
+<!-- CHALLENGE -->
+<div style="background:var(--bg2)">
+<div class="sec reveal">
+  <div class="sl">O problema</div>
+  <h2 class="sh">Quem sofre de depressão em Portugal merece melhor</h2>
+  <p class="sp">Meses de espera, medicação que nem sempre funciona, e um sistema que não acompanha entre consultas.</p>
+  <div class="sc-grid">
+    <div class="sc reveal d1"><div class="sc-n">1 em <span>5</span></div><div class="sc-l">portugueses sofre de depressão ou ansiedade</div><div class="sc-src">OMS, 2023</div></div>
+    <div class="sc reveal d2"><div class="sc-n"><span>4-6</span> meses</div><div class="sc-l">de espera para consulta de psiquiatria no SNS</div><div class="sc-src">Tribunal de Contas, 2024</div></div>
+    <div class="sc reveal d3"><div class="sc-n"><span>30</span>%</div><div class="sc-l">não responde à primeira linha de medicação</div><div class="sc-src">NICE Guidelines</div></div>
+  </div>
+</div>
+</div>
+
+<!-- APP SHOWCASE -->
+<div class="app-show">
+  <div class="app-show-in">
+    <div class="app-show-phones reveal">
+      <div class="phone"><div class="ps">
+        <div class="ph"><div class="ph-top">Bom dia, Maria</div><h3>Semana 6 de 12</h3><p>Sessão de hoje: 14:00</p></div>
+        <div class="pb">
+          <div class="pc"><div class="pc-l">O seu progresso</div><div class="pc-v">Semana 6 <span style="font-size:12px;color:var(--accent);font-weight:600">de 12</span></div>
+            <div class="pc-bar"><div class="pc-fill" style="width:50%"></div></div></div>
+          <div class="pc-row"><div class="pc"><div class="pc-l">Sessões</div><div style="font-size:18px;font-weight:700">28/42</div></div>
+            <div class="pc"><div class="pc-l">Adesão</div><div style="font-size:18px;font-weight:700;color:var(--accent)">94%</div></div></div>
+          <div class="p-sess"><div class="p-sess-ic"><svg width="14" height="14" fill="none" stroke="#fff" stroke-width="2"><polygon points="5,3 11,7 5,11"/></svg></div>
+            <div class="p-sess-t"><p>Iniciar sessão</p><span>30 min · sessão guiada</span></div></div>
+        </div>
+      </div></div>
+    </div>
+    <div class="reveal d2">
+      <div class="sl">A sua app</div>
+      <h2 class="sh">Tudo no seu telemóvel</h2>
+      <p class="sp">Acompanhe o seu progresso, inicie sessões e comunique com a equipa clínica — tudo a partir da app.</p>
+      <ul class="fl">
+        <li><span class="fl-ic"><svg width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Registo automático de cada sessão</li>
+        <li><span class="fl-ic"><svg width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Evolução do humor ao longo das semanas</li>
+        <li><span class="fl-ic"><svg width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Mensagens diretas com o psiquiatra</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURE 1 -->
+<div class="feat">
+  <div class="feat-in">
+    <div class="feat-txt reveal">
+      <div class="sl">Acompanhamento contínuo</div>
+      <h2>A sua equipa clínica, sempre consigo</h2>
+      <p>Não está sozinho. A equipa acompanha cada sessão, monitoriza o seu progresso e ajusta o tratamento quando necessário.</p>
+      <ul class="fl">
+        <li><span class="fl-ic"><svg width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Monitorização de cada sessão em tempo real</li>
+        <li><span class="fl-ic"><svg width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Alertas automáticos se algo não estiver bem</li>
+        <li><span class="fl-ic"><svg width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Check-ins regulares com o psiquiatra</li>
+      </ul>
+    </div>
+    <div class="fv reveal d2">
+      <div class="dash">
+        <div class="dash-top"><div class="dd r"></div><div class="dd y"></div><div class="dd g"></div>
+          <span style="font-size:11px;color:var(--t3);margin-left:10px;font-weight:500">O seu progresso</span></div>
+        <div class="dash-b">
+          <div class="dc"><div class="dc-l">Humor (PHQ-9)</div><div class="dc-v up">12</div><div class="dc-s">&#x2193; 7 pts desde o início</div></div>
+          <div class="dc"><div class="dc-l">Adesão</div><div class="dc-v up">94%</div><div class="dc-s">28 de 30 sessões</div></div>
+          <div class="dc"><div class="dc-l">Semana</div><div class="dc-v">6/12</div><div class="dc-s">Protocolo ativo</div></div>
+          <div class="dc"><div class="dc-l">Próximo check-in</div><div class="dc-v" style="font-size:16px">23 Jun</div><div class="dc-s">Com Dr. Santos</div></div>
+          <div class="dc-f"><div class="dc-f-l">A sua evolução</div><div class="dg">
+            <div class="dg-b" style="height:95%;background:var(--accent-l)"></div>
+            <div class="dg-b" style="height:88%;background:var(--accent-l)"></div>
+            <div class="dg-b" style="height:80%;background:var(--accent-l)"></div>
+            <div class="dg-b" style="height:72%;background:var(--accent-l)"></div>
+            <div class="dg-b" style="height:60%;background:var(--accent-l)"></div>
+            <div class="dg-b" style="height:48%;background:var(--accent)"></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURE 2 -->
+<div class="feat rev" style="background:var(--bg2)">
+  <div class="feat-in">
+    <div class="feat-txt reveal">
+      <div class="sl">Sessões guiadas</div>
+      <h2>30 minutos por dia. Sem complicações.</h2>
+      <p>Pode ler, trabalhar ou simplesmente descansar enquanto o dispositivo faz o trabalho. A app guia-o passo a passo.</p>
+      <ul class="fl">
+        <li><span class="fl-ic"><svg width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Completamente indolor e seguro</li>
+        <li><span class="fl-ic"><svg width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Compatível com a sua medicação atual</li>
+        <li><span class="fl-ic"><svg width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>Faça a sessão quando lhe der mais jeito</li>
+      </ul>
+    </div>
+    <div class="fv light reveal d2">
+      <div class="app"><div class="app-top"></div>
+        <div class="app-h"><h4>Sessão em curso</h4><span>14:00 — 14:30</span></div>
+        <div class="app-b">
+          <div style="text-align:center;padding:20px 0">
+            <svg width="120" height="120" viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="#E8ECF1" stroke-width="6"/><circle cx="60" cy="60" r="52" fill="none" stroke="var(--accent)" stroke-width="6" stroke-dasharray="327" stroke-dashoffset="130" stroke-linecap="round" transform="rotate(-90 60 60)"/><text x="60" y="55" text-anchor="middle" font-size="24" font-weight="700" fill="var(--t)" font-family="Inter">18:42</text><text x="60" y="72" text-anchor="middle" font-size="11" fill="var(--t3)" font-family="Inter">restantes</text></svg>
+          </div>
+          <div class="app-tl">
+            <div class="app-tl-i"><div class="app-tl-d g"></div><span class="app-tl-t">Ramp-up completo</span><span class="app-tl-time">00:30</span></div>
+            <div class="app-tl-i"><div class="app-tl-d b"></div><span class="app-tl-t">Estimulação ativa — 2mA</span><span class="app-tl-time">agora</span></div>
+            <div class="app-tl-i"><div class="app-tl-d a"></div><span class="app-tl-t">Ramp-down</span><span class="app-tl-time">18:42</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="sec" id="como">
+  <div class="reveal"><div class="sl">Como funciona</div><h2 class="sh">Comece em três passos</h2>
+    <p class="sp">Do primeiro contacto ao tratamento em casa, em menos de uma semana.</p></div>
+  <div class="how-grid">
+    <div class="hc reveal d1"><div class="hc-n">01</div><h3>Avaliação online</h3><p>Consulta com o nosso psiquiatra para avaliar o seu caso e confirmar que o tratamento é adequado para si.</p>
+      <div class="hc-d"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="5.5"/><path d="M7 4.5v2.5l2 1.5"/></svg>45 min por videochamada</div></div>
+    <div class="hc reveal d2"><div class="hc-n">02</div><h3>Receba o kit em casa</h3><p>Dispositivo + app + sessão de onboarding com a equipa para garantir que está tudo pronto.</p>
+      <div class="hc-d"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 5l6-4 6 4v7a1 1 0 01-1 1H2a1 1 0 01-1-1z"/></svg>Entrega em 48h</div></div>
+    <div class="hc reveal d3"><div class="hc-n">03</div><h3>Tratamento diário</h3><p>Sessões de 30 minutos em casa, com a equipa clínica a monitorizar e a ajustar o protocolo.</p>
+      <div class="hc-d"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 7H10L8.5 12 5.5 2 4 7H1"/></svg>Protocolo de 10-12 semanas</div></div>
+  </div>
+</div>
+
+<!-- OUTCOMES -->
+<div class="out" id="resultados">
+  <div class="out-in">
+    <div class="reveal"><div class="sl">Resultados</div><h2 class="sh">Comprovado cientificamente</h2>
+      <p class="sp">O tDCS é uma das técnicas mais estudadas em neurociência. <a href="#" onclick="showPage('science');return false" style="color:var(--accent);text-decoration:underline">Ver publicações</a></p></div>
+    <div class="og">
+      <div class="oc reveal d1"><div class="oc-n">58%</div><div class="oc-l">Taxa de remissão após<br>10 semanas</div></div>
+      <div class="oc reveal d2"><div class="oc-n">55k+</div><div class="oc-l">Pacientes tratados na Europa<br>com tDCS domiciliário</div></div>
+      <div class="oc reveal d3"><div class="oc-n">90%</div><div class="oc-l">Completam o protocolo<br>com sucesso</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIAL -->
+<div class="testi">
+  <div class="testi-in reveal">
+    <p class="testi-q">Depois de anos a experimentar diferentes medicações, encontrei algo que me ajudou a sentir-me eu mesma outra vez. Faço a sessão enquanto leio antes de dormir.</p>
+    <div class="testi-auth"><div class="testi-av">M</div><div><div class="testi-name">Maria S., 34 anos</div><div class="testi-det">Lisboa</div></div></div>
+    <p class="testi-note">*Resultados individuais podem variar.</p>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="sec" id="faq">
+  <div class="faq-wrap">
+    <div class="reveal"><div class="sl">FAQ</div><h2 class="sh">Perguntas frequentes</h2>
+      <p class="sp" style="margin-bottom:0">Tudo o que precisa de saber antes de começar.</p></div>
+    <div class="faq-list reveal d2">
+      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">O que é a estimulação transcraniana (tDCS)?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>Uma técnica não-invasiva que usa corrente elétrica de baixa intensidade para estimular áreas do cérebro ligadas ao humor. É completamente indolor e tem mais de 20 anos de investigação científica.</p></div></div>
+      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">É seguro?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>Sim. Os efeitos secundários mais comuns são ligeiro formigueiro ou calor, que desaparece após a sessão. O dispositivo tem marcação CE classe IIa para depressão.</p></div></div>
+      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">Preciso de prescrição médica?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>O tratamento começa com avaliação pelo nosso psiquiatra, que acompanha todo o processo. Este modelo garante a sua segurança.</p></div></div>
+      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">Quanto tempo até ver resultados?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>A maioria nota melhorias entre a 3.ª e 4.ª semana. O protocolo completo dura 10–12 semanas com sessões diárias de 30 minutos.</p></div></div>
+      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">Posso continuar a minha medicação?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>Sim. O tDCS complementa a medicação — estudos sugerem que a combinação pode ser mais eficaz.</p></div></div>
+      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">E se não funcionar para mim?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>A avaliação inicial identifica quem tem maior probabilidade de beneficiar. Se os resultados não forem os esperados, o psiquiatra discute alternativas consigo.</p></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-f">
+  <div class="cta-f-in reveal">
+    <h2>O primeiro passo é o mais importante</h2>
+    <p>Junte-se à lista de espera e seja dos primeiros a aceder ao programa piloto.</p>
+    <form class="cta-form" id="waitlist-home" onsubmit="return submitWaitlist(event, this)">
+      <input type="text" name="name" placeholder="O seu nome" required>
+      <div class="cta-row">
+        <input type="email" name="email" id="hero-email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Telefone" required>
+      </div>
+      <button type="submit">Juntar-me à lista de espera</button>
+    </form>
+    <div class="cta-ok" id="ok-home"><h3>Obrigado!</h3><p>Entraremos em contacto em breve.</p></div>
+  </div>
+</div>
+
+</div><!-- end page-home -->
+
+<!-- ═══════════ SCIENCE PAGE ═══════════ -->
+<div class="page" id="page-science">
+
+<div class="sci-hero">
+  <h1>A ciência por trás da Sereen</h1>
+  <p>O tDCS é suportado por décadas de investigação, centenas de ensaios clínicos e publicações em revistas científicas de referência.</p>
+  <div class="sci-stats">
+    <div class="sci-stat"><div class="sci-stat-n">200+</div><div class="sci-stat-l">Ensaios clínicos</div></div>
+    <div class="sci-stat"><div class="sci-stat-n">20+</div><div class="sci-stat-l">Anos de investigação</div></div>
+    <div class="sci-stat"><div class="sci-stat-n">55k+</div><div class="sci-stat-l">Pacientes tratados</div></div>
+    <div class="sci-stat"><div class="sci-stat-n">58%</div><div class="sci-stat-l">Taxa de remissão</div></div>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sl">Publicações científicas</div>
+  <h2 class="sh">Estudos peer-reviewed</h2>
+  <p class="sp">Uma seleção de publicações científicas recentes sobre tDCS e neuroestimulação.</p>
+
+  <div class="filters" id="filters">
+    <button class="filter-btn active" onclick="filterPubs('all',this)">Todos</button>
+    <button class="filter-btn" onclick="filterPubs('dep',this)">Depressão</button>
+    <button class="filter-btn" onclick="filterPubs('high',this)">Destaques</button>
+    <button class="filter-btn" onclick="filterPubs('mech',this)">Mecanismos</button>
+    <button class="filter-btn" onclick="filterPubs('pain',this)">Dor</button>
+    <button class="filter-btn" onclick="filterPubs('other',this)">Outras condições</button>
+  </div>
+
+  <div class="pub-grid" id="pubGrid">
+    <a class="pub" data-cat="dep high" href="https://soomamedical.com/publications/transcranial-electrical-stimulation-in-treatment-of-depressiona-systematic-review-and-meta-analysis/" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2025</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Transcranial Electrical Stimulation in Treatment of Depression: A Systematic Review and Meta-Analysis</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/efficacy-and-safety-of-transcranial-direct-current-stimulation-for-depression-in-older-adults/" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Efficacy and Safety of Transcranial Direct Current Stimulation for Depression in Older Adults: A Systematic Review and Meta-Analysis</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/home-use-transcranial-direct-current-stimulation-tdcs-as-a-safe-effective-and-feasible-application-in-depression-a-randomized-single-blind-placebo-controlled-trial/" target="_blank"><div class="pub-meta"><span class="pub-date">Abr 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Home-use tDCS as a Safe, Effective, and Feasible Application in Depression: A Randomized, Single-Blind, Placebo-Controlled Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/home-%e2%80%91administered-tdcs-for-major-depressive-disorder-exploring-thepredictive-value-of-eeg-biomarkers/" target="_blank"><div class="pub-meta"><span class="pub-date">Abr 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Home-Administered tDCS for Major Depressive Disorder: Exploring the Predictive Value of EEG Biomarkers</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/transcranial-direct-current-stimulation-tdcs-in-the-treatment-of-youth-depression-integrating-literature-review-insights-in-a-pilot-clinical-trial/" target="_blank"><div class="pub-meta"><span class="pub-date">Mar 2025</span><span class="pub-tag dep">Depressão</span></div><h3>tDCS in the Treatment of Youth Depression: Integrating Literature Review Insights in a Pilot Clinical Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/spaced-tdcs-for-major-depression/" target="_blank"><div class="pub-meta"><span class="pub-date">Jan 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Spaced Transcranial Direct Current Stimulation for Major Depression</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep high" href="https://soomamedical.com/publications/home-based-treatment-for-major-depressive-disorder/" target="_blank"><div class="pub-meta"><span class="pub-date">Out 2024</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Home-based tDCS Treatment for Major Depressive Disorder: A Fully Remote Phase 2 Randomized Sham-Controlled Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/evaluating-the-effects-of-tdcs-on-depressive-and-anxiety-symptoms-from-a-transdiagnostic-perspective-a-systematic-review-and-meta-analysis-of-randomized-controlled-trials/" target="_blank"><div class="pub-meta"><span class="pub-date">Jul 2024</span><span class="pub-tag dep">Depressão</span></div><h3>Evaluating the Effects of tDCS on Depressive and Anxiety Symptoms: A Systematic Review and Meta-Analysis of RCTs</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep high" href="https://soomamedical.com/publications/effects-and-safety-of-transcranial-direct-current-stimulation-on-multiple-health-outcomes-an-umbrella-review-of-randomized-clinical-trials/" target="_blank"><div class="pub-meta"><span class="pub-date">Mai 2024</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Effects and Safety of tDCS on Multiple Health Outcomes: An Umbrella Review of Randomized Clinical Trials</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/tdcs-reduces-depression-and-state-anxiety-symptoms-in-older-adults-from-the-augmenting-cognitive-training-in-older-adults-study-act-3/" target="_blank"><div class="pub-meta"><span class="pub-date">Abr 2024</span><span class="pub-tag dep">Depressão</span></div><h3>tDCS Reduces Depression and State Anxiety Symptoms in Older Adults (ACT Study)</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/time-course-of-the-tdcs-antidepressant-effect-an-individual-participant-data-meta-analysis/" target="_blank"><div class="pub-meta"><span class="pub-date">Abr 2023</span><span class="pub-tag dep">Depressão</span></div><h3>Time-course of the tDCS Antidepressant Effect: An Individual Participant Data Meta-Analysis</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep high" href="https://soomamedical.com/publications/reduction-of-symptoms-in-patients-with-major-depressive-disorder-after-transcranial-direct-current-stimulation-treatment-a-real-world-study/" target="_blank"><div class="pub-meta"><span class="pub-date">Mai 2022</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Reduction of Symptoms in Patients with MDD after tDCS Treatment: A Real-World Study</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/clinical-case-series-of-acute-and-maintenance-home-administered-transcranial-direct-current-stimulation-in-treatment-resistant-depression/" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2022</span><span class="pub-tag dep">Depressão</span></div><h3>Home Administered tDCS in Treatment-Resistant Depression: A Clinical Case Series</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/efficacy-of-neurostimulation-across-mental-disorders/" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2022</span><span class="pub-tag dep">Depressão</span><span class="pub-tag other">Outras</span></div><h3>Efficacy of Neurostimulation Across Mental Disorders: Systematic Review and Meta-Analysis of 208 RCTs</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep" href="https://soomamedical.com/publications/neurostimulation-methods-in-the-treatment-of-depression-a-comparison-of-rtms-tdcs-and-venlafaxine-using-a-pooled-analysis-of-two-studies/" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2021</span><span class="pub-tag dep">Depressão</span></div><h3>Neurostimulation Methods in Depression: A Comparison of rTMS, tDCS, and Venlafaxine</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="mech" href="https://soomamedical.com/publications/neurobiological-mechanisms-of-transcranial-direct-current-stimulation-for-psychiatric-disorders-neurophysiological-chemical-and-anatomical-considerations/" target="_blank"><div class="pub-meta"><span class="pub-date">Jan 2021</span><span class="pub-tag mech">Mecanismos</span></div><h3>Neurobiological Mechanisms of tDCS for Psychiatric Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="mech" href="https://soomamedical.com/publications/tdcs-induced-modulation-of-gaba-concentration-and-dopamine-release-in-the-human-brain-a-combination-study-of-magnetic-resonance-spectroscopy-and-positron-emission-tomography/" target="_blank"><div class="pub-meta"><span class="pub-date">Dez 2020</span><span class="pub-tag mech">Mecanismos</span></div><h3>tDCS-induced Modulation of GABA and Dopamine Release in the Human Brain</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="dep high" href="https://soomamedical.com/publications/evidence-based-guidelines-and-secondary-meta-analysis-for-the-use-of-transcranial-direct-current-stimulation-tdcs-in-neurological-and-psychiatric-disorders/" target="_blank"><div class="pub-meta"><span class="pub-date">Ago 2020</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Evidence-based Guidelines for the Use of tDCS in Neurological and Psychiatric Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="mech" href="https://soomamedical.com/publications/electric-fields-induced-in-the-brain-by-transcranial-electric-stimulation-a-review-of-in-vivo-recordings/" target="_blank"><div class="pub-meta"><span class="pub-date">Ago 2022</span><span class="pub-tag mech">Mecanismos</span></div><h3>Electric Fields Induced in the Brain by Transcranial Electric Stimulation: A Review of In Vivo Recordings</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="pain" href="https://soomamedical.com/publications/combined-transcranial-direct-current-stimulation-and-pain-neuroscience-education-for-chronic-low-back-pain-a-randomized-controlled-trial/" target="_blank"><div class="pub-meta"><span class="pub-date">Out 2024</span><span class="pub-tag pain">Dor</span></div><h3>Combined tDCS and Pain Neuroscience Education for Chronic Low Back Pain: A Randomized Controlled Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="other" href="https://soomamedical.com/publications/assessing-tdcs-efficacy-in-reducing-negative-symptoms-in-schizophrenia-spectrum-disorders-a-systematic-review-and-meta-analysis/" target="_blank"><div class="pub-meta"><span class="pub-date">Set 2025</span><span class="pub-tag other">Outras</span></div><h3>Assessing tDCS Efficacy in Reducing Negative Symptoms in Schizophrenia Spectrum Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="other" href="https://soomamedical.com/publications/immediate-and-long-term-efficacy-of-transcranial-direct-current-stimulation-tcds-in-obsessive-compulsive-disorder-posttraumatic-stress-disorder-and-anxiety-disorders-a-systematic-review-and-meta-a/" target="_blank"><div class="pub-meta"><span class="pub-date">Ago 2024</span><span class="pub-tag other">Outras</span></div><h3>Immediate and Long-term Efficacy of tDCS in OCD, PTSD and Anxiety Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+
+    <a class="pub" data-cat="pain" href="https://soomamedical.com/publications/home-based-transcranial-direct-current-stimulation-vs-placebo-for-fibromyalgia-randomized-clinical-trial/" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2025</span><span class="pub-tag pain">Dor</span></div><h3>Home-Based tDCS vs Placebo for Fibromyalgia: A Randomized Clinical Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+  </div>
+
+  <p style="text-align:center;margin-top:40px;font-size:14px;color:var(--t3)">
+    Publicações recolhidas de <a href="https://soomamedical.com/publications/" target="_blank" style="color:var(--accent)">revistas peer-reviewed</a>. A Sereen não é autora destes estudos.
+  </p>
+</div>
+
+<!-- CTA on science page -->
+<div class="cta-f">
+  <div class="cta-f-in">
+    <h2>Quer experimentar o tratamento?</h2>
+    <p>Junte-se à lista de espera do programa piloto.</p>
+    <form class="cta-form" id="waitlist-sci" onsubmit="return submitWaitlist(event, this)">
+      <input type="text" name="name" placeholder="O seu nome" required>
+      <div class="cta-row">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Telefone" required>
+      </div>
+      <button type="submit">Juntar-me à lista de espera</button>
+    </form>
+    <div class="cta-ok" id="ok-sci"><h3>Obrigado!</h3><p>Entraremos em contacto em breve.</p></div>
+  </div>
+</div>
+
+</div><!-- end page-science -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div class="ft-brand"><a href="#" class="logo" onclick="showPage('home');return false">sereen</a><p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p></div>
+      <div class="ft-cols">
+        <div class="ft-col"><h4>Sereen</h4><a href="#" onclick="showPage('home');return false">Início</a><a href="#" onclick="showPage('science');return false">Ciência</a><a href="#">Contacto</a></div>
+        <div class="ft-col"><h4>Legal</h4><a href="#">Privacidade</a><a href="#">Termos</a><a href="#">Cookies</a></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">&copy; 2026 Sereen. Todos os direitos reservados.</span>
+      <span class="ft-crisis">Em crise? SNS 24: 808 24 24 24</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Nav scroll
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50),{passive:true});
+
+// Reveal
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),
+  {threshold:.06,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// FAQ
+function toggleFaq(el){const item=el.parentElement,w=item.classList.contains('open');
+  document.querySelectorAll('.faq-i').forEach(i=>i.classList.remove('open'));if(!w)item.classList.add('open')}
+
+// Page switching
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  // Re-observe reveals on new page
+  setTimeout(()=>{
+    document.querySelectorAll('.reveal:not(.vis)').forEach(el=>obs.observe(el));
+  },100);
+}
+
+// Publication filter
+function filterPubs(cat,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.pub').forEach(p=>{
+    if(cat==='all'){p.style.display='block'}
+    else{p.style.display=p.dataset.cat.includes(cat)?'block':'none'}
+  });
+}
+
+// ── Waitlist form (Google Apps Script via iframe — CORS-free) ──
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyc9aBoM2YOpOx0h2yS9gCTZsNom92H7KTCmIPcFtNhkNkJzAUrCSD6z9WzgoH_8FucKQ/exec';
+
+function submitWaitlist(e, form) {
+  e.preventDefault();
+  const btn = form.querySelector('button');
+  const okId = form.id === 'waitlist-home' ? 'ok-home' : 'ok-sci';
+  btn.textContent = 'A enviar...';
+  btn.disabled = true;
+
+  // Cria iframe oculto para evitar CORS
+  const iframe = document.createElement('iframe');
+  iframe.name = 'submit-frame-' + Date.now();
+  iframe.style.display = 'none';
+  document.body.appendChild(iframe);
+
+  // Cria form temporário que submete para o iframe
+  const tmp = document.createElement('form');
+  tmp.method = 'POST';
+  tmp.action = APPS_SCRIPT_URL;
+  tmp.target = iframe.name;
+  tmp.style.display = 'none';
+
+  ['name','email','phone'].forEach(field => {
+    const input = document.createElement('input');
+    input.name = field;
+    input.value = form.querySelector('[name=' + field + ']').value;
+    tmp.appendChild(input);
+  });
+
+  document.body.appendChild(tmp);
+  tmp.submit();
+
+  // Mostra sucesso após breve delay (não conseguimos ler resposta do iframe cross-origin)
+  setTimeout(() => {
+    form.style.display = 'none';
+    document.getElementById(okId).style.display = 'block';
+    tmp.remove();
+    iframe.remove();
+  }, 1500);
+
+  return false;
+}
+</script>
+
+</body>
+</html>

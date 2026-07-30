@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estudos Científicos sobre tDCS e Dor Crónica: Revisão da Evidência | Sereen</title>
+<meta name="description" content="Revisão dos estudos chave sobre tDCS para dor crónica: Fregni 2006, Valle 2009 e guidelines europeias Lefaucheur 2017. Análise crítica da evidência.">
+<link rel="canonical" href="https://sereen.pt/dor-cronica/estudos/">
+<meta property="og:title" content="Estudos Científicos sobre tDCS e Dor Crónica: Revisão da Evidência | Sereen">
+<meta property="og:description" content="Revisão dos estudos chave sobre tDCS para dor crónica: Fregni 2006, Valle 2009 e guidelines europeias Lefaucheur 2017. Análise crítica da evidência.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sereen.pt/dor-cronica/estudos/">
+<meta property="og:site_name" content="Sereen">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fff;--bg2:#F7F8FA;--dark:#0B1120;--accent:#3D8B6E;--accent-l:#E8F5EE;--accent-d:#2D6B52;--t:#0B1120;--t2:#4A5568;--t3:#8896AB;--t4:#B0BCCD;--brd:#E8ECF1}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:var(--t);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;top:-100%;left:0;padding:12px 24px;background:var(--accent);color:#fff;font-weight:600;font-size:14px;text-decoration:none;z-index:9999;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--brd);transition:all .3s}
+nav.s{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.ni{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:700;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:14px;color:var(--t2);text-decoration:none;font-weight:500;transition:color .2s}
+.nr a:hover{color:var(--t)}
+.btn{display:inline-flex;align-items:center;border-radius:100px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s;text-decoration:none;border:none;padding:12px 28px}
+.bp{background:var(--accent);color:#fff}.bp:hover{background:var(--accent-d);transform:translateY(-1px)}
+.bc{padding:88px 40px 0;max-width:1240px;margin:0 auto}
+.bc-list{display:flex;align-items:center;gap:8px;list-style:none;flex-wrap:wrap}
+.bc-list li{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t3)}
+.bc-list a{color:var(--accent);text-decoration:none}
+.bc-list a:hover{text-decoration:underline}
+.bc-sep{color:var(--t4)}
+.pg-hero{padding:24px 40px 60px;max-width:1240px;margin:0 auto}
+.pg-hero h1{font-size:clamp(28px,3.5vw,48px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px;max-width:760px}
+.pg-hero .sub{font-size:18px;color:var(--t2);max-width:640px;line-height:1.65;margin-bottom:40px}
+.stats-bar{display:flex;gap:0;border:1px solid var(--brd);border-radius:16px;overflow:hidden;margin-bottom:0}
+.stat{flex:1;padding:24px 28px;text-align:center;border-right:1px solid var(--brd);background:var(--bg)}
+.stat:last-child{border-right:0}
+.stat-n{font-size:clamp(28px,3vw,40px);font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.stat-l{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--t3);margin-top:4px}
+.pg-layout{max-width:1240px;margin:0 auto;padding:48px 40px 80px;display:grid;grid-template-columns:1fr 280px;gap:60px;align-items:start}
+.content h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin:48px 0 16px;color:var(--t)}
+.content h2:first-child{margin-top:0}
+.content h3{font-size:19px;font-weight:600;margin:28px 0 10px;color:var(--t)}
+.content p{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:16px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:6px}
+.content a{color:var(--accent)}
+.content strong{color:var(--t);font-weight:600}
+.ok{color:#2D6B52;font-weight:600}.no{color:#E53E3E;font-weight:600}
+.info-box{background:var(--accent-l);border-left:3px solid var(--accent);padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.info-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.warn-box{background:#FFF8E6;border-left:3px solid #E5A530;padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.warn-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0}
+.study-card{background:var(--bg2);border-radius:12px;padding:20px 24px;border-left:3px solid var(--accent)}
+.study-card .s-title{font-size:13px;font-weight:600;color:var(--t3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.study-card .s-stat{font-size:32px;font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.study-card .s-desc{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.5}
+.sidebar{position:sticky;top:96px}
+.faq-sec{margin:60px 0 0}
+.faq-sec h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin-bottom:32px;color:var(--t)}
+.faq-list{display:flex;flex-direction:column}
+.faq-i{border-bottom:1px solid var(--brd)}
+.faq-q{padding:20px 0;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color .2s;background:0;border:0;width:100%;text-align:left;font-family:inherit;color:var(--t)}
+.faq-q:hover{color:var(--accent)}
+.faq-ic{width:28px;height:28px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.faq-i.open .faq-ic{background:var(--accent);transform:rotate(180deg)}
+.faq-i.open .faq-ic svg{stroke:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .4s}
+.faq-i.open .faq-a{max-height:500px;padding-bottom:20px}
+.faq-a p{font-size:14px;color:var(--t2);line-height:1.7}
+.cta-sec{background:var(--dark);border-radius:24px;padding:60px 40px;text-align:center;margin:60px 0;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(61,139,110,.12),transparent 70%);bottom:-200px;left:-100px;pointer-events:none}
+.cta-sec h2{font-size:clamp(24px,3vw,36px);font-weight:700;color:#fff;letter-spacing:-1px;margin-bottom:12px;position:relative}
+.cta-sec > p{font-size:16px;color:rgba(255,255,255,.5);max-width:420px;margin:0 auto 32px;position:relative}
+.cta-form{display:flex;flex-direction:column;gap:10px;max-width:380px;margin:0 auto;position:relative}
+.cta-form input{padding:14px 20px;border:1.5px solid rgba(255,255,255,.12);border-radius:12px;font-size:15px;font-family:inherit;background:rgba(255,255,255,.06);color:#fff;outline:none;transition:all .3s}
+.cta-form input::placeholder{color:rgba(255,255,255,.5)}
+.cta-form input:focus{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
+.cta-form button{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:14px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .3s;width:100%}
+.cta-form button:hover{background:var(--accent-d)}
+.cta-ok{display:none;text-align:center;padding:20px;color:#fff}
+.cta-ok h3{font-size:20px;margin-bottom:8px}
+.cta-ok p{font-size:14px;opacity:.6}
+.gdpr-note{font-size:11px;color:rgba(255,255,255,.35);margin-top:8px;line-height:1.5}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+footer{padding:48px 40px;border-top:1px solid var(--brd)}
+.ft-in{max-width:1240px;margin:0 auto}
+.ft-top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:32px;flex-wrap:wrap;gap:32px}
+.ft-brand p{font-size:13px;color:var(--t3);margin-top:8px;max-width:260px}
+.ft-cols{display:flex;gap:56px}
+.ft-col h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:14px}
+.ft-col a{display:block;font-size:13px;color:var(--t2);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.ft-col a:hover{color:var(--t)}
+.ft-bot{padding-top:24px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:12px;color:var(--t3)}
+.ft-crisis{font-size:12px;color:var(--accent-d);background:var(--accent-l);padding:6px 14px;border-radius:8px;font-weight:500}
+@media(max-width:900px){.pg-layout{grid-template-columns:1fr}.sidebar{position:static}.study-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.nr a:not(.btn){display:none}.ni{padding:16px 24px}.pg-hero{padding:16px 24px 40px}.bc{padding:80px 24px 0}.pg-layout{padding:32px 24px 60px}.stats-bar{flex-direction:column}.stat{border-right:0;border-bottom:1px solid var(--brd)}.stat:last-child{border-bottom:0}footer{padding:40px 24px}.ft-top{flex-direction:column}.ft-cols{flex-direction:column;gap:24px}}
+.pg-layout{display:block;max-width:800px}
+.sidebar{display:none}
+.topics-btn{position:fixed;bottom:28px;right:28px;z-index:200;background:var(--dark);color:#fff;border:none;border-radius:100px;padding:11px 20px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;font-family:inherit;box-shadow:0 4px 24px rgba(0,0,0,.18);transition:all .2s}
+.topics-btn:hover{background:var(--accent);transform:translateY(-1px)}
+.topics-btn svg{flex-shrink:0}
+.topics-overlay{position:fixed;inset:0;background:rgba(11,17,32,.35);z-index:198;opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(2px)}
+.topics-overlay.open{opacity:1;pointer-events:auto}
+.topics-panel{position:fixed;right:0;top:0;bottom:0;width:272px;background:#fff;z-index:199;transform:translateX(100%);transition:transform .35s cubic-bezier(.16,1,.3,1);overflow-y:auto;border-left:1px solid var(--brd)}
+.topics-panel.open{transform:translateX(0)}
+.topics-head{display:flex;justify-content:space-between;align-items:center;padding:20px 20px 16px;border-bottom:1px solid var(--brd)}
+.topics-head span{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3)}
+.topics-close{background:none;border:none;cursor:pointer;color:var(--t3);font-size:20px;line-height:1;padding:2px 4px;transition:color .2s}
+.topics-close:hover{color:var(--t)}
+.topics-nav{padding:12px}
+.topics-nav a{display:block;font-size:14px;color:var(--t2);text-decoration:none;padding:9px 12px;border-radius:8px;margin-bottom:1px;transition:all .2s}
+.topics-nav a:hover{background:var(--bg2);color:var(--t)}
+.topics-nav a.active{background:var(--accent-l);color:var(--accent-d);font-weight:600}
+.topics-cta{margin:12px;padding:16px;background:var(--dark);border-radius:12px;text-align:center}
+.topics-cta p{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:10px;line-height:1.5}
+.topics-cta a{display:block;background:var(--accent);color:#fff;text-decoration:none;border-radius:100px;padding:9px 16px;font-size:13px;font-weight:600;transition:all .2s}
+.topics-cta a:hover{background:var(--accent-d)}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://sereen.pt/dor-cronica/estudos/#webpage",
+      "url": "https://sereen.pt/dor-cronica/estudos/",
+      "name": "Estudos Científicos sobre tDCS e Dor Crónica: Revisão da Evidência | Sereen",
+      "description": "Revisão dos estudos chave sobre tDCS para dor crónica: Fregni 2006, Valle 2009 e guidelines europeias Lefaucheur 2017. Análise crítica da evidência.",
+      "isPartOf": {"@id": "https://sereen.pt/#website"},
+      "about": {"@type": "MedicalCondition", "name": "Dor Crónica"},
+      "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"},
+      "reviewedBy": {"@type": "Person", "name": "Simão Ferreira, PhD", "url": "https://sereen.pt/equipa/"}
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sereen.pt/dor-cronica/estudos/#article",
+      "headline": "Estudos Científicos sobre tDCS e Dor Crónica: Revisão da Evidência",
+      "url": "https://sereen.pt/dor-cronica/estudos/",
+      "publisher": {"@type": "Organization", "name": "Sereen", "url": "https://sereen.pt"},
+      "datePublished": "2026-07-31",
+      "dateModified": "2026-07-31",
+      "inLanguage": "pt-PT",
+      "author": {"@type": "Person", "name": "Simão Ferreira, PhD", "url": "https://sereen.pt/equipa/"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sereen.pt/dor-cronica/estudos/#faq",
+      "mainEntity": [
+        {"@type": "Question", "name": "O que é Level A nas guidelines europeias de neuromodulação?", "acceptedAnswer": {"@type": "Answer", "text": "Level A na classificação das guidelines europeias de neuromodulação (Lefaucheur 2017) significa 'definitivamente eficaz' — o nível mais elevado de recomendação. É atribuído quando existe evidência de pelo menos dois RCTs de alta qualidade com resultados consistentes e mecanismo plausível. Para fibromialgia com estimulação M1, foi atribuído Level A."}},
+        {"@type": "Question", "name": "Quantos estudos existem sobre tDCS e fibromialgia?", "acceptedAnswer": {"@type": "Answer", "text": "Os dois estudos de referência são Fregni et al., 2006 (Journal of Pain) e Valle et al., 2009. Estes foram os primeiros e os mais citados RCTs. Estudos posteriores e revisões sistemáticas consolidaram estes resultados. A base de evidência é mais restrita do que para depressão, mas de qualidade reconhecida pelas guidelines europeias."}},
+        {"@type": "Question", "name": "Porque se usa o Journal of Pain como referência?", "acceptedAnswer": {"@type": "Answer", "text": "O Journal of Pain é uma das publicações de referência em investigação sobre dor, peer-reviewed e com elevado fator de impacto. A publicação do estudo de Fregni nesta revista em 2006 conferiu-lhe credibilidade imediata na comunidade de investigação da dor."}},
+        {"@type": "Question", "name": "Há estudos sobre tDCS para dor lombar crónica?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, existem estudos positivos para dor lombar crónica, embora de menor robustez do que para fibromialgia. Os resultados são geralmente favoráveis em casos onde a componente de sensibilização central é dominante — ou seja, dor lombar crónica sem causa estrutural ativa identificável."}},
+        {"@type": "Question", "name": "Qual é a principal limitação dos estudos em tDCS para dor?", "acceptedAnswer": {"@type": "Answer", "text": "A principal limitação é o tamanho amostral dos estudos individuais (n=32 no RCT fundador de Fregni). Amostras pequenas aumentam a incerteza em torno das estimativas de eficácia. A replicação por Valle 2009 é importante precisamente por esta razão. Estudos maiores e de mais longo prazo são necessários."}},
+        {"@type": "Question", "name": "As guidelines europeias foram atualizadas desde 2017?", "acceptedAnswer": {"@type": "Answer", "text": "Lefaucheur et al., 2017 continua a ser o documento de referência mais citado para neuromodulação e dor. Atualizações sectoriais têm sido publicadas, mas as recomendações core para fibromialgia e tDCS M1 permanecem consistentes com as de 2017."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sereen.pt/dor-cronica/estudos/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://sereen.pt/"},
+        {"@type": "ListItem", "position": 2, "name": "Dor Crónica", "item": "https://sereen.pt/dor-cronica/"},
+        {"@type": "ListItem", "position": 3, "name": "Estudos científicos", "item": "https://sereen.pt/dor-cronica/estudos/"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+<header>
+<nav id="nav">
+  <div class="ni">
+    <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+    <div class="nr" aria-label="Navegação principal">
+      <a href="/#como">Como funciona</a>
+      <a href="/depressao/" class="active">Condições</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/" class="btn bp">Lista de espera</a>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main-content">
+<nav class="bc" aria-label="Breadcrumb">
+  <ol class="bc-list">
+    <li><a href="/">Início</a><span class="bc-sep" aria-hidden="true">›</span></li>
+    <li><a href="/dor-cronica/">Dor Crónica</a><span class="bc-sep" aria-hidden="true">›</span></li>
+    <li>Estudos científicos</li>
+  </ol>
+</nav>
+
+<div class="pg-hero">
+  <h1>Estudos Científicos sobre tDCS e Dor Crónica</h1>
+  <p class="sub">A fibromialgia é a condição de dor crónica com evidência mais sólida para tDCS — dois RCTs de qualidade, replicados, e recomendação Level A nas guidelines europeias de 2017.</p>
+  <div class="stats-bar" role="list">
+    <div class="stat" role="listitem">
+      <div class="stat-n">2006</div>
+      <div class="stat-l">Primeiro RCT (Fregni et al.)</div>
+      <div class="stat-src">Journal of Pain</div>
+    </div>
+    <div class="stat" role="listitem">
+      <div class="stat-n">Level A</div>
+      <div class="stat-l">Para fibromialgia (Lefaucheur 2017)</div>
+      <div class="stat-src">Guidelines europeias</div>
+    </div>
+    <div class="stat" role="listitem">
+      <div class="stat-n">2</div>
+      <div class="stat-l">RCTs de alta qualidade em fibromialgia</div>
+      <div class="stat-src">Fregni 2006, Valle 2009</div>
+    </div>
+  </div>
+</div>
+
+<div class="pg-layout">
+  <div class="content">
+    <h2>Por que a dor crónica tem a melhor evidência entre as condições da Sereen</h2>
+    <p>Das condições abordadas pela Sereen — depressão, ansiedade, insónia e dor crónica — a dor crónica (especificamente fibromialgia) tem a base de evidência mais sólida para tDCS. Três fatores convergem para esta posição:</p>
+    <ul>
+      <li><strong>Dois RCTs de alta qualidade</strong> com resultados consistentes (Fregni 2006, Valle 2009)</li>
+      <li><strong>Replicação independente</strong> — os dois estudos foram conduzidos por grupos distintos e chegaram a conclusões similares</li>
+      <li><strong>Sistematização por guidelines europeias</strong> — Lefaucheur et al., 2017 classificaram a evidência como Level A (definitivamente eficaz) para estimulação M1 em fibromialgia</li>
+    </ul>
+    <p>Adicionalmente, o mecanismo de ação está bem fundamentado: fibromialgia é essencialmente uma doença de sensibilização central, e o tDCS sobre M1 atua especificamente sobre os mecanismos de sensibilização central. A adequação mecanicista reforça a plausibilidade biológica dos resultados.</p>
+
+    <h2>Os estudos mais importantes</h2>
+    <div class="study-grid">
+      <div class="study-card">
+        <div class="s-title">Fregni et al., 2006 — Journal of Pain</div>
+        <div class="s-stat">n=32</div>
+        <div class="s-desc">Primeiro RCT de tDCS para fibromialgia. Três grupos: M1, DLPFC, sham. Apenas M1 mostrou redução significativa da dor. Estudo fundador da área.</div>
+      </div>
+      <div class="study-card">
+        <div class="s-title">Valle et al., 2009</div>
+        <div class="s-stat">Duplo-cego</div>
+        <div class="s-desc">Replicação com design duplo-cego rigoroso. Resultados consistentes com Fregni 2006. Confirmou M1 como alvo e consolidou NNT 3-4.</div>
+      </div>
+      <div class="study-card">
+        <div class="s-title">Lefaucheur et al., 2017</div>
+        <div class="s-stat">Level A</div>
+        <div class="s-desc">Guidelines europeias de neuromodulação para dor. Sistematizaram a evidência e atribuíram Level A (definitivamente eficaz) para tDCS M1 em fibromialgia.</div>
+      </div>
+      <div class="study-card">
+        <div class="s-title">Evidência combinada</div>
+        <div class="s-stat">NNT 3–4</div>
+        <div class="s-desc">NNT calculado a partir dos estudos disponíveis. Clinicamente comparável a analgésicos aprovados, sem os seus efeitos sistémicos.</div>
+      </div>
+    </div>
+
+    <h2>O que dizem as guidelines europeias</h2>
+    <p>As guidelines de Lefaucheur et al., 2017 (publicadas pela European Federation of Neurological Societies) são o documento de referência para neuromodulação em dor. O sistema de classificação utilizado é:</p>
+    <ul>
+      <li><strong>Level A</strong> — definitivamente eficaz (evidência de ≥2 RCTs de alta qualidade e consistentes)</li>
+      <li><strong>Level B</strong> — provavelmente eficaz (evidência de ≥1 RCT ou estudos controlados de qualidade)</li>
+      <li><strong>Level C</strong> — possivelmente eficaz (evidência de estudos não controlados ou caso a caso)</li>
+    </ul>
+    <p>A estimulação M1 por tDCS para fibromialgia recebeu <strong>Level A</strong> — o nível mais elevado possível. Esta classificação posiciona o tDCS M1 para fibromialgia ao mesmo nível de intervenções farmacológicas bem estabelecidas neste sistema de evidência.</p>
+    <p>É importante notar que a classificação Level A neste contexto não equivale automaticamente à aprovação regulatória europeia — trata-se de uma classificação baseada em evidência clínica por um painel de especialistas, não de um processo regulatório.</p>
+
+    <h2>Limitações e perspetivas</h2>
+    <p>Uma avaliação honesta da evidência inclui reconhecer as suas limitações:</p>
+    <ul>
+      <li><strong>Amostras pequenas</strong> — os RCTs individuais têm amostras limitadas (n=32 em Fregni 2006). Amostras pequenas aumentam a incerteza das estimativas de efeito.</li>
+      <li><strong>Heterogeneidade de protocolos</strong> — diferentes estudos usam diferentes durações de sessão, número de sessões e parâmetros de estimulação, dificultando comparações diretas.</li>
+      <li><strong>Necessidade de estudos de longo prazo</strong> — os dados de manutenção a longo prazo são mais limitados do que os dados do protocolo agudo.</li>
+      <li><strong>Outras formas de dor crónica</strong> — a evidência para dor lombar, neuropatia e cefaleia crónica está em desenvolvimento e é menos robusta.</li>
+    </ul>
+
+    <div class="info-box">
+      <p>As guidelines europeias (Lefaucheur 2017) são o documento de referência mais importante para neuromodulação na dor. A recomendação Level A para fibromialgia com estimulação M1 por tDCS é a mais forte possível neste sistema de classificação — e é o fundamento científico do protocolo da Sereen para dor crónica.</p>
+    </div>
+
+    <section class="faq-sec" aria-labelledby="faq-heading-estudos">
+      <h2 id="faq-heading-estudos">Perguntas frequentes sobre estudos e evidência</h2>
+      <div class="faq-list">
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-est-1">O que é Level A nas guidelines europeias de neuromodulação?<span class="faq-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a" id="faq-est-1" role="region"><p>Level A na classificação das guidelines europeias de neuromodulação (Lefaucheur 2017) significa "definitivamente eficaz" — o nível mais elevado de recomendação. É atribuído quando existe evidência de pelo menos dois RCTs de alta qualidade com resultados consistentes e mecanismo plausível. Para fibromialgia com estimulação M1, foi atribuído Level A.</p></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-est-2">Quantos estudos existem sobre tDCS e fibromialgia?<span class="faq-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a" id="faq-est-2" role="region"><p>Os dois estudos de referência são Fregni et al., 2006 (Journal of Pain) e Valle et al., 2009. Estes foram os primeiros e os mais citados RCTs. Estudos posteriores e revisões sistemáticas consolidaram estes resultados. A base de evidência é mais restrita do que para depressão, mas de qualidade reconhecida pelas guidelines europeias.</p></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-est-3">Porque se usa o Journal of Pain como referência?<span class="faq-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a" id="faq-est-3" role="region"><p>O Journal of Pain é uma das publicações de referência em investigação sobre dor, peer-reviewed e com elevado fator de impacto. A publicação do estudo de Fregni nesta revista em 2006 conferiu-lhe credibilidade imediata na comunidade de investigação da dor.</p></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-est-4">Há estudos sobre tDCS para dor lombar crónica?<span class="faq-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a" id="faq-est-4" role="region"><p>Sim, existem estudos positivos para dor lombar crónica, embora de menor robustez do que para fibromialgia. Os resultados são geralmente favoráveis em casos onde a componente de sensibilização central é dominante — ou seja, dor lombar crónica sem causa estrutural ativa identificável.</p></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-est-5">Qual é a principal limitação dos estudos em tDCS para dor?<span class="faq-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a" id="faq-est-5" role="region"><p>A principal limitação é o tamanho amostral dos estudos individuais (n=32 no RCT fundador de Fregni). Amostras pequenas aumentam a incerteza em torno das estimativas de eficácia. A replicação por Valle 2009 é importante precisamente por esta razão. Estudos maiores e de mais longo prazo são necessários.</p></div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-est-6">As guidelines europeias foram atualizadas desde 2017?<span class="faq-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a" id="faq-est-6" role="region"><p>Lefaucheur et al., 2017 continua a ser o documento de referência mais citado para neuromodulação e dor. Atualizações sectoriais têm sido publicadas, mas as recomendações core para fibromialgia e tDCS M1 permanecem consistentes com as de 2017.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-sec" id="cta-estudos">
+      <h2>Tratamento baseado em evidência científica</h2>
+      <p>O protocolo da Sereen para dor crónica é fundamentado nas guidelines europeias de 2017.</p>
+      <form class="cta-form" onsubmit="submitForm(event,this,'cta-ok-estudos')" aria-label="Formulário de contacto">
+        <label class="sr-only" for="name-est">Nome</label>
+        <input type="text" id="name-est" name="name" placeholder="Nome" required aria-required="true">
+        <label class="sr-only" for="email-est">Email</label>
+        <input type="email" id="email-est" name="email" placeholder="Email" required aria-required="true">
+        <label class="sr-only" for="phone-est">Telefone</label>
+        <input type="tel" id="phone-est" name="phone" placeholder="Telefone (opcional)">
+        <button type="submit">Quero saber mais</button>
+        <p class="gdpr-note">Ao submeter, aceita a nossa <a href="/privacidade/" style="color:rgba(255,255,255,.5)">política de privacidade</a>. Os seus dados não são partilhados com terceiros.</p>
+      </form>
+      <div class="cta-ok" id="cta-ok-estudos"><h3>Recebemos o seu contacto!</h3><p>Entraremos em contacto em breve.</p></div>
+    </div>
+  </div>
+</div>
+</main>
+
+<button class="topics-btn" id="topicsBtn" onclick="toggleTopics()" aria-expanded="false" aria-controls="topicsPanel" aria-label="Ver tópicos de dor crónica">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  Tópicos
+</button>
+<div class="topics-overlay" id="topicsOverlay" onclick="closeTopics()"></div>
+<div class="topics-panel" id="topicsPanel" role="dialog" aria-modal="true" aria-label="Tópicos de Dor Crónica">
+  <div class="topics-head">
+    <span>Dor Crónica &amp; tDCS</span>
+    <button class="topics-close" onclick="closeTopics()" aria-label="Fechar">&#x2715;</button>
+  </div>
+  <nav class="topics-nav" aria-label="Sub-páginas de dor crónica">
+    <a href="/dor-cronica/">Visão geral</a>
+    <a href="/dor-cronica/tdcs/">tDCS para dor crónica</a>
+    <a href="/dor-cronica/funciona/">Funciona?</a>
+    <a href="/dor-cronica/resultados/">Resultados</a>
+    <a href="/dor-cronica/estudos/" class="active">Estudos científicos</a>
+    <a href="/dor-cronica/efeitos-secundarios/">Efeitos secundários</a>
+    <a href="/dor-cronica/contraindicacoes/">Contraindicações</a>
+    <a href="/dor-cronica/quem-pode/">Quem pode fazer</a>
+    <a href="/dor-cronica/custo/">Quanto custa</a>
+    <a href="/dor-cronica/duracao/">Quanto demora</a>
+    <a href="/dor-cronica/vs-medicacao/">vs Medicação</a>
+    <a href="/dor-cronica/fibromialgia/">Fibromialgia</a>
+  </nav>
+  <div class="topics-cta">
+    <p>Pronto para começar?</p>
+    <a href="/">Lista de espera</a>
+  </div>
+</div>
+
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="/" class="logo" aria-label="Sereen">sereen</a>
+        <p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p>
+        <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--t3)">
+          <a href="mailto:geral@sereen.pt" style="color:var(--t3);text-decoration:none;display:block;margin-bottom:4px">geral@sereen.pt</a>
+          <a href="tel:+351932881800" style="color:var(--t3);text-decoration:none">+351 932 881 800</a>
+        </address>
+      </div>
+      <div class="ft-cols">
+        <div class="ft-col"><h4>Condições</h4><a href="/depressao/">Depressão</a><a href="/ansiedade/">Ansiedade</a><a href="/insonia/">Insónia</a><a href="/dor-cronica/">Dor crónica</a></div>
+        <div class="ft-col"><h4>Sereen</h4><a href="/">Início</a><a href="/equipa/">A Nossa Equipa</a><a href="/tdcs/">O que é tDCS</a><a href="/faq/">FAQ</a><a href="mailto:geral@sereen.pt">Contacto</a></div>
+        <div class="ft-col"><h4>Legal</h4><a href="/privacidade/">Privacidade</a><a href="/termos/">Termos</a><a href="/cookies/">Cookies</a></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">&copy; 2026 Sereen. Todos os direitos reservados.</span>
+      <span class="ft-crisis">Em crise? SNS 24: 808 24 24 24</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50),{passive:true});
+function toggleFaq(btn){
+  const item=btn.closest('.faq-i');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-i.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+  if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+}
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbyc9aBoM2YOpOx0h2yS9gCTZsNom92H7KTCmIPcFtNhkNkJzAUrCSD6z9WzgoH_8FucKQ/exec';
+function submitForm(e,formEl,okId){
+  e.preventDefault();
+  const btn=formEl.querySelector('button');
+  btn.textContent='A enviar...';btn.disabled=true;
+  const iframe=document.createElement('iframe');
+  iframe.name='sf'+Date.now();iframe.style.display='none';
+  document.body.appendChild(iframe);
+  const tmp=document.createElement('form');
+  tmp.method='POST';tmp.action=APPS_SCRIPT_URL;tmp.target=iframe.name;tmp.style.display='none';
+  ['name','email','phone'].forEach(f=>{
+    const el=formEl.querySelector('[name='+f+']');
+    if(el){const i=document.createElement('input');i.name=f;i.value=el.value;tmp.appendChild(i)}
+  });
+  document.body.appendChild(tmp);tmp.submit();
+  setTimeout(()=>{formEl.style.display='none';document.getElementById(okId).style.display='block';tmp.remove();iframe.remove()},1500);
+}
+function toggleTopics(){
+  var panel=document.getElementById('topicsPanel');
+  var open=panel.classList.toggle('open');
+  document.getElementById('topicsOverlay').classList.toggle('open',open);
+  document.getElementById('topicsBtn').setAttribute('aria-expanded',String(open));
+}
+function closeTopics(){
+  document.getElementById('topicsPanel').classList.remove('open');
+  document.getElementById('topicsOverlay').classList.remove('open');
+  document.getElementById('topicsBtn').setAttribute('aria-expanded','false');
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeTopics();});
+</script>
+</body>
+</html>

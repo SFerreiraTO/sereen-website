@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ansiedade: Tratamento sem Medicação com tDCS | Sereen</title>
+<meta name="description" content="Tudo sobre ansiedade: tipos, sintomas e opções de tratamento, incluindo tDCS. Dados clínicos reais para ansiedade generalizada, social e de pânico em Portugal.">
+<link rel="canonical" href="https://sereen.pt/ansiedade/">
+<meta property="og:title" content="Ansiedade: Tratamento sem Medicação com tDCS | Sereen">
+<meta property="og:description" content="Tudo sobre ansiedade: tipos, sintomas e opções de tratamento, incluindo tDCS. Dados clínicos reais para ansiedade generalizada, social e de pânico em Portugal.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sereen.pt/ansiedade/">
+<meta property="og:site_name" content="Sereen">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fff;--bg2:#F7F8FA;--dark:#0B1120;--accent:#3D8B6E;--accent-l:#E8F5EE;--accent-d:#2D6B52;--t:#0B1120;--t2:#4A5568;--t3:#8896AB;--t4:#B0BCCD;--brd:#E8ECF1}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:var(--t);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;top:-100%;left:0;padding:12px 24px;background:var(--accent);color:#fff;font-weight:600;font-size:14px;text-decoration:none;z-index:9999;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--brd);transition:all .3s}
+nav.s{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.ni{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:700;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:14px;color:var(--t2);text-decoration:none;font-weight:500;transition:color .2s}
+.nr a:hover{color:var(--t)}
+.btn{display:inline-flex;align-items:center;border-radius:100px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s;text-decoration:none;border:none;padding:12px 28px}
+.bp{background:var(--accent);color:#fff}.bp:hover{background:var(--accent-d);transform:translateY(-1px)}
+.bc{padding:88px 40px 0;max-width:1240px;margin:0 auto}
+.bc-list{display:flex;align-items:center;gap:8px;list-style:none;flex-wrap:wrap}
+.bc-list li{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t3)}
+.bc-list a{color:var(--accent);text-decoration:none}
+.bc-list a:hover{text-decoration:underline}
+.bc-sep{color:var(--t4)}
+.pg-hero{padding:24px 40px 60px;max-width:1240px;margin:0 auto}
+.pg-hero h1{font-size:clamp(28px,3.5vw,48px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px;max-width:760px}
+.pg-hero .sub{font-size:18px;color:var(--t2);max-width:640px;line-height:1.65;margin-bottom:40px}
+.stats-bar{display:flex;gap:0;border:1px solid var(--brd);border-radius:16px;overflow:hidden;margin-bottom:0}
+.stat{flex:1;padding:24px 28px;text-align:center;border-right:1px solid var(--brd);background:var(--bg)}
+.stat:last-child{border-right:0}
+.stat-n{font-size:clamp(28px,3vw,40px);font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.stat-l{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--t3);margin-top:4px}
+.pg-layout{max-width:1240px;margin:0 auto;padding:48px 40px 80px;display:grid;grid-template-columns:1fr 280px;gap:60px;align-items:start}
+.content h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin:48px 0 16px;color:var(--t)}
+.content h2:first-child{margin-top:0}
+.content h3{font-size:19px;font-weight:600;margin:28px 0 10px;color:var(--t)}
+.content p{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:16px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:6px}
+.content a{color:var(--accent)}
+.content strong{color:var(--t);font-weight:600}
+.content table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.content table th{padding:12px 16px;background:var(--bg2);font-weight:600;text-align:left;border-bottom:2px solid var(--brd)}
+.content table td{padding:12px 16px;border-bottom:1px solid var(--brd);color:var(--t2)}
+.content table tr:hover td{background:var(--bg2)}
+.ok{color:#2D6B52;font-weight:600}.no{color:#E53E3E;font-weight:600}
+.info-box{background:var(--accent-l);border-left:3px solid var(--accent);padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.info-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.warn-box{background:#FFF8E6;border-left:3px solid #E5A530;padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.warn-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0}
+.study-card{background:var(--bg2);border-radius:12px;padding:20px 24px;border-left:3px solid var(--accent)}
+.study-card .s-title{font-size:13px;font-weight:600;color:var(--t3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.study-card .s-stat{font-size:32px;font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.study-card .s-desc{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.5}
+.sidebar{position:sticky;top:96px}
+.sidebar-nav{background:var(--bg2);border-radius:16px;padding:24px;margin-bottom:20px}
+.sidebar-nav h3{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:16px}
+.sidebar-nav a{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--t2);text-decoration:none;padding:10px 12px;border-radius:8px;transition:all .2s;margin-bottom:2px}
+.sidebar-nav a:hover,.sidebar-nav a.active{background:var(--accent-l);color:var(--accent-d);font-weight:500}
+.sidebar-cta{background:var(--dark);border-radius:16px;padding:24px;text-align:center}
+.sidebar-cta h3{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
+.sidebar-cta p{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:16px;line-height:1.5}
+.sidebar-cta a{display:block;background:var(--accent);color:#fff;text-decoration:none;border-radius:100px;padding:12px 20px;font-size:14px;font-weight:600;transition:all .2s;margin-bottom:8px}
+.sidebar-cta a:hover{background:var(--accent-d)}
+.faq-sec{margin:60px 0 0}
+.faq-sec h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin-bottom:32px;color:var(--t)}
+.faq-list{display:flex;flex-direction:column}
+.faq-i{border-bottom:1px solid var(--brd)}
+.faq-q{padding:20px 0;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color .2s;background:0;border:0;width:100%;text-align:left;font-family:inherit;color:var(--t)}
+.faq-q:hover{color:var(--accent)}
+.faq-ic{width:28px;height:28px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.faq-i.open .faq-ic{background:var(--accent);transform:rotate(180deg)}
+.faq-i.open .faq-ic svg{stroke:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .4s}
+.faq-i.open .faq-a{max-height:500px;padding-bottom:20px}
+.faq-a p{font-size:14px;color:var(--t2);line-height:1.7}
+.cta-sec{background:var(--dark);border-radius:24px;padding:60px 40px;text-align:center;margin:60px 0;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(61,139,110,.12),transparent 70%);bottom:-200px;left:-100px;pointer-events:none}
+.cta-sec h2{font-size:clamp(24px,3vw,36px);font-weight:700;color:#fff;letter-spacing:-1px;margin-bottom:12px;position:relative}
+.cta-sec > p{font-size:16px;color:rgba(255,255,255,.5);max-width:420px;margin:0 auto 32px;position:relative}
+.cta-form{display:flex;flex-direction:column;gap:10px;max-width:380px;margin:0 auto;position:relative}
+.cta-form input{padding:14px 20px;border:1.5px solid rgba(255,255,255,.12);border-radius:12px;font-size:15px;font-family:inherit;background:rgba(255,255,255,.06);color:#fff;outline:none;transition:all .3s}
+.cta-form input::placeholder{color:rgba(255,255,255,.5)}
+.cta-form input:focus{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
+.cta-form button{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:14px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .3s;width:100%}
+.cta-form button:hover{background:var(--accent-d)}
+.cta-ok{display:none;text-align:center;padding:20px;color:#fff}
+.cta-ok h3{font-size:20px;margin-bottom:8px}
+.cta-ok p{font-size:14px;opacity:.6}
+.gdpr-note{font-size:11px;color:rgba(255,255,255,.35);margin-top:8px;line-height:1.5}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+footer{padding:48px 40px;border-top:1px solid var(--brd)}
+.ft-in{max-width:1240px;margin:0 auto}
+.ft-top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:32px;flex-wrap:wrap;gap:32px}
+.ft-brand p{font-size:13px;color:var(--t3);margin-top:8px;max-width:260px}
+.ft-cols{display:flex;gap:56px}
+.ft-col h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:14px}
+.ft-col a{display:block;font-size:13px;color:var(--t2);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.ft-col a:hover{color:var(--t)}
+.ft-bot{padding-top:24px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:12px;color:var(--t3)}
+.ft-crisis{font-size:12px;color:var(--accent-d);background:var(--accent-l);padding:6px 14px;border-radius:8px;font-weight:500}
+.sub-pages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}
+.sp-card{background:var(--bg2);border-radius:12px;padding:16px 20px;text-decoration:none;transition:all .2s;border:1px solid var(--brd);display:block}
+.sp-card:hover{border-color:var(--accent);background:var(--accent-l);transform:translateY(-2px)}
+.sp-card span{font-size:14px;font-weight:600;color:var(--t);display:block}
+.sp-card small{font-size:12px;color:var(--t3);margin-top:4px;display:block;line-height:1.4}
+@media(max-width:900px){.pg-layout{grid-template-columns:1fr}.sidebar{position:static}.study-grid{grid-template-columns:1fr}.sub-pages-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.nr a:not(.btn){display:none}.ni{padding:16px 24px}.pg-hero{padding:16px 24px 40px}.bc{padding:80px 24px 0}.pg-layout{padding:32px 24px 60px}.stats-bar{flex-direction:column}.stat{border-right:0;border-bottom:1px solid var(--brd)}.stat:last-child{border-bottom:0}footer{padding:40px 24px}.ft-top{flex-direction:column}.ft-cols{flex-direction:column;gap:24px}.sub-pages-grid{grid-template-columns:1fr}}
+/* ── Floating topics button ── */
+.pg-layout{display:block;max-width:800px}
+.sidebar{display:none}
+.topics-btn{position:fixed;bottom:28px;right:28px;z-index:200;background:var(--dark);color:#fff;border:none;border-radius:100px;padding:11px 20px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;font-family:inherit;box-shadow:0 4px 24px rgba(0,0,0,.18);transition:all .2s}
+.topics-btn:hover{background:var(--accent);transform:translateY(-1px)}
+.topics-btn svg{flex-shrink:0}
+.topics-overlay{position:fixed;inset:0;background:rgba(11,17,32,.35);z-index:198;opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(2px)}
+.topics-overlay.open{opacity:1;pointer-events:auto}
+.topics-panel{position:fixed;right:0;top:0;bottom:0;width:272px;background:#fff;z-index:199;transform:translateX(100%);transition:transform .35s cubic-bezier(.16,1,.3,1);overflow-y:auto;border-left:1px solid var(--brd)}
+.topics-panel.open{transform:translateX(0)}
+.topics-head{display:flex;justify-content:space-between;align-items:center;padding:20px 20px 16px;border-bottom:1px solid var(--brd)}
+.topics-head span{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3)}
+.topics-close{background:none;border:none;cursor:pointer;color:var(--t3);font-size:20px;line-height:1;padding:2px 4px;transition:color .2s}
+.topics-close:hover{color:var(--t)}
+.topics-nav{padding:12px}
+.topics-nav a{display:block;font-size:14px;color:var(--t2);text-decoration:none;padding:9px 12px;border-radius:8px;margin-bottom:1px;transition:all .2s}
+.topics-nav a:hover{background:var(--bg2);color:var(--t)}
+.topics-nav a.active{background:var(--accent-l);color:var(--accent-d);font-weight:600}
+.topics-cta{margin:12px;padding:16px;background:var(--dark);border-radius:12px;text-align:center}
+.topics-cta p{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:10px;line-height:1.5}
+.topics-cta a{display:block;background:var(--accent);color:#fff;text-decoration:none;border-radius:100px;padding:9px 16px;font-size:13px;font-weight:600;transition:all .2s}
+.topics-cta a:hover{background:var(--accent-d)}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalCondition",
+      "@id": "https://sereen.pt/ansiedade/#condition",
+      "name": "Ansiedade",
+      "alternateName": ["Perturbação de Ansiedade Generalizada","PAG","Anxiety Disorder"],
+      "code": {"@type": "MedicalCode", "code": "F41.1", "codingSystem": "ICD-10"},
+      "description": "Perturbação de ansiedade caracterizada por preocupação excessiva e persistente, tensão muscular, irritabilidade e dificuldade de concentração.",
+      "possibleTreatment": [
+        {"@type": "MedicalTherapy", "name": "tDCS (Estimulação Transcraniana por Corrente Contínua)"},
+        {"@type": "MedicalTherapy", "name": "Terapia Cognitivo-Comportamental"},
+        {"@type": "Drug", "name": "SSRIs / SNRIs"}
+      ]
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://sereen.pt/ansiedade/#webpage",
+      "url": "https://sereen.pt/ansiedade/",
+      "name": "Ansiedade: Tratamento sem Medicação com tDCS | Sereen",
+      "description": "Tudo sobre ansiedade: tipos, sintomas e opções de tratamento, incluindo tDCS. Dados clínicos reais para ansiedade generalizada, social e de pânico em Portugal.",
+      "isPartOf": {"@id": "https://sereen.pt/#website"},
+      "about": {"@type": "MedicalCondition", "name": "Ansiedade"},
+      "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"},
+      "reviewedBy": {"@type": "Person", "name": "Simão Ferreira, PhD", "url": "https://sereen.pt/equipa/"}
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sereen.pt/ansiedade/#article",
+      "headline": "Ansiedade: Guia Completo e Opções de Tratamento",
+      "description": "Tudo sobre ansiedade: tipos, sintomas e opções de tratamento, incluindo tDCS. Dados clínicos reais para ansiedade generalizada, social e de pânico em Portugal.",
+      "url": "https://sereen.pt/ansiedade/",
+      "publisher": {"@type": "Organization", "name": "Sereen", "url": "https://sereen.pt"},
+      "datePublished": "2026-07-31",
+      "dateModified": "2026-07-31",
+      "inLanguage": "pt-PT",
+      "author": {"@type": "Person", "name": "Simão Ferreira, PhD", "url": "https://sereen.pt/equipa/"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sereen.pt/ansiedade/#faq",
+      "mainEntity": [
+        {"@type": "Question", "name": "A ansiedade é uma doença ou uma emoção normal?", "acceptedAnswer": {"@type": "Answer", "text": "A ansiedade é uma emoção humana normal e adaptativa — serve para nos alertar para perigos reais. Torna-se perturbação quando é excessiva, persistente (mais de 6 meses), desproporcional à situação e interfere com o funcionamento diário. A distinção entre ansiedade normal e patológica é clínica e baseia-se no impacto funcional."}},
+        {"@type": "Question", "name": "Qual é a diferença entre ansiedade generalizada, social e ataques de pânico?", "acceptedAnswer": {"@type": "Answer", "text": "A Perturbação de Ansiedade Generalizada (PAG) caracteriza-se por preocupação excessiva sobre múltiplos domínios da vida quotidiana. A ansiedade social centra-se no medo de situações sociais ou de desempenho. Os ataques de pânico são episódios agudos de medo intenso com sintomas físicos marcados (palpitações, falta de ar, tonturas). Cada tipo tem características e abordagens terapêuticas distintas."}},
+        {"@type": "Question", "name": "Quantas pessoas em Portugal têm ansiedade?", "acceptedAnswer": {"@type": "Answer", "text": "Estima-se que cerca de 16% da população portuguesa sofra de alguma perturbação de ansiedade, colocando Portugal entre os países europeus com maior prevalência. A OMS (2023) estima que as perturbações de ansiedade afetam mais de 300 milhões de pessoas mundialmente. Em Portugal, o acesso a tratamento especializado pelo SNS pode implicar esperas prolongadas."}},
+        {"@type": "Question", "name": "A ansiedade e a depressão costumam aparecer juntas?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Estima-se que 50-60% das pessoas com depressão tenham também ansiedade significativa, e vice-versa. Esta comorbilidade é tão comum que o DSM-5 inclui specifiers específicos para ansiedade em contexto de perturbações depressivas. Para o tDCS, esta comorbilidade pode ser vantajosa: o mesmo protocolo pode abordar ambas as condições simultaneamente."}},
+        {"@type": "Question", "name": "O tDCS funciona para a ansiedade?", "acceptedAnswer": {"@type": "Answer", "text": "Estudos preliminares, incluindo a revisão sistemática de Shiozawa et al. (2014) e o ensaio START de Brunoni et al. (2013), sugerem que o tDCS pode reduzir sintomas de ansiedade, especialmente quando comórbida com depressão. A taxa de resposta estimada situa-se entre 25-35%. A evidência é considerada Grade C-B — promissora mas menos robusta do que para a depressão. A avaliação clínica individual é essencial para determinar a adequação."}},
+        {"@type": "Question", "name": "Quais são as alternativas ao tDCS para a ansiedade?", "acceptedAnswer": {"@type": "Answer", "text": "A Terapia Cognitivo-Comportamental (TCC) é o tratamento com maior evidência científica para a maioria das perturbações de ansiedade. A nível farmacológico, SSRIs e SNRIs são a primeira linha, com as benzodiazepinas reservadas para uso pontual devido ao risco de dependência. O tDCS pode ser usado como complemento à TCC ou à medicação, ou como alternativa em quem não tolera ou não quer farmacoterapia."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sereen.pt/ansiedade/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://sereen.pt/"},
+        {"@type": "ListItem", "position": 2, "name": "Ansiedade", "item": "https://sereen.pt/ansiedade/"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+<header>
+<nav id="nav">
+  <div class="ni">
+    <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+    <div class="nr" aria-label="Navegação principal">
+      <a href="/#como">Como funciona</a>
+      <a href="/depressao/" class="active">Condições</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/" class="btn bp">Lista de espera</a>
+    </div>
+  </div>
+</nav>
+</header>
+
+<nav class="bc" aria-label="Breadcrumb">
+  <ol class="bc-list">
+    <li><a href="/">Início</a></li>
+    <li><span class="bc-sep" aria-hidden="true">›</span></li>
+    <li aria-current="page">Ansiedade</li>
+  </ol>
+</nav>
+
+<section class="pg-hero">
+  <h1>Ansiedade: Guia Completo e Opções de Tratamento</h1>
+  <p class="sub">Da medicação ao tDCS, o que funciona para ansiedade em Portugal — tipos, sintomas, diagnóstico e tratamentos com evidência científica.</p>
+  <div class="stats-bar" role="list">
+    <div class="stat" role="listitem">
+      <div class="stat-n">~16%</div>
+      <div class="stat-l">Prevalência em Portugal</div>
+      <div class="stat-src">OMS, 2023</div>
+    </div>
+    <div class="stat" role="listitem">
+      <div class="stat-n">25–35%</div>
+      <div class="stat-l">Taxa de resposta ao tDCS</div>
+      <div class="stat-src">Shiozawa et al., 2014</div>
+    </div>
+    <div class="stat" role="listitem">
+      <div class="stat-n">60%</div>
+      <div class="stat-l">Comórbida com depressão</div>
+      <div class="stat-src">DSM-5</div>
+    </div>
+  </div>
+</section>
+
+<main id="main-content">
+<div class="pg-layout">
+  <article class="content">
+
+    <h2>O que é a ansiedade?</h2>
+    <p>A ansiedade é uma resposta emocional e fisiológica que todos os seres humanos experimentam. Na sua forma adaptativa, serve para nos alertar para perigos reais e preparar o organismo para agir — o chamado mecanismo de "luta ou fuga". Contudo, quando a ansiedade é excessiva, persistente e desproporcional às circunstâncias reais, estamos perante uma perturbação clínica que requer atenção e tratamento.</p>
+    <p>A <strong>Perturbação de Ansiedade Generalizada (PAG)</strong> é a forma mais comum, codificada como F41.1 no ICD-10. Caracteriza-se por preocupação crónica e difusa sobre múltiplos domínios da vida — saúde, finanças, trabalho, família — que a pessoa tem dificuldade em controlar. Além da PAG, existem outras perturbações de ansiedade com características distintas: ansiedade social (fobia social), perturbação de pânico, e fobias específicas.</p>
+    <p>Para que seja considerada patológica, a ansiedade deve persistir por pelo menos <strong>6 meses</strong> e causar sofrimento clinicamente significativo ou compromisso do funcionamento social, profissional ou noutras áreas importantes. Os critérios do DSM-5 para PAG incluem:</p>
+    <ul>
+      <li>Ansiedade e preocupação excessivas, ocorrendo na maioria dos dias durante pelo menos 6 meses</li>
+      <li>Dificuldade em controlar a preocupação</li>
+      <li>Três ou mais dos seguintes: inquietação, fatigabilidade fácil, dificuldade de concentração, irritabilidade, tensão muscular, perturbações do sono</li>
+      <li>Sofrimento clinicamente significativo ou compromisso funcional</li>
+    </ul>
+    <p>É igualmente importante distinguir a ansiedade de condições médicas que podem mimetizá-la, como o hipertiroidismo, arritmias cardíacas ou uso de substâncias. O diagnóstico diferencial competente é essencial e deve ser feito por um clínico responsável com formação adequada.</p>
+
+    <h2>Ansiedade em Portugal</h2>
+    <p>Portugal apresenta uma das prevalências mais elevadas de perturbações de ansiedade na Europa. Estima-se que cerca de <strong>16% da população portuguesa</strong> sofra de alguma forma de perturbação de ansiedade ao longo da vida, um valor que coloca o país acima da média europeia de aproximadamente 14%. Estes dados, alinhados com estimativas da OMS (2023), refletem uma combinação de fatores socioeconómicos, culturais e de acesso a cuidados de saúde mental.</p>
+    <p>O acesso a tratamento especializado em Portugal é um desafio significativo. Nas consultas do SNS, os tempos de espera para acompanhamento psiquiátrico ou psicológico podem ser prolongados — frequentemente vários meses a mais de um ano. No setor privado, os custos de psicoterapia (€60-120 por sessão) constituem uma barreira financeira real para muitas famílias. Esta lacuna entre necessidade e acesso a cuidados é um dos problemas de saúde pública mais prementes em Portugal.</p>
+    <p>Outro aspeto relevante é a elevada comorbilidade da ansiedade com a depressão. <strong>50-60% das pessoas com depressão</strong> têm ansiedade significativa, e a maioria das pessoas com perturbações de ansiedade desenvolvem episódios depressivos ao longo da vida. Esta sobreposição tem implicações práticas importantes para o tratamento: abordagens que funcionam para ambas as condições, como o tDCS, podem ser particularmente valiosas para este grupo.</p>
+    <p>Há também um problema de diagnóstico tardio e subdiagnóstico. Muitas pessoas com ansiedade atribuem os seus sintomas a "stress" ou a características de personalidade, não procurando ajuda clínica durante anos. O impacto económico e na qualidade de vida — absentismo, presentismo, deterioração de relações — é substancial e frequentemente subestimado.</p>
+
+    <h2>Opções de tratamento</h2>
+    <p>O tratamento da ansiedade baseia-se em várias abordagens com diferentes níveis de evidência. É fundamental que qualquer plano terapêutico seja individualizado e supervisionado por um clínico responsável, tendo em conta o tipo de ansiedade, a sua severidade, comorbilidades e as preferências da pessoa.</p>
+    <h3>Terapia Cognitivo-Comportamental (TCC)</h3>
+    <p>A TCC é considerada o tratamento de primeira linha para a maioria das perturbações de ansiedade, com um corpo robusto de evidência científica que inclui múltiplos ensaios aleatorizados e meta-análises. Atua diretamente nos padrões de pensamento disfuncionais e nos comportamentos de evitamento que perpetuam a ansiedade. Para ansiedade social e fobias específicas, as técnicas de exposição gradual são particularmente eficazes. A principal limitação é o acesso: requer um terapeuta treinado e um compromisso de tempo considerável (habitualmente 12-20 sessões).</p>
+    <h3>Medicação ansiolítica e antidepressiva</h3>
+    <p>A nível farmacológico, os <strong>SSRIs e SNRIs</strong> são a primeira linha de tratamento médico para perturbações de ansiedade — o mesmo grupo de medicamentos usado para a depressão. São eficazes, mas têm um período de latência de 4-8 semanas e podem causar efeitos secundários iniciais que algumas pessoas não toleram. As <strong>benzodiazepinas</strong> aliviam a ansiedade rapidamente mas não devem ser usadas a longo prazo devido ao risco de dependência e tolerância. A buspirona e a pregabalina são alternativas com perfis de risco diferentes, adequadas para determinados perfis clínicos.</p>
+    <h3>tDCS — estimulação cerebral não-invasiva</h3>
+    <p>O tDCS (estimulação transcraniana por corrente contínua) representa uma abordagem emergente que atua diretamente nos mecanismos neurobiológicos da ansiedade. Através da modulação do córtex pré-frontal dorsolateral (DLPFC) e da regulação indireta da amígdala, o tDCS pode reduzir a hiperatividade do sistema de resposta ao medo característico das perturbações de ansiedade. A evidência atual é considerada de <strong>Grau C-B</strong> — promissora mas menos consolidada do que para a depressão. Mais informação nas sub-páginas abaixo.</p>
+
+    <h2>tDCS para ansiedade — o que diz a ciência</h2>
+    <p>A investigação sobre tDCS para ansiedade tem vindo a crescer, embora o corpo de evidência seja ainda mais limitado do que para a depressão. Os dados mais robustos provêm de dois estudos fundamentais: a revisão sistemática de <strong>Shiozawa et al. (2014)</strong>, que analisou o efeito do tDCS em perturbações de ansiedade e encontrou resultados preliminares positivos, e o ensaio clínico START de <strong>Brunoni et al. (2013)</strong>, que demonstrou redução significativa de sintomas de ansiedade comórbida em doentes com depressão tratados com tDCS.</p>
+    <p>O mecanismo de ação baseia-se na modulação do <strong>circuito DLPFC-amígdala</strong>. Na ansiedade patológica, a amígdala apresenta hiperatividade e o controlo inibitório top-down exercido pelo córtex pré-frontal está comprometido. O tDCS, ao aplicar uma corrente anódica de baixa intensidade (1-2mA) sobre o DLPFC esquerdo, aumenta a excitabilidade cortical desta região, potenciando o seu papel regulatório sobre a amígdala e reduzindo a resposta excessiva ao medo.</p>
+    <p>É importante ser honesto sobre as limitações desta evidência: a maioria dos estudos disponíveis tem amostras pequenas, os protocolos são heterogéneos, e uma parte significativa dos dados provém de populações com ansiedade comórbida com depressão, não de ansiedade isolada. A taxa de resposta estimada de 25-35% é inferior à obtida para depressão, e a variabilidade individual é considerável. Estes factos não invalidam o tDCS como opção, mas exigem honestidade e avaliação clínica cuidadosa.</p>
+    <p>A Sereen adota uma postura conservadora e baseada em evidência: oferecemos tDCS para ansiedade como parte de um plano terapêutico individualizado, supervisionado clinicamente, com expectativas claras e realistas. Para muitos doentes — especialmente os que não toleram medicação, que têm ansiedade comórbida com depressão, ou que procuram uma abordagem complementar à TCC — o tDCS pode representar uma opção valiosa.</p>
+
+    <h2>Explore todos os tópicos sobre ansiedade e tDCS</h2>
+    <nav aria-label="Sub-páginas de ansiedade" class="sub-pages-grid">
+      <a href="/ansiedade/tdcs/" class="sp-card">
+        <span>tDCS para ansiedade</span>
+        <small>Mecanismo, protocolo e resultados</small>
+      </a>
+      <a href="/ansiedade/funciona/" class="sp-card">
+        <span>Funciona?</span>
+        <small>Análise honesta da eficácia</small>
+      </a>
+      <a href="/ansiedade/resultados/" class="sp-card">
+        <span>Resultados</span>
+        <small>O que esperar do tratamento</small>
+      </a>
+      <a href="/ansiedade/estudos/" class="sp-card">
+        <span>Estudos científicos</span>
+        <small>Revisão da evidência</small>
+      </a>
+      <a href="/ansiedade/efeitos-secundarios/" class="sp-card">
+        <span>Efeitos secundários</span>
+        <small>O que pode acontecer</small>
+      </a>
+      <a href="/ansiedade/contraindicacoes/" class="sp-card">
+        <span>Contraindicações</span>
+        <small>Quem não deve fazer tDCS</small>
+      </a>
+      <a href="/ansiedade/quem-pode/" class="sp-card">
+        <span>Quem pode fazer</span>
+        <small>Critérios de elegibilidade</small>
+      </a>
+      <a href="/ansiedade/custo/" class="sp-card">
+        <span>Quanto custa</span>
+        <small>Preços e comparação</small>
+      </a>
+      <a href="/ansiedade/duracao/" class="sp-card">
+        <span>Quanto demora</span>
+        <small>Duração do protocolo</small>
+      </a>
+      <a href="/ansiedade/vs-medicacao/" class="sp-card">
+        <span>vs Medicação</span>
+        <small>tDCS ou ansiolíticos?</small>
+      </a>
+      <a href="/ansiedade/tipos/" class="sp-card">
+        <span>Tipos de ansiedade</span>
+        <small>PAG, social, pânico e tDCS</small>
+      </a>
+    </nav>
+
+    <section class="faq-sec" aria-labelledby="faq-hub-heading">
+      <h2 id="faq-hub-heading">Perguntas frequentes sobre ansiedade</h2>
+      <div class="faq-list">
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-hub-1">
+            A ansiedade é uma doença ou uma emoção normal?
+            <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-a" id="faq-hub-1" role="region">
+            <p>A ansiedade é uma emoção humana normal e adaptativa — serve para nos alertar para perigos reais. Torna-se perturbação clínica quando é excessiva, persistente (mais de 6 meses), desproporcional à situação e interfere com o funcionamento diário. A distinção entre ansiedade normal e patológica é clínica e baseia-se no impacto funcional e no sofrimento causado.</p>
+          </div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-hub-2">
+            Qual é a diferença entre ansiedade generalizada, social e ataques de pânico?
+            <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-a" id="faq-hub-2" role="region">
+            <p>A Perturbação de Ansiedade Generalizada (PAG) caracteriza-se por preocupação excessiva sobre múltiplos domínios da vida quotidiana. A ansiedade social centra-se no medo intenso de situações sociais ou de desempenho. Os ataques de pânico são episódios agudos de medo intenso com sintomas físicos marcados — palpitações, falta de ar, tonturas. Cada tipo tem características e abordagens terapêuticas distintas.</p>
+          </div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-hub-3">
+            Quantas pessoas em Portugal têm ansiedade?
+            <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-a" id="faq-hub-3" role="region">
+            <p>Estima-se que cerca de 16% da população portuguesa sofra de alguma perturbação de ansiedade, colocando Portugal entre os países europeus com maior prevalência. A OMS (2023) estima que as perturbações de ansiedade afetam mais de 300 milhões de pessoas mundialmente. Em Portugal, o acesso a tratamento especializado pelo SNS pode implicar esperas prolongadas.</p>
+          </div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-hub-4">
+            A ansiedade e a depressão costumam aparecer juntas?
+            <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-a" id="faq-hub-4" role="region">
+            <p>Sim. Estima-se que 50-60% das pessoas com depressão tenham também ansiedade significativa, e vice-versa. Esta comorbilidade é tão comum que o DSM-5 inclui especificadores próprios para ansiedade em contexto de perturbações depressivas. Para o tDCS, esta comorbilidade pode ser vantajosa: o mesmo protocolo pode abordar ambas as condições em simultâneo.</p>
+          </div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-hub-5">
+            O tDCS funciona para a ansiedade?
+            <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-a" id="faq-hub-5" role="region">
+            <p>Estudos preliminares, incluindo a revisão sistemática de Shiozawa et al. (2014) e o ensaio START de Brunoni et al. (2013), sugerem que o tDCS pode reduzir sintomas de ansiedade, especialmente quando comórbida com depressão. A taxa de resposta estimada situa-se entre 25-35%. A evidência é considerada Grade C-B — promissora mas menos robusta do que para a depressão. A avaliação clínica individual é essencial para determinar a adequação.</p>
+          </div>
+        </div>
+        <div class="faq-i">
+          <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-hub-6">
+            Quais são as alternativas ao tDCS para a ansiedade?
+            <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-a" id="faq-hub-6" role="region">
+            <p>A Terapia Cognitivo-Comportamental (TCC) é o tratamento com maior evidência científica para a maioria das perturbações de ansiedade. A nível farmacológico, SSRIs e SNRIs são a primeira linha, com as benzodiazepinas reservadas para uso pontual devido ao risco de dependência. O tDCS pode ser usado como complemento à TCC ou à medicação, ou como alternativa em quem não tolera ou não quer farmacoterapia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-sec" aria-labelledby="cta-heading-hub">
+      <h2 id="cta-heading-hub">Perceba se o tDCS é adequado para si</h2>
+      <p>Avaliação gratuita com o nosso clínico responsável. Sem compromisso.</p>
+      <form class="cta-form" id="cta-form-hub" onsubmit="submitForm(event,this,'cta-ok-hub')" novalidate>
+        <label class="sr-only" for="cta-name-hub">Nome</label>
+        <input type="text" id="cta-name-hub" name="name" placeholder="O seu nome" required aria-required="true">
+        <label class="sr-only" for="cta-email-hub">Email</label>
+        <input type="email" id="cta-email-hub" name="email" placeholder="O seu email" required aria-required="true">
+        <label class="sr-only" for="cta-phone-hub">Telefone (opcional)</label>
+        <input type="tel" id="cta-phone-hub" name="phone" placeholder="Telefone (opcional)">
+        <button type="submit">Entrar na lista de espera</button>
+        <p class="gdpr-note">Os seus dados são usados apenas para contacto clínico e nunca partilhados. Consulte a nossa <a href="/privacidade/" style="color:rgba(255,255,255,.5)">política de privacidade</a>.</p>
+      </form>
+      <div class="cta-ok" id="cta-ok-hub" aria-live="polite">
+        <h3>Recebemos o seu pedido</h3>
+        <p>Entraremos em contacto em breve para agendar a avaliação.</p>
+      </div>
+    </section>
+
+  </article>
+</div>
+</main>
+
+<button class="topics-btn" id="topicsBtn" onclick="toggleTopics()" aria-expanded="false" aria-controls="topicsPanel" aria-label="Ver tópicos de ansiedade">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  Tópicos
+</button>
+<div class="topics-overlay" id="topicsOverlay" onclick="closeTopics()"></div>
+<div class="topics-panel" id="topicsPanel" role="dialog" aria-modal="true" aria-label="Tópicos de Ansiedade">
+  <div class="topics-head">
+    <span>Ansiedade &amp; tDCS</span>
+    <button class="topics-close" onclick="closeTopics()" aria-label="Fechar">&#x2715;</button>
+  </div>
+  <nav class="topics-nav" aria-label="Sub-páginas de ansiedade">
+    <a href="/ansiedade/" class="active">Visão geral</a>
+    <a href="/ansiedade/tdcs/">tDCS para ansiedade</a>
+    <a href="/ansiedade/funciona/">Funciona?</a>
+    <a href="/ansiedade/resultados/">Resultados</a>
+    <a href="/ansiedade/estudos/">Estudos científicos</a>
+    <a href="/ansiedade/efeitos-secundarios/">Efeitos secundários</a>
+    <a href="/ansiedade/contraindicacoes/">Contraindicações</a>
+    <a href="/ansiedade/quem-pode/">Quem pode fazer</a>
+    <a href="/ansiedade/custo/">Quanto custa</a>
+    <a href="/ansiedade/duracao/">Quanto demora</a>
+    <a href="/ansiedade/vs-medicacao/">vs Medicação</a>
+    <a href="/ansiedade/tipos/">Tipos de ansiedade</a>
+  </nav>
+  <div class="topics-cta">
+    <p>Pronto para começar?</p>
+    <a href="/">Lista de espera</a>
+  </div>
+</div>
+
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="/" class="logo" aria-label="Sereen">sereen</a>
+        <p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p>
+        <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--t3)">
+          <a href="mailto:geral@sereen.pt" style="color:var(--t3);text-decoration:none;display:block;margin-bottom:4px">geral@sereen.pt</a>
+          <a href="tel:+351932881800" style="color:var(--t3);text-decoration:none">+351 932 881 800</a>
+        </address>
+      </div>
+      <div class="ft-cols">
+        <div class="ft-col"><h4>Condições</h4><a href="/depressao/">Depressão</a><a href="/ansiedade/">Ansiedade</a><a href="/insonia/">Insónia</a><a href="/dor-cronica/">Dor crónica</a></div>
+        <div class="ft-col"><h4>Sereen</h4><a href="/">Início</a><a href="/equipa/">A Nossa Equipa</a><a href="/tdcs/">O que é tDCS</a><a href="/faq/">FAQ</a><a href="mailto:geral@sereen.pt">Contacto</a></div>
+        <div class="ft-col"><h4>Legal</h4><a href="/privacidade/">Privacidade</a><a href="/termos/">Termos</a><a href="/cookies/">Cookies</a></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">&copy; 2026 Sereen. Todos os direitos reservados.</span>
+      <span class="ft-crisis">Em crise? SNS 24: 808 24 24 24</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50),{passive:true});
+function toggleFaq(btn){
+  const item=btn.closest('.faq-i');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-i.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+  if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+}
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbyc9aBoM2YOpOx0h2yS9gCTZsNom92H7KTCmIPcFtNhkNkJzAUrCSD6z9WzgoH_8FucKQ/exec';
+function submitForm(e,formEl,okId){
+  e.preventDefault();
+  const btn=formEl.querySelector('button');
+  btn.textContent='A enviar...';btn.disabled=true;
+  const iframe=document.createElement('iframe');
+  iframe.name='sf'+Date.now();iframe.style.display='none';
+  document.body.appendChild(iframe);
+  const tmp=document.createElement('form');
+  tmp.method='POST';tmp.action=APPS_SCRIPT_URL;tmp.target=iframe.name;tmp.style.display='none';
+  ['name','email','phone'].forEach(f=>{
+    const el=formEl.querySelector('[name='+f+']');
+    if(el){const i=document.createElement('input');i.name=f;i.value=el.value;tmp.appendChild(i)}
+  });
+  document.body.appendChild(tmp);tmp.submit();
+  setTimeout(()=>{formEl.style.display='none';document.getElementById(okId).style.display='block';tmp.remove();iframe.remove()},1500);
+}
+function toggleTopics(){
+  var panel=document.getElementById('topicsPanel');
+  var open=panel.classList.toggle('open');
+  document.getElementById('topicsOverlay').classList.toggle('open',open);
+  document.getElementById('topicsBtn').setAttribute('aria-expanded',String(open));
+}
+function closeTopics(){
+  document.getElementById('topicsPanel').classList.remove('open');
+  document.getElementById('topicsOverlay').classList.remove('open');
+  document.getElementById('topicsBtn').setAttribute('aria-expanded','false');
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeTopics();});
+</script>
+</body>
+</html>

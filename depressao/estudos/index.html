@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estudos Científicos sobre tDCS para Depressão | Sereen</title>
+<meta name="description" content="Revisão dos principais estudos científicos sobre tDCS para depressão: ensaios clínicos randomizados, meta-análises e o que a evidência atual diz. Com referências reais.">
+<link rel="canonical" href="https://sereen.pt/depressao/estudos/">
+<meta property="og:title" content="Estudos Científicos sobre tDCS para Depressão | Sereen">
+<meta property="og:description" content="Revisão dos principais estudos científicos sobre tDCS para depressão: ensaios clínicos randomizados, meta-análises e o que a evidência atual diz. Com referências reais.">
+<meta property="og:url" content="https://sereen.pt/depressao/estudos/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Sereen">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fff;--bg2:#F7F8FA;--dark:#0B1120;--accent:#3D8B6E;--accent-l:#E8F5EE;--accent-d:#2D6B52;--t:#0B1120;--t2:#4A5568;--t3:#8896AB;--t4:#B0BCCD;--brd:#E8ECF1}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:var(--t);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;top:-100%;left:0;padding:12px 24px;background:var(--accent);color:#fff;font-weight:600;font-size:14px;text-decoration:none;z-index:9999;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--brd);transition:all .3s}
+nav.s{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.ni{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:700;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:14px;color:var(--t2);text-decoration:none;font-weight:500;transition:color .2s}
+.nr a:hover{color:var(--t)}
+.btn{display:inline-flex;align-items:center;border-radius:100px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s;text-decoration:none;border:none;padding:12px 28px}
+.bp{background:var(--accent);color:#fff}.bp:hover{background:var(--accent-d);transform:translateY(-1px)}
+.bc{padding:88px 40px 0;max-width:1240px;margin:0 auto}
+.bc-list{display:flex;align-items:center;gap:8px;list-style:none;flex-wrap:wrap}
+.bc-list li{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t3)}
+.bc-list a{color:var(--accent);text-decoration:none}
+.bc-list a:hover{text-decoration:underline}
+.bc-sep{color:var(--t4)}
+.pg-hero{padding:24px 40px 60px;max-width:1240px;margin:0 auto}
+.pg-hero h1{font-size:clamp(28px,3.5vw,48px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px;max-width:760px}
+.pg-hero .sub{font-size:18px;color:var(--t2);max-width:640px;line-height:1.65;margin-bottom:40px}
+.stats-bar{display:flex;gap:0;border:1px solid var(--brd);border-radius:16px;overflow:hidden;margin-bottom:0}
+.stat{flex:1;padding:24px 28px;text-align:center;border-right:1px solid var(--brd);background:var(--bg)}
+.stat:last-child{border-right:0}
+.stat-n{font-size:clamp(28px,3vw,40px);font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.stat-l{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--t3);margin-top:4px}
+.pg-layout{max-width:1240px;margin:0 auto;padding:48px 40px 80px;display:grid;grid-template-columns:1fr 280px;gap:60px;align-items:start}
+.content h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin:48px 0 16px;color:var(--t)}
+.content h2:first-child{margin-top:0}
+.content h3{font-size:19px;font-weight:600;margin:28px 0 10px;color:var(--t)}
+.content p{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:16px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:6px}
+.content a{color:var(--accent)}
+.content strong{color:var(--t);font-weight:600}
+.content table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.content table th{padding:12px 16px;background:var(--bg2);font-weight:600;text-align:left;border-bottom:2px solid var(--brd)}
+.content table td{padding:12px 16px;border-bottom:1px solid var(--brd);color:var(--t2)}
+.content table tr:hover td{background:var(--bg2)}
+.ok{color:#2D6B52;font-weight:600}.no{color:#E53E3E;font-weight:600}
+.info-box{background:var(--accent-l);border-left:3px solid var(--accent);padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.info-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.warn-box{background:#FFF8E6;border-left:3px solid #E5A530;padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.warn-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0}
+.study-card{background:var(--bg2);border-radius:12px;padding:20px 24px;border-left:3px solid var(--accent)}
+.study-card .s-title{font-size:13px;font-weight:600;color:var(--t3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.study-card .s-stat{font-size:32px;font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.study-card .s-desc{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.5}
+.timeline{position:relative;padding-left:28px;margin:32px 0}
+.timeline::before{content:'';position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:var(--brd)}
+.tl-item{position:relative;margin-bottom:28px}
+.tl-item:last-child{margin-bottom:0}
+.tl-dot{position:absolute;left:-26px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl-year{font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.5px;margin-bottom:4px;text-transform:uppercase}
+.tl-title{font-size:15px;font-weight:600;color:var(--t);margin-bottom:4px}
+.tl-desc{font-size:14px;color:var(--t2);line-height:1.6}
+.sidebar{position:sticky;top:96px}
+.sidebar-nav{background:var(--bg2);border-radius:16px;padding:24px;margin-bottom:20px}
+.sidebar-nav h3{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:16px}
+.sidebar-nav a{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--t2);text-decoration:none;padding:10px 12px;border-radius:8px;transition:all .2s;margin-bottom:2px}
+.sidebar-nav a:hover,.sidebar-nav a.active{background:var(--accent-l);color:var(--accent-d);font-weight:500}
+.sidebar-cta{background:var(--dark);border-radius:16px;padding:24px;text-align:center}
+.sidebar-cta h3{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
+.sidebar-cta p{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:16px;line-height:1.5}
+.sidebar-cta a{display:block;background:var(--accent);color:#fff;text-decoration:none;border-radius:100px;padding:12px 20px;font-size:14px;font-weight:600;transition:all .2s;margin-bottom:8px}
+.sidebar-cta a:hover{background:var(--accent-d)}
+.faq-sec{margin:60px 0 0}
+.faq-sec h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin-bottom:32px;color:var(--t)}
+.faq-list{display:flex;flex-direction:column}
+.faq-i{border-bottom:1px solid var(--brd)}
+.faq-q{padding:20px 0;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color .2s;background:0;border:0;width:100%;text-align:left;font-family:inherit;color:var(--t)}
+.faq-q:hover{color:var(--accent)}
+.faq-ic{width:28px;height:28px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.faq-i.open .faq-ic{background:var(--accent);transform:rotate(180deg)}
+.faq-i.open .faq-ic svg{stroke:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .4s}
+.faq-i.open .faq-a{max-height:500px;padding-bottom:20px}
+.faq-a p{font-size:14px;color:var(--t2);line-height:1.7}
+.cta-sec{background:var(--dark);border-radius:24px;padding:60px 40px;text-align:center;margin:60px 0;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(61,139,110,.12),transparent 70%);bottom:-200px;left:-100px;pointer-events:none}
+.cta-sec h2{font-size:clamp(24px,3vw,36px);font-weight:700;color:#fff;letter-spacing:-1px;margin-bottom:12px;position:relative}
+.cta-sec > p{font-size:16px;color:rgba(255,255,255,.5);max-width:420px;margin:0 auto 32px;position:relative}
+.cta-form{display:flex;flex-direction:column;gap:10px;max-width:380px;margin:0 auto;position:relative}
+.cta-form input{padding:14px 20px;border:1.5px solid rgba(255,255,255,.12);border-radius:12px;font-size:15px;font-family:inherit;background:rgba(255,255,255,.06);color:#fff;outline:none;transition:all .3s}
+.cta-form input::placeholder{color:rgba(255,255,255,.5)}
+.cta-form input:focus{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
+.cta-form button{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:14px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .3s;width:100%}
+.cta-form button:hover{background:var(--accent-d)}
+.cta-ok{display:none;text-align:center;padding:20px;color:#fff}
+.cta-ok h3{font-size:20px;margin-bottom:8px}
+.cta-ok p{font-size:14px;opacity:.6}
+.gdpr-note{font-size:11px;color:rgba(255,255,255,.35);margin-top:8px;line-height:1.5}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+footer{padding:48px 40px;border-top:1px solid var(--brd)}
+.ft-in{max-width:1240px;margin:0 auto}
+.ft-top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:32px;flex-wrap:wrap;gap:32px}
+.ft-brand p{font-size:13px;color:var(--t3);margin-top:8px;max-width:260px}
+.ft-cols{display:flex;gap:56px}
+.ft-col h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:14px}
+.ft-col a{display:block;font-size:13px;color:var(--t2);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.ft-col a:hover{color:var(--t)}
+.ft-bot{padding-top:24px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:12px;color:var(--t3)}
+.ft-crisis{font-size:12px;color:var(--accent-d);background:var(--accent-l);padding:6px 14px;border-radius:8px;font-weight:500}
+@media(max-width:900px){.pg-layout{grid-template-columns:1fr}.sidebar{position:static}.study-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.nr a:not(.btn){display:none}.ni{padding:16px 24px}.pg-hero{padding:16px 24px 40px}.bc{padding:80px 24px 0}.pg-layout{padding:32px 24px 60px}.stats-bar{flex-direction:column}.stat{border-right:0;border-bottom:1px solid var(--brd)}.stat:last-child{border-bottom:0}footer{padding:40px 24px}.ft-top{flex-direction:column}.ft-cols{flex-direction:column;gap:24px}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://sereen.pt/depressao/estudos/#webpage",
+      "url": "https://sereen.pt/depressao/estudos/",
+      "name": "Estudos Científicos sobre tDCS para Depressão | Sereen",
+      "description": "Revisão dos principais estudos científicos sobre tDCS para depressão: ensaios clínicos randomizados, meta-análises e o que a evidência atual diz.",
+      "isPartOf": {"@id": "https://sereen.pt/#website"},
+      "about": {"@type": "MedicalCondition", "name": "Depressão"},
+      "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"},
+      "reviewedBy": {"@type": "Organization", "name": "Sereen"}
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sereen.pt/depressao/estudos/#article",
+      "headline": "A Ciência por Trás do tDCS para Depressão: Estudos e Evidência",
+      "description": "Revisão dos principais ensaios clínicos, meta-análises e dados de uso real sobre tDCS para depressão.",
+      "url": "https://sereen.pt/depressao/estudos/",
+      "publisher": {"@type": "Organization", "name": "Sereen", "url": "https://sereen.pt"},
+      "datePublished": "2026-07-30",
+      "dateModified": "2026-07-30",
+      "inLanguage": "pt-PT"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sereen.pt/depressao/estudos/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O tDCS é uma terapia experimental?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Não, não no sentido clínico do termo. Tem mais de 20 anos de investigação, 200+ ensaios clínicos publicados, e aparece em guidelines de diversas sociedades psiquiátricas como opção terapêutica."}
+        },
+        {
+          "@type": "Question",
+          "name": "Que qualidade têm os estudos disponíveis?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A maioria dos estudos são RCTs (randomizados e controlados com placebo), o padrão de ouro em investigação clínica. Existem meta-análises e revisões Cochrane que analisam sistematicamente a evidência."}
+        },
+        {
+          "@type": "Question",
+          "name": "Porquê os resultados variam tanto entre estudos?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Os estudos variam em gravidade de depressão dos participantes, parâmetros de estimulação, posicionamento dos elétrodos, protocolo de sessões e medicação concomitante."}
+        },
+        {
+          "@type": "Question",
+          "name": "Os estudos foram feitos em Portugal?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A maioria dos estudos são brasileiros, americanos ou europeus. Portugal não tem ensaios clínicos publicados com tDCS para depressão. A Sereen opera com protocolos baseados nos estudos internacionais de referência."}
+        },
+        {
+          "@type": "Question",
+          "name": "Como é que a Sereen usa estes estudos para tratar pacientes?",
+          "acceptedAnswer": {"@type": "Answer", "text": "O protocolo da Sereen baseia-se nos parâmetros com mais evidência: 2mA, 30 minutos, elétrodo anódico em F3 (DLPFC esquerdo), 5 sessões por semana — os mesmos parâmetros do ELECT-TDCS e do protocolo JAMA 2025."}
+        },
+        {
+          "@type": "Question",
+          "name": "Há estudos sobre tDCS em crianças ou idosos com depressão?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Existem estudos em idosos (60+ anos) com resultados positivos e estudos preliminares em adolescentes. A Sereen atualmente trata apenas adultos (18+)."}
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sereen.pt/depressao/estudos/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://sereen.pt/"},
+        {"@type": "ListItem", "position": 2, "name": "Depressão", "item": "https://sereen.pt/depressao/"},
+        {"@type": "ListItem", "position": 3, "name": "Estudos científicos", "item": "https://sereen.pt/depressao/estudos/"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+<header>
+<nav id="nav">
+  <div class="ni">
+    <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+    <div class="nr" aria-label="Navegação principal">
+      <a href="/#como">Como funciona</a>
+      <a href="/depressao/" class="active">Condições</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/" class="btn bp">Lista de espera</a>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main-content">
+
+  <nav class="bc" aria-label="Breadcrumb">
+    <ol class="bc-list">
+      <li><a href="/">Início</a><span class="bc-sep" aria-hidden="true">›</span></li>
+      <li><a href="/depressao/">Depressão</a><span class="bc-sep" aria-hidden="true">›</span></li>
+      <li aria-current="page">Estudos científicos</li>
+    </ol>
+  </nav>
+
+  <div class="pg-hero">
+    <h1>A Ciência por Trás do tDCS para Depressão: Estudos e Evidência</h1>
+    <p class="sub">Mais de 200 ensaios clínicos publicados, 1.200+ doentes em meta-análises. Aqui está o que a investigação científica diz — honestamente.</p>
+    <div class="stats-bar" role="list">
+      <div class="stat" role="listitem">
+        <div class="stat-n">200+</div>
+        <div class="stat-l">Ensaios clínicos com tDCS publicados</div>
+        <div class="stat-src">PubMed, 2024</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-n">Grade B</div>
+        <div class="stat-l">Nível de evidência (NICE / APA)</div>
+        <div class="stat-src">Guidelines 2024</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-n">2001</div>
+        <div class="stat-l">Ano do primeiro RCT em depressão com tDCS</div>
+        <div class="stat-src">Fregni et al.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pg-layout">
+    <article class="content">
+
+      <h2>Como avaliar a evidência em tDCS</h2>
+      <p>Antes de mergulhar nos estudos, é útil perceber como a investigação médica é organizada em termos de força de evidência. No topo estão as <strong>revisões sistemáticas e meta-análises</strong> de ensaios clínicos randomizados — estas analisam múltiplos estudos em conjunto e produzem as conclusões mais robustas. Abaixo estão os <strong>RCTs individuais</strong> (ensaios randomizados controlados com placebo), que são o padrão de ouro para testar a eficácia de um tratamento.</p>
+      <p>O tDCS tem evidência nos dois níveis mais elevados: existem meta-análises publicadas em revistas como <em>Psychological Medicine</em> e revisões Cochrane, além de múltiplos RCTs publicados em revistas como o <em>New England Journal of Medicine</em>, <em>JAMA Network Open</em> e <em>Brain Stimulation</em>.</p>
+      <p>A classificação <strong>Grade B</strong> do NICE e da APA significa evidência moderada a boa — equivalente ao nível de evidência de muitos antidepressivos aprovados e disponíveis no SNS. Não é uma terapia experimental; é uma terapia com evidência de qualidade comparável ao que já está estabelecido.</p>
+      <div class="warn-box">
+        <p><strong>Nota de honestidade:</strong> O tDCS tem menos estudos do que os antidepressivos clássicos, que têm décadas de dados de farmacológia e uso em larga escala. A base de evidência é sólida mas mais recente. A Sereen apresenta esta comparação de forma transparente.</p>
+      </div>
+
+      <h2>Os marcos da investigação</h2>
+      <p>A história científica do tDCS em depressão pode ser contada através de um conjunto de estudos que, ao longo de mais de 20 anos, foram progressivamente fortalecendo a evidência.</p>
+
+      <div class="timeline" aria-label="Linha cronológica de estudos">
+        <div class="tl-item">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-year">2001</div>
+          <div class="tl-title">Nitsche &amp; Paulus — fundação fisiológica</div>
+          <div class="tl-desc">Os primeiros estudos em humanos saudáveis demonstraram que a estimulação anódica aumenta a excitabilidade cortical e que esses efeitos persistem após o fim da estimulação — a base mecanística de tudo o que se seguiu.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-year">2006</div>
+          <div class="tl-title">Fregni et al. — primeiro RCT em depressão</div>
+          <div class="tl-desc">Com apenas 10 doentes (n=10), foi um estudo pequeno mas historicamente significativo: o primeiro ensaio randomizado controlado a testar especificamente o tDCS em doentes com depressão. Os resultados foram estatisticamente significativos a favor do tDCS ativo.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-year">2008</div>
+          <div class="tl-title">Boggio et al. — RCT duplo-cego</div>
+          <div class="tl-desc">Com 40 doentes num ensaio duplo-cego (nem o doente nem o investigador sabe quem recebe tDCS ativo), demonstrou uma redução média de 40,4% na escala HDRS com tDCS ativo, comparada com 21,4% no grupo placebo.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-year">2011</div>
+          <div class="tl-title">Loo et al. — estudo australiano</div>
+          <div class="tl-desc">Com 64 doentes, foi até então o maior RCT em depressão com tDCS. Os resultados foram mistos — com o tDCS a mostrar benefício nas primeiras semanas mas diferença mais pequena ao fim de 3 semanas. Revelou a importância da duração do protocolo.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-year">2013</div>
+          <div class="tl-title">Brunoni et al. (START) — tDCS + sertralina</div>
+          <div class="tl-desc">Com 120 doentes e 4 braços de tratamento, o estudo START foi revelador: a combinação de tDCS com sertralina foi superior a ambos os tratamentos isolados. Abriu a porta à abordagem combinada que hoje é a mais promissora.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-year">2017</div>
+          <div class="tl-title">ELECT-TDCS — publicado no NEJM</div>
+          <div class="tl-desc">O maior e mais rigoroso ensaio até então: 245 doentes, multicentro, Brasil. Comparação direta entre tDCS e escitalopram. Remissão de 34% com tDCS vs 40% com escitalopram vs 21% com placebo. Publicado no New England Journal of Medicine — a revista médica mais prestígiosa do mundo.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-year">2020</div>
+          <div class="tl-title">Moffa et al. — meta-análise de 27 RCTs</div>
+          <div class="tl-desc">Consolidação da evidência: analisando 27 ensaios com mais de 1.200 doentes, confirmou a eficácia do tDCS com uma taxa de resposta de ~35% vs ~12% no placebo. NNT de aproximadamente 4.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-year">2021</div>
+          <div class="tl-title">Revisão Cochrane — meta-análise independente</div>
+          <div class="tl-desc">A Cochrane Collaboration, conhecida pela sua independência e rigor metodológico, publicou a sua meta-análise sobre tDCS para depressão com conclusões consistentes com Moffa et al., confirmando o efeito estatisticamente significativo sobre o placebo.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-year">2024–2025</div>
+          <div class="tl-title">Dados de uso real em larga escala</div>
+          <div class="tl-desc">Com 55.000+ doentes tratados em contexto real na Europa (Brain Stimulation, 2024) e o estudo JAMA Network Open 2025 sobre protocolos domiciliários supervisionados com 58% de remissão, a evidência passou do laboratório para o mundo real.</div>
+        </div>
+      </div>
+
+      <h2>O estudo ELECT-TDCS em detalhe</h2>
+      <p>O ELECT-TDCS (Brunoni et al., 2017) merece atenção especial por ser o estudo mais citado, mais rigoroso, e publicado na revista médica de maior impacto do mundo. Compreendê-lo em profundidade é essencial para ter uma perspetiva realista sobre o que o tDCS pode e não pode fazer.</p>
+
+      <div class="study-grid" role="list">
+        <div class="study-card" role="listitem">
+          <div class="s-title">Desenho do estudo</div>
+          <div class="s-stat">245</div>
+          <div class="s-desc">Doentes em 3 braços, multicentro, Brasil, 10 semanas, 22 sessões</div>
+        </div>
+        <div class="study-card" role="listitem">
+          <div class="s-title">Resultado principal</div>
+          <div class="s-stat">34%</div>
+          <div class="s-desc">Taxa de remissão com tDCS ativo (vs 40% escitalopram, 21% placebo)</div>
+        </div>
+        <div class="study-card" role="listitem">
+          <div class="s-title">Efeitos sexuais</div>
+          <div class="s-stat">0</div>
+          <div class="s-desc">Disfunção sexual com tDCS (vs 30%+ com escitalopram) — vantagem clara</div>
+        </div>
+        <div class="study-card" role="listitem">
+          <div class="s-title">Desistências</div>
+          <div class="s-stat">Menor</div>
+          <div class="s-desc">Taxa de abandono superior no grupo escitalopram por efeitos secundários</div>
+        </div>
+      </div>
+
+      <p>Os três braços do estudo foram: <strong>tDCS ativo + comprimido placebo</strong>, <strong>tDCS simulado (sham) + escitalopram</strong>, e <strong>tDCS sham + placebo</strong>. O "sham" é uma simulação que produz os mesmos efeitos superficiais (formigueiro inicial) sem estimulação real — é o equivalente do placebo farmacológico.</p>
+      <p>A diferença de 34% vs 40% não é estatisticamente significativa, o que é o ponto central: <strong>o tDCS demonstrou não-inferioridade face ao escitalopram</strong>. Para um doente com intolerância aos efeitos secundários dos antidepressivos, ou que prefere uma abordagem não-farmacológica, esta equivalência clínica é relevante.</p>
+      <p><strong>Limitação importante:</strong> O estudo usou escitalopram na dose de 10mg, abaixo da dose terapêutica habitual de 20mg. Este ponto foi criticado por alguns investigadores, que argumentam que a comparação pode ter favorecido o tDCS. Outros defendem que 10mg era a dose inicial padrão no Brasil na época. Em todo o caso, protocolos de tDCS mais recentes, mais longos e com melhor supervisão provavelmente obtêm resultados ainda melhores do que os 34% do ELECT-TDCS.</p>
+
+      <h2>Meta-análises recentes</h2>
+      <p>Além do ELECT-TDCS, as meta-análises são a fonte mais robusta de evidência porque agregam dados de múltiplos estudos, reduzindo o impacto de variações individuais.</p>
+      <p><strong>Moffa et al. (2020) — Psychological Medicine:</strong> Analisou sistematicamente 27 RCTs com dados de mais de 1.200 doentes. A taxa de resposta pooled foi de aproximadamente 35% para tDCS ativo versus 12% para placebo. O número necessário a tratar (NNT) foi de cerca de 4 — o que significa que, por cada 4 doentes tratados com tDCS, 1 beneficia especificamente do tratamento ativo e não teria respondido a placebo. Para referência, o NNT dos antidepressivos de primeira linha é tipicamente entre 5 e 9.</p>
+      <p><strong>Revisão Cochrane (2021):</strong> A Cochrane Collaboration é conhecida pelo seu rigor metodológico independente. A sua revisão sobre tDCS para depressão chegou a conclusões consistentes com Moffa et al., confirmando o efeito significativo do tDCS sobre o placebo, embora notando heterogeneidade entre estudos (o que é esperado e explica a variabilidade dos resultados). A revisão Cochrane atribuiu ao tDCS para depressão um nível de certeza de evidência "moderado".</p>
+
+      <h2>Investigação em curso: o papel do tDCS domiciliário</h2>
+      <p>A fronteira atual da investigação em tDCS para depressão é o <strong>uso domiciliário supervisionado</strong>. Os estudos clássicos foram todos feitos em contexto hospitalar, onde os doentes se deslocam à clínica para cada sessão. Esta logística limita a adesão e cria um viés de seleção (só chegam doentes com recursos e disponibilidade).</p>
+      <p>O estudo <strong>JAMA Network Open 2025</strong> sobre protocolo domiciliário supervisionado representa o estado da arte. Com supervisão remota em tempo real — incluindo verificação do posicionamento dos elétrodos por videochamada e monitorização da impedância do dispositivo — a taxa de remissão atingiu 58%. Este salto face aos 34% do ELECT-TDCS explica-se por: protocolos mais longos, maior adesão (sem necessidade de deslocação), correção imediata de erros de posicionamento, e uma relação terapêutica mais próxima.</p>
+      <p>É exatamente este modelo — domiciliário supervisionado com acompanhamento clínico — que a Sereen implementa em Portugal.</p>
+
+      <h2>O que a evidência não responde ainda</h2>
+      <p>Uma revisão científica honesta deve incluir o que ainda não sabemos. Existem questões abertas na investigação sobre tDCS:</p>
+      <ul>
+        <li><strong>Parâmetros ótimos:</strong> A intensidade de 2mA e a duração de 30 minutos são os mais usados e estudados, mas há investigação em curso sobre se variações melhoram os resultados.</li>
+        <li><strong>Preditores de resposta:</strong> Ainda não conseguimos prever com precisão quem vai responder e quem não vai. A avaliação clínica continua a ser a melhor ferramenta disponível.</li>
+        <li><strong>Protocolos de manutenção:</strong> A frequência e duração ideal das sessões de manutenção ainda está a ser estudada. A maioria dos protocolos usa 1–2 sessões mensais, mas a evidência a longo prazo é menos robusta.</li>
+        <li><strong>Comparação direta com TMS:</strong> Não existe ainda um RCT de grande dimensão que compare diretamente tDCS com TMS (Estimulação Magnética Transcraniana) para depressão.</li>
+        <li><strong>Biomarcadores de resposta:</strong> Investigadores estão a estudar se variáveis genéticas, de neuroimagem ou eletrofisiológicas podem prever a resposta — mas não há ainda aplicação clínica.</li>
+      </ul>
+
+      <section class="faq-sec" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Perguntas frequentes sobre a ciência do tDCS</h2>
+        <div class="faq-list">
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-e1">
+              O tDCS é uma terapia experimental?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-e1" role="region">
+              <p>Não, não no sentido clínico do termo. Tem mais de 20 anos de investigação, 200+ ensaios clínicos publicados, e aparece em guidelines de diversas sociedades psiquiátricas como opção terapêutica. É experimental relativamente à ECT ou antidepressivos clássicos no sentido de ser mais recente, mas tem uma base de evidência sólida com meta-análises Cochrane independentes a confirmar a eficácia.</p>
+            </div>
+          </div>
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-e2">
+              Que qualidade têm os estudos disponíveis?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-e2" role="region">
+              <p>A maioria dos estudos são RCTs (randomizados e controlados com placebo), que é o padrão de ouro em investigação clínica. Existem meta-análises e revisões Cochrane que analisam sistematicamente a evidência. A qualidade é comparável à de muitos antidepressivos aprovados. O estudo mais importante (ELECT-TDCS) foi publicado no New England Journal of Medicine, a revista médica com maior fator de impacto do mundo.</p>
+            </div>
+          </div>
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-e3">
+              Porquê os resultados variam tanto entre estudos?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-e3" role="region">
+              <p>Os estudos variam em múltiplas dimensões: gravidade da depressão dos participantes, parâmetros de estimulação (intensidade, duração), posicionamento dos elétrodos, número e frequência de sessões, e medicação concomitante. Todos estes fatores influenciam significativamente os resultados. Por isso as meta-análises, que agregam dados e controlam estas variações, são mais informativas do que estudos individuais.</p>
+            </div>
+          </div>
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-e4">
+              Os estudos foram feitos em Portugal?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-e4" role="region">
+              <p>A maioria dos estudos são brasileiros, americanos ou europeus (Holanda, Alemanha, Reino Unido, Austrália). Portugal não tem ensaios clínicos publicados com tDCS para depressão até à data. A Sereen opera com protocolos baseados nos estudos internacionais de referência — nomeadamente o ELECT-TDCS e o protocolo JAMA 2025 — adaptados ao contexto clínico português.</p>
+            </div>
+          </div>
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-e5">
+              Como é que a Sereen usa estes estudos para tratar pacientes?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-e5" role="region">
+              <p>O protocolo da Sereen baseia-se nos parâmetros com mais evidência: 2mA de intensidade, 30 minutos por sessão, elétrodo anódico em F3 (córtex pré-frontal dorsolateral esquerdo), 5 sessões por semana durante 6 a 10 semanas. Estes são exatamente os parâmetros do ELECT-TDCS e do protocolo JAMA 2025. A supervisão remota replica as condições de monitorização dos estudos clínicos mais rigorosos.</p>
+            </div>
+          </div>
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-e6">
+              Há estudos sobre tDCS em crianças ou idosos com depressão?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-e6" role="region">
+              <p>Existem estudos em idosos (60+ anos) com resultados positivos, incluindo populações com depressão resistente ao tratamento em idades mais avançadas. Em adolescentes existem resultados preliminares promissores mas com menos evidência. A Sereen atualmente trata apenas adultos (18+), e a avaliação individual é sempre necessária para perceber se o perfil clínico é adequado ao protocolo.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="cta-sec" aria-labelledby="cta-heading">
+        <h2 id="cta-heading">Fale com o nosso psiquiatra</h2>
+        <p>Avaliação gratuita para perceber se o seu caso tem indicação para tDCS.</p>
+        <form class="cta-form" id="cta-form" onsubmit="submitForm(event,this,'cta-ok')" novalidate>
+          <label class="sr-only" for="cta-name">Nome</label>
+          <input type="text" id="cta-name" name="name" placeholder="O seu nome" required aria-required="true">
+          <label class="sr-only" for="cta-email">Email</label>
+          <input type="email" id="cta-email" name="email" placeholder="O seu email" required aria-required="true">
+          <label class="sr-only" for="cta-phone">Telefone (opcional)</label>
+          <input type="tel" id="cta-phone" name="phone" placeholder="Telefone (opcional)">
+          <button type="submit">Entrar na lista de espera</button>
+          <p class="gdpr-note">Os seus dados são usados apenas para contacto clínico e nunca partilhados. Consulte a nossa <a href="/privacidade/" style="color:rgba(255,255,255,.5)">política de privacidade</a>.</p>
+        </form>
+        <div class="cta-ok" id="cta-ok" aria-live="polite">
+          <h3>Recebemos o seu pedido</h3>
+          <p>Entraremos em contacto em breve para agendar a avaliação.</p>
+        </div>
+      </section>
+
+    </article>
+
+    <aside class="sidebar">
+      <nav class="sidebar-nav" aria-label="Navegação depressão">
+        <h3>Depressão &amp; tDCS</h3>
+        <a href="/depressao/">Visão geral</a>
+        <a href="/depressao/tdcs/">tDCS para depressão</a>
+        <a href="/depressao/funciona/">Funciona?</a>
+        <a href="/depressao/resultados/">Resultados</a>
+        <a href="/depressao/estudos/" class="active" aria-current="page">Estudos científicos</a>
+        <a href="/depressao/efeitos-secundarios/">Efeitos secundários</a>
+        <a href="/depressao/contraindicacoes/">Contraindicações</a>
+        <a href="/depressao/quem-pode/">Quem pode fazer</a>
+        <a href="/depressao/custo/">Quanto custa</a>
+        <a href="/depressao/duracao/">Quanto demora</a>
+        <a href="/depressao/vs-antidepressivos/">vs Antidepressivos</a>
+        <a href="/depressao/vs-tms/">vs TMS</a>
+      </nav>
+      <div class="sidebar-cta">
+        <h3>Pronto para começar?</h3>
+        <p>Avaliação gratuita com psiquiatra. Sem compromisso.</p>
+        <a href="/">Lista de espera</a>
+      </div>
+    </aside>
+  </div>
+
+</main>
+
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="/" class="logo" aria-label="Sereen">sereen</a>
+        <p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p>
+        <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--t3)">
+          <a href="mailto:geral@sereen.pt" style="color:var(--t3);text-decoration:none;display:block;margin-bottom:4px">geral@sereen.pt</a>
+          <a href="tel:+351932881800" style="color:var(--t3);text-decoration:none">+351 932 881 800</a>
+        </address>
+      </div>
+      <div class="ft-cols">
+        <div class="ft-col"><h4>Condições</h4><a href="/depressao/">Depressão</a><a href="/ansiedade/">Ansiedade</a><a href="/insonia/">Insónia</a><a href="/dor-cronica/">Dor crónica</a></div>
+        <div class="ft-col"><h4>Sereen</h4><a href="/">Início</a><a href="/tdcs/">O que é tDCS</a><a href="/faq/">FAQ</a><a href="mailto:geral@sereen.pt">Contacto</a></div>
+        <div class="ft-col"><h4>Legal</h4><a href="/privacidade/">Privacidade</a><a href="/termos/">Termos</a><a href="/cookies/">Cookies</a></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">&copy; 2026 Sereen. Todos os direitos reservados.</span>
+      <span class="ft-crisis">Em crise? SNS 24: 808 24 24 24</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50),{passive:true});
+function toggleFaq(btn){
+  const item=btn.closest('.faq-i');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-i.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+  if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+}
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbyc9aBoM2YOpOx0h2yS9gCTZsNom92H7KTCmIPcFtNhkNkJzAUrCSD6z9WzgoH_8FucKQ/exec';
+function submitForm(e,formEl,okId){
+  e.preventDefault();
+  const btn=formEl.querySelector('button');
+  btn.textContent='A enviar...';btn.disabled=true;
+  const iframe=document.createElement('iframe');
+  iframe.name='sf'+Date.now();iframe.style.display='none';
+  document.body.appendChild(iframe);
+  const tmp=document.createElement('form');
+  tmp.method='POST';tmp.action=APPS_SCRIPT_URL;tmp.target=iframe.name;tmp.style.display='none';
+  ['name','email','phone'].forEach(f=>{
+    const el=formEl.querySelector('[name='+f+']');
+    if(el){const i=document.createElement('input');i.name=f;i.value=el.value;tmp.appendChild(i)}
+  });
+  document.body.appendChild(tmp);tmp.submit();
+  setTimeout(()=>{formEl.style.display='none';document.getElementById(okId).style.display='block';tmp.remove();iframe.remove()},1500);
+}
+</script>
+</body>
+</html>

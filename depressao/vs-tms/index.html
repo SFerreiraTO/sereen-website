@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>tDCS vs TMS para Depressão: Diferenças e Semelhanças | Sereen</title>
+<meta name="description" content="Comparação entre tDCS e TMS (Estimulação Magnética Transcraniana) para depressão: eficácia, custo, efeitos secundários, disponibilidade e qual escolher.">
+<link rel="canonical" href="https://sereen.pt/depressao/vs-tms/">
+<meta property="og:title" content="tDCS vs TMS para Depressão: Diferenças e Semelhanças | Sereen">
+<meta property="og:description" content="Comparação entre tDCS e TMS (Estimulação Magnética Transcraniana) para depressão: eficácia, custo, efeitos secundários, disponibilidade e qual escolher.">
+<meta property="og:url" content="https://sereen.pt/depressao/vs-tms/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Sereen">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fff;--bg2:#F7F8FA;--dark:#0B1120;--accent:#3D8B6E;--accent-l:#E8F5EE;--accent-d:#2D6B52;--t:#0B1120;--t2:#4A5568;--t3:#8896AB;--t4:#B0BCCD;--brd:#E8ECF1}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:var(--t);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;top:-100%;left:0;padding:12px 24px;background:var(--accent);color:#fff;font-weight:600;font-size:14px;text-decoration:none;z-index:9999;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--brd);transition:all .3s}
+nav.s{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.ni{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:700;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:14px;color:var(--t2);text-decoration:none;font-weight:500;transition:color .2s}
+.nr a:hover{color:var(--t)}
+.btn{display:inline-flex;align-items:center;border-radius:100px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s;text-decoration:none;border:none;padding:12px 28px}
+.bp{background:var(--accent);color:#fff}.bp:hover{background:var(--accent-d);transform:translateY(-1px)}
+.bc{padding:88px 40px 0;max-width:1240px;margin:0 auto}
+.bc-list{display:flex;align-items:center;gap:8px;list-style:none;flex-wrap:wrap}
+.bc-list li{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t3)}
+.bc-list a{color:var(--accent);text-decoration:none}
+.bc-list a:hover{text-decoration:underline}
+.bc-sep{color:var(--t4)}
+.pg-hero{padding:24px 40px 60px;max-width:1240px;margin:0 auto}
+.pg-hero h1{font-size:clamp(28px,3.5vw,48px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px;max-width:760px}
+.pg-hero .sub{font-size:18px;color:var(--t2);max-width:640px;line-height:1.65;margin-bottom:40px}
+.stats-bar{display:flex;gap:0;border:1px solid var(--brd);border-radius:16px;overflow:hidden;margin-bottom:0}
+.stat{flex:1;padding:24px 28px;text-align:center;border-right:1px solid var(--brd);background:var(--bg)}
+.stat:last-child{border-right:0}
+.stat-n{font-size:clamp(28px,3vw,40px);font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.stat-l{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--t3);margin-top:4px}
+.pg-layout{max-width:1240px;margin:0 auto;padding:48px 40px 80px;display:grid;grid-template-columns:1fr 280px;gap:60px;align-items:start}
+.content h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin:48px 0 16px;color:var(--t)}
+.content h2:first-child{margin-top:0}
+.content h3{font-size:19px;font-weight:600;margin:28px 0 10px;color:var(--t)}
+.content p{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:16px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:6px}
+.content a{color:var(--accent)}
+.content strong{color:var(--t);font-weight:600}
+.content table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.content table th{padding:12px 16px;background:var(--bg2);font-weight:600;text-align:left;border-bottom:2px solid var(--brd)}
+.content table td{padding:12px 16px;border-bottom:1px solid var(--brd);color:var(--t2)}
+.content table tr:hover td{background:var(--bg2)}
+.ok{color:#2D6B52;font-weight:600}.no{color:#E53E3E;font-weight:600}.mid{color:#E5A530;font-weight:600}
+.info-box{background:var(--accent-l);border-left:3px solid var(--accent);padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.info-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.warn-box{background:#FFF8E6;border-left:3px solid #E5A530;padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.warn-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0}
+.study-card{background:var(--bg2);border-radius:12px;padding:20px 24px;border-left:3px solid var(--accent)}
+.study-card .s-title{font-size:13px;font-weight:600;color:var(--t3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.study-card .s-stat{font-size:32px;font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.study-card .s-desc{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.5}
+.vs-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.vs-col{background:var(--bg2);border-radius:12px;padding:20px 24px}
+.vs-col h3{font-size:14px;font-weight:700;color:var(--t);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--brd)}
+.vs-col ul{list-style:none;padding:0;margin:0}
+.vs-col li{font-size:14px;color:var(--t2);padding:6px 0;border-bottom:1px solid var(--brd);line-height:1.5}
+.vs-col li:last-child{border-bottom:0}
+.vs-col.tdcs{border-top:3px solid var(--accent)}
+.vs-col.tms{border-top:3px solid #7B61FF}
+.cost-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.cost-card{border-radius:12px;padding:24px;text-align:center}
+.cost-card.c1{background:var(--accent-l);border:1px solid rgba(61,139,110,.2)}
+.cost-card.c2{background:#F3F0FF;border:1px solid rgba(123,97,255,.2)}
+.cost-card .cost-label{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px}
+.cost-card.c1 .cost-label{color:var(--accent-d)}
+.cost-card.c2 .cost-label{color:#5B3FCC}
+.cost-card .cost-num{font-size:36px;font-weight:700;letter-spacing:-1px;line-height:1;margin-bottom:6px}
+.cost-card.c1 .cost-num{color:var(--accent)}
+.cost-card.c2 .cost-num{color:#7B61FF}
+.cost-card .cost-desc{font-size:13px;color:var(--t3);line-height:1.4}
+.sidebar{position:sticky;top:96px}
+.sidebar-nav{background:var(--bg2);border-radius:16px;padding:24px;margin-bottom:20px}
+.sidebar-nav h3{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:16px}
+.sidebar-nav a{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--t2);text-decoration:none;padding:10px 12px;border-radius:8px;transition:all .2s;margin-bottom:2px}
+.sidebar-nav a:hover,.sidebar-nav a.active{background:var(--accent-l);color:var(--accent-d);font-weight:500}
+.sidebar-cta{background:var(--dark);border-radius:16px;padding:24px;text-align:center}
+.sidebar-cta h3{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
+.sidebar-cta p{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:16px;line-height:1.5}
+.sidebar-cta a{display:block;background:var(--accent);color:#fff;text-decoration:none;border-radius:100px;padding:12px 20px;font-size:14px;font-weight:600;transition:all .2s;margin-bottom:8px}
+.sidebar-cta a:hover{background:var(--accent-d)}
+.faq-sec{margin:60px 0 0}
+.faq-sec h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin-bottom:32px;color:var(--t)}
+.faq-list{display:flex;flex-direction:column}
+.faq-i{border-bottom:1px solid var(--brd)}
+.faq-q{padding:20px 0;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color .2s;background:0;border:0;width:100%;text-align:left;font-family:inherit;color:var(--t)}
+.faq-q:hover{color:var(--accent)}
+.faq-ic{width:28px;height:28px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.faq-i.open .faq-ic{background:var(--accent);transform:rotate(180deg)}
+.faq-i.open .faq-ic svg{stroke:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .4s}
+.faq-i.open .faq-a{max-height:500px;padding-bottom:20px}
+.faq-a p{font-size:14px;color:var(--t2);line-height:1.7}
+.cta-sec{background:var(--dark);border-radius:24px;padding:60px 40px;text-align:center;margin:60px 0;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(61,139,110,.12),transparent 70%);bottom:-200px;left:-100px;pointer-events:none}
+.cta-sec h2{font-size:clamp(24px,3vw,36px);font-weight:700;color:#fff;letter-spacing:-1px;margin-bottom:12px;position:relative}
+.cta-sec > p{font-size:16px;color:rgba(255,255,255,.5);max-width:420px;margin:0 auto 32px;position:relative}
+.cta-form{display:flex;flex-direction:column;gap:10px;max-width:380px;margin:0 auto;position:relative}
+.cta-form input{padding:14px 20px;border:1.5px solid rgba(255,255,255,.12);border-radius:12px;font-size:15px;font-family:inherit;background:rgba(255,255,255,.06);color:#fff;outline:none;transition:all .3s}
+.cta-form input::placeholder{color:rgba(255,255,255,.5)}
+.cta-form input:focus{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
+.cta-form button{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:14px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .3s;width:100%}
+.cta-form button:hover{background:var(--accent-d)}
+.cta-ok{display:none;text-align:center;padding:20px;color:#fff}
+.cta-ok h3{font-size:20px;margin-bottom:8px}
+.cta-ok p{font-size:14px;opacity:.6}
+.gdpr-note{font-size:11px;color:rgba(255,255,255,.35);margin-top:8px;line-height:1.5}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+footer{padding:48px 40px;border-top:1px solid var(--brd)}
+.ft-in{max-width:1240px;margin:0 auto}
+.ft-top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:32px;flex-wrap:wrap;gap:32px}
+.ft-brand p{font-size:13px;color:var(--t3);margin-top:8px;max-width:260px}
+.ft-cols{display:flex;gap:56px}
+.ft-col h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:14px}
+.ft-col a{display:block;font-size:13px;color:var(--t2);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.ft-col a:hover{color:var(--t)}
+.ft-bot{padding-top:24px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:12px;color:var(--t3)}
+.ft-crisis{font-size:12px;color:var(--accent-d);background:var(--accent-l);padding:6px 14px;border-radius:8px;font-weight:500}
+@media(max-width:900px){.pg-layout{grid-template-columns:1fr}.sidebar{position:static}.study-grid{grid-template-columns:1fr}.vs-grid{grid-template-columns:1fr}.cost-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.nr a:not(.btn){display:none}.ni{padding:16px 24px}.pg-hero{padding:16px 24px 40px}.bc{padding:80px 24px 0}.pg-layout{padding:32px 24px 60px}.stats-bar{flex-direction:column}.stat{border-right:0;border-bottom:1px solid var(--brd)}.stat:last-child{border-bottom:0}footer{padding:40px 24px}.ft-top{flex-direction:column}.ft-cols{flex-direction:column;gap:24px}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://sereen.pt/depressao/vs-tms/#webpage",
+      "url": "https://sereen.pt/depressao/vs-tms/",
+      "name": "tDCS vs TMS para Depressão: Diferenças e Semelhanças | Sereen",
+      "description": "Comparação entre tDCS e TMS para depressão: eficácia, custo, efeitos secundários, disponibilidade em Portugal e qual escolher.",
+      "isPartOf": {"@id": "https://sereen.pt/#website"},
+      "about": {"@type": "MedicalCondition", "name": "Depressão"},
+      "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"},
+      "reviewedBy": {"@type": "Organization", "name": "Sereen"}
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sereen.pt/depressao/vs-tms/#article",
+      "headline": "tDCS vs TMS: Duas Técnicas de Neuroestimulação, Decisão Diferente",
+      "description": "Comparação detalhada entre tDCS e TMS para depressão, incluindo mecanismo, eficácia, custo e disponibilidade em Portugal.",
+      "url": "https://sereen.pt/depressao/vs-tms/",
+      "publisher": {"@type": "Organization", "name": "Sereen", "url": "https://sereen.pt"},
+      "datePublished": "2026-07-30",
+      "dateModified": "2026-07-30",
+      "inLanguage": "pt-PT"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sereen.pt/depressao/vs-tms/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O TMS é mais eficaz que o tDCS?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A evidência disponível não mostra diferença clara de eficácia entre os dois — os estudos não são comparativos diretos. O TMS tem mais dados de aprovação regulatória (FDA), principalmente por ser comercializado há mais tempo."}
+        },
+        {
+          "@type": "Question",
+          "name": "O TMS é doloroso?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Não é doloroso, mas é desconfortável — os pulsos magnéticos causam contrações dos músculos do couro cabeludo e fazem um barulho de clique muito alto. O tDCS é silencioso e a única sensação é ligeiro formigueiro."}
+        },
+        {
+          "@type": "Question",
+          "name": "Porque é que o TMS tem aprovação FDA e o tDCS não?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Porque o TMS foi desenvolvido e comercializado mais cedo nos EUA. A aprovação FDA requer investimento comercial além de evidência científica. Na Europa, o tDCS tem marcação CE, o equivalente regulatório europeu."}
+        },
+        {
+          "@type": "Question",
+          "name": "Se fiz TMS sem resultado, o tDCS pode funcionar?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Possivelmente, sim. Apesar de visarem a mesma região cerebral, os mecanismos são diferentes ao nível molecular. Há relatos clínicos de pacientes que não responderam a TMS e responderam a tDCS."}
+        },
+        {
+          "@type": "Question",
+          "name": "O SNS português cobre TMS ou tDCS?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Nenhum dos dois está coberto pelo SNS para depressão em Portugal a partir de 2026. Algumas seguradoras privadas cobrem TMS em casos específicos; para tDCS a situação é ainda mais limitada."}
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sereen.pt/depressao/vs-tms/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://sereen.pt/"},
+        {"@type": "ListItem", "position": 2, "name": "Depressão", "item": "https://sereen.pt/depressao/"},
+        {"@type": "ListItem", "position": 3, "name": "tDCS vs TMS", "item": "https://sereen.pt/depressao/vs-tms/"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+<header>
+<nav id="nav">
+  <div class="ni">
+    <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+    <div class="nr" aria-label="Navegação principal">
+      <a href="/#como">Como funciona</a>
+      <a href="/depressao/" class="active">Condições</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/" class="btn bp">Lista de espera</a>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main-content">
+
+  <nav class="bc" aria-label="Breadcrumb">
+    <ol class="bc-list">
+      <li><a href="/">Início</a><span class="bc-sep" aria-hidden="true">›</span></li>
+      <li><a href="/depressao/">Depressão</a><span class="bc-sep" aria-hidden="true">›</span></li>
+      <li aria-current="page">tDCS vs TMS</li>
+    </ol>
+  </nav>
+
+  <div class="pg-hero">
+    <h1>tDCS vs TMS: Duas Técnicas de Neuroestimulação, Decisão Diferente</h1>
+    <p class="sub">TMS tem aprovação FDA. tDCS tem aprovação CE europeia e pode ser usado em casa. Perceba as diferenças reais para tomar a decisão certa.</p>
+    <div class="stats-bar" role="list">
+      <div class="stat" role="listitem">
+        <div class="stat-n">40–50%</div>
+        <div class="stat-l">Taxa de resposta ao TMS para depressão</div>
+        <div class="stat-src">George et al., 2010</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-n">34–58%</div>
+        <div class="stat-l">Taxa de resposta ao tDCS para depressão</div>
+        <div class="stat-src">Múltiplos estudos</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-n">10×</div>
+        <div class="stat-l">Diferença de custo TMS vs tDCS</div>
+        <div class="stat-src">Estimativa clínica</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pg-layout">
+    <article class="content">
+
+      <h2>O que é o TMS?</h2>
+      <p>TMS significa <strong>Estimulação Magnética Transcraniana</strong> (em inglês: Transcranial Magnetic Stimulation). Ao contrário do tDCS, que usa corrente elétrica direta de baixa intensidade, o TMS usa <strong>pulsos magnéticos intensos</strong> para induzir corrente elétrica nas camadas superficiais do córtex cerebral.</p>
+      <p>O equipamento consiste numa bobina magnética que é posicionada sobre o couro cabeludo, geralmente sobre o córtex pré-frontal dorsolateral esquerdo (a mesma região alvo do tDCS para depressão). Cada pulso magnético causa uma corrente elétrica breve e intensa nessa região. Em protocolos repetitivos (rTMS — TMS repetitiva), este efeito acumula-se ao longo de múltiplas sessões.</p>
+      <p>O TMS recebeu <strong>aprovação da FDA americana em 2008</strong> para o tratamento de depressão major resistente a antidepressivos — por isso é frequentemente apresentado como "mais aprovado" do que o tDCS. Esta vantagem regulatória é real, mas é importante compreender o que significa na prática.</p>
+      <p>Em Portugal, o TMS está disponível em poucas clínicas privadas. Requer deslocação ao local em cada sessão — tipicamente 5 sessões por semana durante 4 a 6 semanas, num equipamento que ocupa o espaço de uma cadeira de dentista e pesa centenas de quilogramas. Não é possível usá-lo em casa.</p>
+
+      <h2>Como se comparam tecnicamente?</h2>
+      <div style="overflow-x:auto">
+        <table aria-label="Comparação técnica entre tDCS e TMS">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>tDCS</th>
+              <th>TMS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Mecanismo</td><td>Corrente elétrica direta de baixa intensidade</td><td>Pulsos magnéticos intensos que induzem corrente</td></tr>
+            <tr><td>Invasividade</td><td class="ok">Não-invasivo</td><td class="ok">Não-invasivo</td></tr>
+            <tr><td>Uso domiciliário</td><td class="ok">Sim (com supervisão)</td><td class="no">Não — exige equipamento clínico</td></tr>
+            <tr><td>Aprovação regulatória</td><td class="mid">Marcação CE (Europa)</td><td class="ok">FDA (EUA) + Marcação CE</td></tr>
+            <tr><td>Região alvo para depressão</td><td>DLPFC esquerdo (F3)</td><td>DLPFC esquerdo</td></tr>
+            <tr><td>Duração de sessão típica</td><td>30 minutos</td><td>20–40 minutos</td></tr>
+            <tr><td>Frequência</td><td>5×/semana</td><td>5×/semana</td></tr>
+            <tr><td>Risco de convulsão</td><td class="ok">Extremamente raro</td><td class="mid">Raro (~1:1.000 sessões)</td></tr>
+            <tr><td>Som durante a sessão</td><td class="ok">Silencioso</td><td class="no">Clique rítmico intenso — protetores auditivos obrigatórios</td></tr>
+            <tr><td>Custo estimado por sessão</td><td class="ok">~€20–40</td><td class="no">~€100–200</td></tr>
+            <tr><td>Disponível em Portugal</td><td class="ok">Sereen (domiciliário)</td><td class="mid">Poucas clínicas privadas</td></tr>
+            <tr><td>Efeitos secundários</td><td>Formigueiro ligeiro, pele vermelha</td><td>Desconforto no couro cabeludo, dor de cabeça, contractura muscular</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Eficácia comparada</h2>
+      <p>Ambas as técnicas visam a mesma região cerebral — o córtex pré-frontal dorsolateral esquerdo — e têm taxas de resposta semelhantes nos estudos disponíveis. O TMS mostra 40–50% de taxa de resposta nos grandes ensaios (George et al., 2010; O'Reardon et al., 2007). O tDCS apresenta 34–58% dependendo do protocolo.</p>
+      <p><strong>Não existe atualmente um RCT de grande dimensão que compare diretamente TMS com tDCS</strong> para depressão. Portanto, afirmar que um é "melhor" do que o outro não tem suporte científico. O TMS tem mais dados de aprovação regulatória porque foi comercializado mais cedo e com maior investimento nos EUA — o que não é o mesmo que ter maior eficácia demonstrada.</p>
+      <p>O que os dados sugerem é que as duas técnicas são <em>complementares</em>: alguns doentes respondem melhor a uma, outros à outra. Não é possível prever a priori qual vai funcionar para uma pessoa específica.</p>
+
+      <div class="study-grid" role="list">
+        <div class="study-card" role="listitem">
+          <div class="s-title">TMS — O'Reardon et al. (2007)</div>
+          <div class="s-stat">24%</div>
+          <div class="s-desc">Taxa de remissão em estudo pivotal FDA (n=301). Taxa de resposta 41% vs 17% placebo.</div>
+        </div>
+        <div class="study-card" role="listitem">
+          <div class="s-title">tDCS — ELECT-TDCS (NEJM, 2017)</div>
+          <div class="s-stat">34%</div>
+          <div class="s-desc">Taxa de remissão (n=245). Taxa semelhante à do escitalopram no mesmo estudo.</div>
+        </div>
+        <div class="study-card" role="listitem">
+          <div class="s-title">TMS — uso clínico real (2012)</div>
+          <div class="s-stat">58%</div>
+          <div class="s-desc">Estudo naturalístico americano (NeuroStar, n=307). Dados de clínica real, não RCT.</div>
+        </div>
+        <div class="study-card" role="listitem">
+          <div class="s-title">tDCS — protocolo domiciliário</div>
+          <div class="s-stat">58%</div>
+          <div class="s-desc">JAMA Network Open, 2025. Protocolo supervisionado em casa com monitorização remota.</div>
+        </div>
+      </div>
+
+      <h2>Custo: a diferença que mais importa na prática</h2>
+      <p>Na realidade do sistema de saúde português em 2026, a comparação de custo é provavelmente o fator mais determinante para a maioria dos doentes.</p>
+
+      <div class="cost-grid" role="list">
+        <div class="cost-card c1" role="listitem">
+          <div class="cost-label">tDCS (Sereen)</div>
+          <div class="cost-num">~€500–900</div>
+          <div class="cost-desc">Protocolo completo de 6–10 semanas com supervisão remota, avaliação psiquiátrica e acompanhamento incluídos</div>
+        </div>
+        <div class="cost-card c2" role="listitem">
+          <div class="cost-label">TMS (clínica privada)</div>
+          <div class="cost-num">€3.000–6.000</div>
+          <div class="cost-desc">30 sessões × €100–200/sessão. Sem contar com deslocações e tempo perdido no trabalho</div>
+        </div>
+      </div>
+
+      <p>Nenhum dos dois tratamentos está coberto pelo SNS em Portugal para depressão em 2026. Algumas seguradoras privadas (como a Médis ou a Multicare) têm cobertura parcial para TMS em casos de depressão resistente — mas com critérios de elegibilidade rigorosos e processos de autorização prévia. Para tDCS, a cobertura por seguros privados é ainda mais rara.</p>
+      <p>Além do custo direto, o TMS implica custo indireto: 30 deslocações à clínica, tipicamente 5 dias por semana durante 6 semanas. Para quem trabalha ou tem filhos, este fator logístico é frequentemente subestimado. O modelo domiciliário do tDCS elimina este custo completamente.</p>
+
+      <h2>Quando o TMS pode ser preferível</h2>
+      <div class="vs-grid">
+        <div class="vs-col tms">
+          <h3>TMS — quando faz mais sentido</h3>
+          <ul>
+            <li>Sem resposta ao tDCS após protocolo adequado</li>
+            <li>Necessidade de aprovação FDA para efeitos de seguro</li>
+            <li>Acesso a clínica TMS perto de casa</li>
+            <li>Protocolos específicos (deep TMS, theta burst) para indicações particulares</li>
+            <li>Preferência por tratamento exclusivamente presencial</li>
+          </ul>
+        </div>
+        <div class="vs-col tdcs">
+          <h3>tDCS — quando faz mais sentido</h3>
+          <ul>
+            <li>Custo é um fator determinante</li>
+            <li>Conveniência do uso em casa</li>
+            <li>Ausência de barulho e desconforto durante as sessões</li>
+            <li>Impossibilidade de deslocação frequente</li>
+            <li>Como primeiro passo antes de considerar TMS</li>
+            <li>Sem resposta a antidepressivos mas nunca tentou neuroestimulação</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Quando o tDCS é a melhor escolha</h2>
+      <p>Para a grande maioria dos doentes que nunca tentou neuroestimulação e está a considerar as opções, o <strong>tDCS é o ponto de partida mais racional</strong>: custo significativamente inferior, uso em casa sem necessidade de deslocação, sessão silenciosa e confortável, e eficácia comparável nos dados disponíveis.</p>
+      <p>O TMS faz mais sentido como passo seguinte se o tDCS não for suficiente, ou em casos onde protocolos específicos de TMS (como o theta burst stimulation, que reduz a sessão para 3 minutos) têm vantagens particulares identificadas pelo psiquiatra.</p>
+      <div class="info-box">
+        <p><strong>Nota:</strong> A Sereen não tem interesse comercial em desaconselhar o TMS — se um doente não responder ao tDCS, o psiquiatra referenciará para TMS ou outra opção. O objetivo é que cada doente receba o tratamento mais adequado à sua situação.</p>
+      </div>
+
+      <h2>Uma questão de mecanismo, não apenas de tecnologia</h2>
+      <p>É tentador pensar que "mais tecnologia = mais eficaz". O equipamento de TMS é impressionante — uma máquina de vários milhares de euros, com bobina magnética e sistema de neuronavegação. O dispositivo de tDCS cabe numa mochila.</p>
+      <p>Mas eficácia clínica não se mede em quilogramas de equipamento. O que importa é o mecanismo biológico: ambas as técnicas modulam a excitabilidade cortical do DLPFC esquerdo, estimulando a neuroplasticidade e a regulação emocional de cima para baixo. Os estudos mostram que ambas conseguem isso com eficácia comparável.</p>
+      <p>A diferença real está na <strong>acessibilidade</strong>: o tDCS democratizou a neuroestimulação, tornando-a acessível para uso domiciliário sem equipamento hospitalar. O modelo Sereen é construído precisamente sobre esta possibilidade.</p>
+
+      <section class="faq-sec" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Perguntas frequentes sobre tDCS vs TMS</h2>
+        <div class="faq-list">
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-t1">
+              O TMS é mais eficaz que o tDCS?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-t1" role="region">
+              <p>A evidência disponível não mostra diferença clara de eficácia entre os dois — e não existem estudos que os comparem diretamente. O TMS tem mais dados de aprovação regulatória (FDA), principalmente por ser comercializado há mais tempo nos EUA com maior investimento da indústria. O tDCS tem vantagem no custo, na comodidade e no perfil de tolerabilidade.</p>
+            </div>
+          </div>
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-t2">
+              O TMS é doloroso?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-t2" role="region">
+              <p>Não é doloroso, mas é desconfortável para muitas pessoas. Os pulsos magnéticos causam contrações rítmicas dos músculos do couro cabeludo e fazem um barulho de clique muito alto — os protetores auditivos são obrigatórios. Algumas pessoas desenvolvem dores de cabeça após as sessões iniciais. O tDCS é radicalmente diferente: silencioso, e a única sensação é um ligeiro formigueiro que desaparece em minutos.</p>
+            </div>
+          </div>
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-t3">
+              Porque é que o TMS tem aprovação FDA e o tDCS não?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-t3" role="region">
+              <p>Porque o TMS foi desenvolvido e comercializado mais cedo nos EUA, e a aprovação FDA é um processo que requer investimento comercial significativo — não apenas evidência científica. Empresas como a NeuroStar investiram dezenas de milhões de dólares no processo de aprovação. Na Europa, o tDCS tem marcação CE para uso em depressão, que é o equivalente regulatório europeu à aprovação FDA americana.</p>
+            </div>
+          </div>
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-t4">
+              Se fiz TMS sem resultado, o tDCS pode funcionar?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-t4" role="region">
+              <p>Possivelmente, sim. Apesar de visarem a mesma região cerebral (DLPFC esquerdo), os mecanismos moleculares são diferentes: o TMS induz corrente por indução magnética com pulsos de alta intensidade; o tDCS modula a excitabilidade de membrana com corrente contínua de baixa intensidade. Os efeitos na neuroplasticidade podem ser diferentes. Há relatos clínicos publicados de pacientes que não responderam a TMS e responderam a tDCS, e vice-versa.</p>
+            </div>
+          </div>
+
+          <div class="faq-i">
+            <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-t5">
+              O SNS português cobre TMS ou tDCS?
+              <span class="faq-ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-t5" role="region">
+              <p>Nenhum dos dois está coberto pelo SNS para depressão em Portugal em 2026. Algumas seguradoras privadas têm cobertura parcial para TMS em casos de depressão resistente ao tratamento — com critérios de elegibilidade específicos e processo de autorização prévia que pode demorar semanas. Para tDCS, a cobertura por seguros privados é ainda mais limitada. A Sereen informa sempre os doentes sobre como maximizar a possibilidade de reembolso.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="cta-sec" aria-labelledby="cta-heading">
+        <h2 id="cta-heading">Comece pelo que tem mais evidência acessível</h2>
+        <p>Avaliação gratuita com psiquiatra para perceber se o tDCS é o primeiro passo certo para si.</p>
+        <form class="cta-form" id="cta-form" onsubmit="submitForm(event,this,'cta-ok')" novalidate>
+          <label class="sr-only" for="cta-name">Nome</label>
+          <input type="text" id="cta-name" name="name" placeholder="O seu nome" required aria-required="true">
+          <label class="sr-only" for="cta-email">Email</label>
+          <input type="email" id="cta-email" name="email" placeholder="O seu email" required aria-required="true">
+          <label class="sr-only" for="cta-phone">Telefone (opcional)</label>
+          <input type="tel" id="cta-phone" name="phone" placeholder="Telefone (opcional)">
+          <button type="submit">Entrar na lista de espera</button>
+          <p class="gdpr-note">Os seus dados são usados apenas para contacto clínico e nunca partilhados. Consulte a nossa <a href="/privacidade/" style="color:rgba(255,255,255,.5)">política de privacidade</a>.</p>
+        </form>
+        <div class="cta-ok" id="cta-ok" aria-live="polite">
+          <h3>Recebemos o seu pedido</h3>
+          <p>Entraremos em contacto em breve para agendar a avaliação.</p>
+        </div>
+      </section>
+
+    </article>
+
+    <aside class="sidebar">
+      <nav class="sidebar-nav" aria-label="Navegação depressão">
+        <h3>Depressão &amp; tDCS</h3>
+        <a href="/depressao/">Visão geral</a>
+        <a href="/depressao/tdcs/">tDCS para depressão</a>
+        <a href="/depressao/funciona/">Funciona?</a>
+        <a href="/depressao/resultados/">Resultados</a>
+        <a href="/depressao/estudos/">Estudos científicos</a>
+        <a href="/depressao/efeitos-secundarios/">Efeitos secundários</a>
+        <a href="/depressao/contraindicacoes/">Contraindicações</a>
+        <a href="/depressao/quem-pode/">Quem pode fazer</a>
+        <a href="/depressao/custo/">Quanto custa</a>
+        <a href="/depressao/duracao/">Quanto demora</a>
+        <a href="/depressao/vs-antidepressivos/">vs Antidepressivos</a>
+        <a href="/depressao/vs-tms/" class="active" aria-current="page">vs TMS</a>
+      </nav>
+      <div class="sidebar-cta">
+        <h3>Pronto para começar?</h3>
+        <p>Avaliação gratuita com psiquiatra. Sem compromisso.</p>
+        <a href="/">Lista de espera</a>
+      </div>
+    </aside>
+  </div>
+
+</main>
+
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="/" class="logo" aria-label="Sereen">sereen</a>
+        <p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p>
+        <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--t3)">
+          <a href="mailto:geral@sereen.pt" style="color:var(--t3);text-decoration:none;display:block;margin-bottom:4px">geral@sereen.pt</a>
+          <a href="tel:+351932881800" style="color:var(--t3);text-decoration:none">+351 932 881 800</a>
+        </address>
+      </div>
+      <div class="ft-cols">
+        <div class="ft-col"><h4>Condições</h4><a href="/depressao/">Depressão</a><a href="/ansiedade/">Ansiedade</a><a href="/insonia/">Insónia</a><a href="/dor-cronica/">Dor crónica</a></div>
+        <div class="ft-col"><h4>Sereen</h4><a href="/">Início</a><a href="/tdcs/">O que é tDCS</a><a href="/faq/">FAQ</a><a href="mailto:geral@sereen.pt">Contacto</a></div>
+        <div class="ft-col"><h4>Legal</h4><a href="/privacidade/">Privacidade</a><a href="/termos/">Termos</a><a href="/cookies/">Cookies</a></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">&copy; 2026 Sereen. Todos os direitos reservados.</span>
+      <span class="ft-crisis">Em crise? SNS 24: 808 24 24 24</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50),{passive:true});
+function toggleFaq(btn){
+  const item=btn.closest('.faq-i');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-i.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+  if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+}
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbyc9aBoM2YOpOx0h2yS9gCTZsNom92H7KTCmIPcFtNhkNkJzAUrCSD6z9WzgoH_8FucKQ/exec';
+function submitForm(e,formEl,okId){
+  e.preventDefault();
+  const btn=formEl.querySelector('button');
+  btn.textContent='A enviar...';btn.disabled=true;
+  const iframe=document.createElement('iframe');
+  iframe.name='sf'+Date.now();iframe.style.display='none';
+  document.body.appendChild(iframe);
+  const tmp=document.createElement('form');
+  tmp.method='POST';tmp.action=APPS_SCRIPT_URL;tmp.target=iframe.name;tmp.style.display='none';
+  ['name','email','phone'].forEach(f=>{
+    const el=formEl.querySelector('[name='+f+']');
+    if(el){const i=document.createElement('input');i.name=f;i.value=el.value;tmp.appendChild(i)}
+  });
+  document.body.appendChild(tmp);tmp.submit();
+  setTimeout(()=>{formEl.style.display='none';document.getElementById(okId).style.display='block';tmp.remove();iframe.remove()},1500);
+}
+</script>
+</body>
+</html>

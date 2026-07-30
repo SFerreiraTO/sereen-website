@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>O que é tDCS (Estimulação Transcraniana por Corrente Direta) | Sereen</title>
+<meta name="description" content="Guia completo sobre tDCS — como funciona, evidência científica, condições tratadas e segurança. Sereen oferece tDCS domiciliário com acompanhamento clínico em Portugal.">
+<link rel="canonical" href="https://sereen.pt/tdcs/">
+<meta property="og:title" content="O que é tDCS (Estimulação Transcraniana por Corrente Direta) | Sereen">
+<meta property="og:description" content="Guia completo sobre tDCS — como funciona, evidência científica, condições tratadas e segurança. Sereen oferece tDCS domiciliário com acompanhamento clínico em Portugal.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sereen.pt/tdcs/">
+<meta property="og:site_name" content="Sereen">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fff;--bg2:#F7F8FA;--dark:#0B1120;--accent:#3D8B6E;--accent-l:#E8F5EE;--accent-d:#2D6B52;--t:#0B1120;--t2:#4A5568;--t3:#8896AB;--t4:#B0BCCD;--brd:#E8ECF1}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:var(--t);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;top:-100%;left:0;padding:12px 24px;background:var(--accent);color:#fff;font-weight:600;font-size:14px;text-decoration:none;z-index:9999;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--brd);transition:all .3s}
+nav.s{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.ni{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:700;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:14px;color:var(--t2);text-decoration:none;font-weight:500;transition:color .2s}
+.nr a:hover{color:var(--t)}
+.btn{display:inline-flex;align-items:center;border-radius:100px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s;text-decoration:none;border:none;padding:12px 28px}
+.bp{background:var(--accent);color:#fff}.bp:hover{background:var(--accent-d);transform:translateY(-1px)}
+.bc{padding:88px 40px 0;max-width:1240px;margin:0 auto}
+.bc-list{display:flex;align-items:center;gap:8px;list-style:none;flex-wrap:wrap}
+.bc-list li{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t3)}
+.bc-list a{color:var(--accent);text-decoration:none}
+.bc-list a:hover{text-decoration:underline}
+.bc-sep{color:var(--t4)}
+.pg-hero{padding:24px 40px 60px;max-width:1240px;margin:0 auto}
+.pg-hero h1{font-size:clamp(28px,3.5vw,48px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px;max-width:760px}
+.pg-hero .sub{font-size:18px;color:var(--t2);max-width:640px;line-height:1.65;margin-bottom:40px}
+.stats-bar{display:flex;gap:0;border:1px solid var(--brd);border-radius:16px;overflow:hidden;margin-bottom:0}
+.stat{flex:1;padding:24px 28px;text-align:center;border-right:1px solid var(--brd);background:var(--bg)}
+.stat:last-child{border-right:0}
+.stat-n{font-size:clamp(28px,3vw,40px);font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.stat-l{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--t3);margin-top:4px}
+.pg-layout{max-width:1240px;margin:0 auto;padding:48px 40px 80px;display:grid;grid-template-columns:1fr;max-width:900px}
+.content h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin:48px 0 16px;color:var(--t)}
+.content h2:first-child{margin-top:0}
+.content h3{font-size:19px;font-weight:600;margin:28px 0 10px;color:var(--t)}
+.content p{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:16px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:6px}
+.content a{color:var(--accent)}
+.content strong{color:var(--t);font-weight:600}
+.content table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.content table th{padding:12px 16px;background:var(--bg2);font-weight:600;text-align:left;border-bottom:2px solid var(--brd)}
+.content table td{padding:12px 16px;border-bottom:1px solid var(--brd);color:var(--t2)}
+.content table tr:hover td{background:var(--bg2)}
+.ok{color:#2D6B52;font-weight:600}.no{color:#E53E3E;font-weight:600}
+.info-box{background:var(--accent-l);border-left:3px solid var(--accent);padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.info-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.warn-box{background:#FFF8E6;border-left:3px solid #E5A530;padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.warn-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0}
+.study-card{background:var(--bg2);border-radius:12px;padding:20px 24px;border-left:3px solid var(--accent)}
+.study-card .s-title{font-size:13px;font-weight:600;color:var(--t3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.study-card .s-stat{font-size:32px;font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.study-card .s-desc{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.5}
+.faq-sec{margin:60px 0 0}
+.faq-sec h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin-bottom:32px;color:var(--t)}
+.faq-list{display:flex;flex-direction:column}
+.faq-i{border-bottom:1px solid var(--brd)}
+.faq-q{padding:20px 0;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color .2s;background:0;border:0;width:100%;text-align:left;font-family:inherit;color:var(--t)}
+.faq-q:hover{color:var(--accent)}
+.faq-ic{width:28px;height:28px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.faq-i.open .faq-ic{background:var(--accent);transform:rotate(180deg)}
+.faq-i.open .faq-ic svg{stroke:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .4s}
+.faq-i.open .faq-a{max-height:500px;padding-bottom:20px}
+.faq-a p{font-size:14px;color:var(--t2);line-height:1.7}
+.cta-sec{background:var(--dark);border-radius:24px;padding:60px 40px;text-align:center;margin:60px 0;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(61,139,110,.12),transparent 70%);bottom:-200px;left:-100px;pointer-events:none}
+.cta-sec h2{font-size:clamp(24px,3vw,36px);font-weight:700;color:#fff;letter-spacing:-1px;margin-bottom:12px;position:relative}
+.cta-sec > p{font-size:16px;color:rgba(255,255,255,.5);max-width:420px;margin:0 auto 32px;position:relative}
+.cta-form{display:flex;flex-direction:column;gap:10px;max-width:380px;margin:0 auto;position:relative}
+.cta-form input{padding:14px 20px;border:1.5px solid rgba(255,255,255,.12);border-radius:12px;font-size:15px;font-family:inherit;background:rgba(255,255,255,.06);color:#fff;outline:none;transition:all .3s}
+.cta-form input::placeholder{color:rgba(255,255,255,.5)}
+.cta-form input:focus{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
+.cta-form button{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:14px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .3s;width:100%}
+.cta-form button:hover{background:var(--accent-d)}
+.cta-ok{display:none;text-align:center;padding:20px;color:#fff}
+.cta-ok h3{font-size:20px;margin-bottom:8px}
+.cta-ok p{font-size:14px;opacity:.6}
+.gdpr-note{font-size:11px;color:rgba(255,255,255,.35);margin-top:8px;line-height:1.5}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+footer{padding:48px 40px;border-top:1px solid var(--brd)}
+.ft-in{max-width:1240px;margin:0 auto}
+.ft-top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:32px;flex-wrap:wrap;gap:32px}
+.ft-brand p{font-size:13px;color:var(--t3);margin-top:8px;max-width:260px}
+.ft-cols{display:flex;gap:56px}
+.ft-col h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:14px}
+.ft-col a{display:block;font-size:13px;color:var(--t2);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.ft-col a:hover{color:var(--t)}
+.ft-bot{padding-top:24px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:12px;color:var(--t3)}
+.ft-crisis{font-size:12px;color:var(--accent-d);background:var(--accent-l);padding:6px 14px;border-radius:8px;font-weight:500}
+.cond-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}
+.cond-card{background:var(--bg2);border-radius:12px;padding:16px 20px;text-decoration:none;transition:all .2s;border:1px solid var(--brd)}
+.cond-card:hover{border-color:var(--accent);background:var(--accent-l);transform:translateY(-2px)}
+.cond-card span{font-size:14px;font-weight:600;color:var(--t);display:block}
+.cond-card small{font-size:12px;color:var(--t3);margin-top:4px;display:block}
+@media(max-width:900px){.study-grid{grid-template-columns:1fr}.cond-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.nr a:not(.btn){display:none}.ni{padding:16px 24px}.pg-hero{padding:16px 24px 40px}.bc{padding:80px 24px 0}.pg-layout{padding:32px 24px 60px}.stats-bar{flex-direction:column}.stat{border-right:0;border-bottom:1px solid var(--brd)}.stat:last-child{border-bottom:0}footer{padding:40px 24px}.ft-top{flex-direction:column}.ft-cols{flex-direction:column;gap:24px}.cond-grid{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://sereen.pt/tdcs/#article",
+      "headline": "O que é tDCS (Estimulação Transcraniana por Corrente Direta)",
+      "description": "Guia completo sobre tDCS — como funciona, evidência científica, condições tratadas e segurança.",
+      "datePublished": "2026-07-30",
+      "dateModified": "2026-07-30",
+      "author": {
+        "@type": "Organization",
+        "name": "Sereen",
+        "url": "https://sereen.pt"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sereen",
+        "url": "https://sereen.pt"
+      },
+      "mainEntityOfPage": "https://sereen.pt/tdcs/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://sereen.pt/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "tDCS",
+          "item": "https://sereen.pt/tdcs/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O tDCS é aprovado para uso médico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, os dispositivos utilizados pela Sereen têm marcação CE classe IIa, o que significa que passaram pelas avaliações de segurança e eficácia exigidas na União Europeia para dispositivos médicos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso usar tDCS se já tomar antidepressivos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O tDCS não tem interações farmacológicas conhecidas. Estudos como o ELECT-TDCS (Brunoni et al., 2017) mostram inclusive que a combinação pode ser mais eficaz do que cada tratamento isolado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo dura cada sessão?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As sessões típicas duram 20–30 minutos. No protocolo da Sereen, são 30 minutos por dia, 5 dias por semana, durante 10–12 semanas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sinto dor durante as sessões?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. A grande maioria dos utilizadores sente apenas um ligeiro formigueiro ou calor nos primeiros 30–60 segundos, que depois desaparece. É uma experiência muito diferente da eletroterapia convencional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Com que frequência preciso de fazer sessões?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para depressão, o protocolo padrão é 5 sessões por semana durante 4–6 semanas, seguido de sessões de manutenção. A frequência exata é definida pelo psiquiatra com base na avaliação individual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O tDCS tem aprovação da FDA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A FDA (EUA) ainda não aprovou o tDCS como dispositivo de marketing para indicações psiquiátricas específicas. Na Europa, vários dispositivos têm marcação CE para depressão, sendo o quadro regulatório europeu mais avançado nesta área."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+<header>
+<nav id="nav">
+  <div class="ni">
+    <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+    <div class="nr" aria-label="Navegação principal">
+      <a href="/#como">Como funciona</a>
+      <a href="/depressao/">Condições</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/" class="btn bp">Lista de espera</a>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main-content">
+  <div class="bc">
+    <nav aria-label="Breadcrumb">
+      <ol class="bc-list">
+        <li><a href="/">Início</a></li>
+        <li><span class="bc-sep" aria-hidden="true">›</span></li>
+        <li aria-current="page">tDCS</li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="pg-hero">
+    <h1>tDCS: O que é a Estimulação Transcraniana por Corrente Direta</h1>
+    <p class="sub">Um guia completo sobre a tecnologia de neuroestimulação com mais de 20 anos de evidência científica e 200+ ensaios clínicos.</p>
+    <div class="stats-bar" role="list">
+      <div class="stat" role="listitem">
+        <div class="stat-n">200+</div>
+        <div class="stat-l">Ensaios clínicos publicados</div>
+        <div class="stat-src">Brain Stimulation, 2024</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-n">20+</div>
+        <div class="stat-l">Anos de investigação científica</div>
+        <div class="stat-src">PubMed</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-n">58%</div>
+        <div class="stat-l">Taxa de remissão para depressão</div>
+        <div class="stat-src">JAMA Network Open, 2025</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pg-layout" style="grid-template-columns:1fr;max-width:900px">
+    <article class="content">
+
+      <h2>O que é o tDCS?</h2>
+      <p>O tDCS (Estimulação Transcraniana por Corrente Direta, do inglês <em>Transcranial Direct Current Stimulation</em>) é uma técnica não-invasiva de neuromodulação que aplica corrente elétrica de baixa intensidade — tipicamente entre 1 e 2 miliamperes — através de elétrodos colocados no couro cabeludo. Esta corrente suave modula a excitabilidade neuronal, tornando os neurónios mais ou menos propensos a disparar, sem os provocar diretamente.</p>
+      <p>A sessão típica dura 20–30 minutos e é completamente indolor. A maioria das pessoas sente apenas um ligeiro formigueiro ou calor na zona dos elétrodos nos primeiros 30–60 segundos, que desaparece rapidamente à medida que o sistema nervoso se adapta. O dispositivo é silencioso, não exige sedação, e a pessoa pode permanecer acordada e em atividade leve durante a sessão.</p>
+      <p>Ao contrário da eletrochoque terapia (ECT), que causa convulsões sob anestesia geral, o tDCS opera com correntes centenas de vezes mais baixas — comparáveis às que o próprio cérebro gera naturalmente. A tecnologia tem raízes na investigação dos anos 1960, mas a sua aplicação clínica moderna acelerou a partir de 2000, com o trabalho seminal de Nitsche e Paulus (2000, <em>Journal of Physiology</em>), que demonstraram de forma controlada a capacidade do tDCS de modular a excitabilidade do córtex motor humano.</p>
+
+      <div class="info-box">
+        <p><strong>tDCS em resumo:</strong> Elétrodos no couro cabeludo aplicam 1–2 mA de corrente contínua durante 20–30 minutos. O elétrodo positivo (ânodo) aumenta a excitabilidade neuronal; o negativo (cátodo) reduz-a. Sem dor, sem sedação, sem efeitos sistémicos.</p>
+      </div>
+
+      <h2>Como funciona ao nível cerebral?</h2>
+      <p>O tDCS age principalmente através de dois mecanismos complementares: efeitos imediatos durante a estimulação e efeitos de plasticidade que persistem após o fim da sessão.</p>
+
+      <h3>Efeitos durante a estimulação</h3>
+      <p>Quando a corrente passa pelo córtex cerebral, o <strong>elétrodo anódico</strong> cria um campo elétrico que despolariza parcialmente as membranas neuronais, reduzindo o limiar de disparo e aumentando a excitabilidade da região subjacente. O <strong>elétrodo catódico</strong> tem o efeito oposto: hiperpolariza as membranas, reduzindo a probabilidade de disparo neuronal.</p>
+
+      <h3>Plasticidade de longa duração</h3>
+      <p>O efeito mais terapeuticamente relevante ocorre após as sessões repetidas. O tDCS induz mecanismos de plasticidade sináptica semelhantes à potenciação de longa duração (LTP), especificamente:</p>
+      <ul>
+        <li><strong>Modulação de recetores NMDA:</strong> o tDCS anódico aumenta a sensibilidade dos recetores NMDA ao glutamato, facilitando a LTP</li>
+        <li><strong>Canais de sódio e cálcio:</strong> a corrente altera a condutância destes canais, afetando a excitabilidade de forma duradoura</li>
+        <li><strong>Libertação de BDNF:</strong> o fator neurotrófico derivado do cérebro (Brain-Derived Neurotrophic Factor) é libertado durante e após a estimulação, promovendo a sobrevivência neuronal e a formação de novas sinapses</li>
+        <li><strong>Modulação dopaminérgica e serotoninérgica:</strong> evidência crescente sugere que o tDCS influencia indiretamente os sistemas de dopamina e serotonina, relevantes para o humor e motivação</li>
+      </ul>
+
+      <h3>Protocolo para depressão: o alvo cerebral</h3>
+      <p>No tratamento da depressão, o alvo primário é o <strong>córtex pré-frontal dorsolateral esquerdo (DLPFC)</strong>, localizado aproximadamente na posição F3 do sistema 10–20 do EEG. Esta região está consistentemente hipoativa na depressão major. O protocolo padrão coloca o ânodo em F3 (aumentando a atividade do DLPFC esquerdo) e o cátodo em F4 ou Fp2 (hemisfério direito). Após 10–12 semanas de estimulação regular, estudos de neuroimagem mostram normalização da conectividade entre o DLPFC e o sistema límbico (amígdala, hipocampo), que está perturbada na depressão.</p>
+
+      <h2>Para que condições é usado?</h2>
+      <p>O tDCS tem sido investigado para uma ampla gama de condições neurológicas e psiquiátricas. A evidência é mais sólida para depressão, mas múltiplas meta-análises suportam a sua utilização em várias outras áreas:</p>
+
+      <div class="cond-grid">
+        <a href="/depressao/" class="cond-card">
+          <span>Depressão Major</span>
+          <small>Evidência forte — 200+ RCTs</small>
+        </a>
+        <a href="/ansiedade/" class="cond-card">
+          <span>Ansiedade</span>
+          <small>Evidência moderada</small>
+        </a>
+        <a href="/dor-cronica/" class="cond-card">
+          <span>Dor Crónica</span>
+          <small>Evidência moderada-forte</small>
+        </a>
+        <a href="/insonia/" class="cond-card">
+          <span>Insónia</span>
+          <small>Evidência emergente</small>
+        </a>
+        <a href="/fibromialgia/" class="cond-card">
+          <span>Fibromialgia</span>
+          <small>Evidência moderada</small>
+        </a>
+        <a href="/enxaqueca/" class="cond-card">
+          <span>Enxaqueca</span>
+          <small>Evidência emergente</small>
+        </a>
+        <a href="/ocd/" class="cond-card">
+          <span>TOC</span>
+          <small>Evidência preliminar</small>
+        </a>
+        <a href="/rehabilitacao-pos-avc/" class="cond-card">
+          <span>Reabilitação pós-AVC</span>
+          <small>Evidência moderada-forte</small>
+        </a>
+      </div>
+
+      <p>A Sereen foca-se atualmente no tratamento da depressão, onde a evidência é mais robusta e o enquadramento clínico está mais estabelecido. A expansão para outras condições decorrerá com base na evidência científica disponível e na capacidade de monitorização clínica adequada.</p>
+
+      <h2>O tDCS é seguro?</h2>
+      <p>O perfil de segurança do tDCS é um dos seus maiores atributos. Décadas de investigação com dezenas de milhares de participantes estabeleceram que, dentro dos parâmetros aprovados (corrente ≤2 mA, duração ≤40 minutos, área de elétrodo ≥25 cm²), o tDCS não apresenta riscos sistémicos.</p>
+
+      <h3>O que a investigação sobre segurança demonstra</h3>
+      <ul>
+        <li><strong>Sem risco de convulsões</strong> aos parâmetros aprovados — densidade de corrente muito abaixo dos limiares de ativação epiléptica</li>
+        <li><strong>Sem interações farmacológicas</strong> diretas — pode ser combinado com medicação sem ajustes de dose</li>
+        <li><strong>Sem efeitos sistémicos</strong> — a corrente não atravessa o organismo; fica confinada à região craniana</li>
+        <li><strong>Marcação CE classe IIa</strong> — avaliação de conformidade europeia para dispositivos médicos de risco moderado</li>
+      </ul>
+
+      <h3>Efeitos secundários reportados</h3>
+      <p>Os efeitos secundários são ligeiros, transitórios e tipicamente ocorrem apenas durante as primeiras sessões:</p>
+      <ul>
+        <li><strong>Formigueiro ou picadas</strong> na zona dos elétrodos: ~70% dos utilizadores, desaparece em segundos</li>
+        <li><strong>Vermelhidão da pele</strong> sob os elétrodos: ~20%, devida à vasodilatação local, benigna</li>
+        <li><strong>Cefaleia leve</strong>: ~10%, transitória, sem diferença significativa face ao placebo em estudos cegos</li>
+        <li><strong>Fadiga ligeira</strong> após a sessão: reportada por alguns utilizadores, geralmente nas primeiras semanas</li>
+      </ul>
+
+      <div class="warn-box">
+        <p><strong>Contraindicações:</strong> O tDCS não é adequado para pessoas com implantes metálicos cranianos (pacemaker cerebral, clips de aneurisma), epilepsia ativa não controlada, ou durante a gravidez. A avaliação médica prévia é obrigatória.</p>
+      </div>
+
+      <h2>tDCS vs outras técnicas de neuroestimulação</h2>
+      <p>O tDCS insere-se num ecossistema de técnicas de neuroestimulação não-invasivas e invasivas. Cada uma tem vantagens, limitações e indicações diferentes. A tabela seguinte compara as três opções mais relevantes para o tratamento da depressão:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Critério</th>
+            <th>tDCS</th>
+            <th>TMS (rTMS)</th>
+            <th>ECT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Invasividade</strong></td>
+            <td class="ok">Não-invasivo</td>
+            <td class="ok">Não-invasivo</td>
+            <td class="no">Procedimento hospitalar</td>
+          </tr>
+          <tr>
+            <td><strong>Uso domiciliário</strong></td>
+            <td class="ok">Sim (supervisionado)</td>
+            <td class="no">Não</td>
+            <td class="no">Não</td>
+          </tr>
+          <tr>
+            <td><strong>Anestesia necessária</strong></td>
+            <td class="ok">Não</td>
+            <td class="ok">Não</td>
+            <td class="no">Sim (geral)</td>
+          </tr>
+          <tr>
+            <td><strong>Custo relativo</strong></td>
+            <td class="ok">Baixo</td>
+            <td class="no">Alto</td>
+            <td class="no">Muito alto</td>
+          </tr>
+          <tr>
+            <td><strong>Efeitos cognitivos</strong></td>
+            <td class="ok">Nenhum significativo</td>
+            <td class="ok">Raros</td>
+            <td class="no">Frequentes (memória)</td>
+          </tr>
+          <tr>
+            <td><strong>Ruído durante sessão</strong></td>
+            <td class="ok">Silencioso</td>
+            <td class="no">Cliques audíveis</td>
+            <td class="no">N/A (sob anestesia)</td>
+          </tr>
+          <tr>
+            <td><strong>Evidência para depressão</strong></td>
+            <td class="ok">Forte (200+ RCTs)</td>
+            <td class="ok">Forte (FDA aprovado nos EUA)</td>
+            <td class="ok">Muito forte (mais eficaz em casos graves)</td>
+          </tr>
+          <tr>
+            <td><strong>Aprovação regulatória EU</strong></td>
+            <td class="ok">CE classe IIa</td>
+            <td class="ok">CE classe IIb/III</td>
+            <td class="ok">Uso hospitalar estabelecido</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>O TMS (Estimulação Magnética Transcraniana) usa pulsos magnéticos que induzem correntes elétricas no cérebro — mais intensas e focalizadas do que o tDCS, mas requerendo equipamento volumoso e sessões em clínica. A ECT é reservada para casos graves e resistentes, com eficácia muito alta mas efeitos cognitivos que não podem ser ignorados. O tDCS ocupa um nicho importante: tecnologia com boa eficácia, excelente perfil de segurança, e possibilidade real de uso domiciliário supervisionado.</p>
+
+      <h2>O tDCS da Sereen</h2>
+      <p>O modelo da Sereen foi desenhado para combinar o rigor clínico da psiquiatria convencional com a conveniência e acessibilidade do tratamento domiciliário. O processo tem quatro fases:</p>
+
+      <h3>1. Avaliação psiquiátrica</h3>
+      <p>Antes de qualquer tratamento, um psiquiatra faz uma avaliação clínica completa: diagnóstico, historial de tratamentos, contraindicações, medicação atual. Esta etapa é obrigatória e gratuita para quem entra na lista de espera.</p>
+
+      <h3>2. Entrega do kit domiciliário</h3>
+      <p>O kit Sereen inclui o dispositivo tDCS com marcação CE, elétrodos posicionados com precisão através de um headset padronizado (elimina erros de posicionamento manual), e todos os consumíveis necessários para o protocolo completo.</p>
+
+      <h3>3. Sessões guiadas pela aplicação</h3>
+      <p>A aplicação Sereen guia o utilizador em cada sessão: verificação do posicionamento, início e fim da estimulação, registo de sintomas e humor. As sessões duram 30 minutos. A maioria dos utilizadores realiza a sessão enquanto lê, ouve música ou trabalha em tarefas leves.</p>
+
+      <h3>4. Monitorização clínica remota</h3>
+      <p>A equipa clínica da Sereen monitoriza os dados da aplicação em tempo real. Consultas de acompanhamento regulares (por videochamada) garantem que o tratamento está a progredir conforme esperado, com ajustes de protocolo quando necessário.</p>
+
+      <div class="info-box">
+        <p><strong>Resultado esperado:</strong> A maioria dos utilizadores Sereen completa o protocolo de 10–12 semanas com acompanhamento clínico contínuo. Os dados de eficácia do protocolo domiciliário supervisionado mostram resultados comparáveis ao tratamento em clínica (Brain Stimulation, 2024).</p>
+      </div>
+
+      <section class="faq-sec">
+        <h2>Perguntas frequentes sobre tDCS</h2>
+        <div class="faq-list" role="list">
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdcs-1" onclick="toggleFaq(this)">
+              O tDCS é aprovado para uso médico?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdcs-1"><p>Sim, os dispositivos utilizados pela Sereen têm marcação CE classe IIa, o que significa que passaram pelas avaliações de segurança e eficácia exigidas na União Europeia para dispositivos médicos. A marcação CE classe IIa corresponde a dispositivos médicos de risco moderado, sujeitos a avaliação por organismos notificados independentes.</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdcs-2" onclick="toggleFaq(this)">
+              Posso usar tDCS se já tomar antidepressivos?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdcs-2"><p>Sim. O tDCS não tem interações farmacológicas conhecidas. Estudos como o ELECT-TDCS (Brunoni et al., 2017, NEJM) mostram inclusive que a combinação tDCS + escitalopram pode ser mais eficaz do que cada tratamento isolado. A única ressalva são benzodiazepinas em doses altas, que podem reduzir o efeito modulador do tDCS por ação nos recetores GABA.</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdcs-3" onclick="toggleFaq(this)">
+              Quanto tempo dura cada sessão?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdcs-3"><p>As sessões típicas duram 20–30 minutos. No protocolo da Sereen para depressão, são 30 minutos por dia, 5 dias por semana, durante 10–12 semanas. As sessões de manutenção, após a fase aguda, são geralmente mais espaçadas (1–2 por semana).</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdcs-4" onclick="toggleFaq(this)">
+              Sinto dor durante as sessões?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdcs-4"><p>Não. A grande maioria dos utilizadores sente apenas um ligeiro formigueiro ou calor nos primeiros 30–60 segundos, que depois desaparece à medida que o sistema nervoso se adapta. É uma experiência muito diferente da eletroterapia convencional ou de qualquer outro procedimento elétrico. Alguns utilizadores descrevem uma leve sensação de pressão ou coceira — todos efeitos benignos e temporários.</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdcs-5" onclick="toggleFaq(this)">
+              Com que frequência preciso de fazer sessões?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdcs-5"><p>Para depressão, o protocolo padrão é 5 sessões por semana durante 4–6 semanas (fase aguda), seguido de sessões de manutenção mensais ou quinzenais. A frequência exata é definida pelo psiquiatra com base na avaliação individual — fatores como gravidade, historial de tratamentos e resposta ao protocolo influenciam o plano.</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdcs-6" onclick="toggleFaq(this)">
+              O tDCS tem aprovação da FDA?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdcs-6"><p>A FDA americana ainda não aprovou o tDCS como dispositivo de marketing para indicações psiquiátricas específicas — o processo regulatório nos EUA é diferente do europeu. Na Europa, vários dispositivos têm marcação CE para depressão e outras indicações. O quadro regulatório europeu, baseado no Regulamento MDR 2017/745, é atualmente mais avançado nesta área do que o sistema FDA para dispositivos de neuroestimulação de baixa intensidade.</p></div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="cta-sec">
+        <h2>Dê o primeiro passo</h2>
+        <p>Junte-se à lista de espera e seja contactado pela nossa equipa clínica.</p>
+        <form class="cta-form" id="cta-tdcs" onsubmit="return submitForm(event,this,'ok-tdcs')">
+          <label class="sr-only" for="name-tdcs">Nome</label>
+          <input type="text" name="name" id="name-tdcs" placeholder="O seu nome" required aria-required="true">
+          <label class="sr-only" for="email-tdcs">Email</label>
+          <input type="email" name="email" id="email-tdcs" placeholder="Email" required aria-required="true">
+          <label class="sr-only" for="phone-tdcs">Telefone</label>
+          <input type="tel" name="phone" id="phone-tdcs" placeholder="Telefone (opcional)">
+          <button type="submit">Juntar-me à lista de espera</button>
+          <p class="gdpr-note">Ao submeter, aceita o tratamento dos seus dados nos termos da nossa <a href="/privacidade/" style="color:rgba(255,255,255,.5)">Política de Privacidade</a>.</p>
+        </form>
+        <div class="cta-ok" id="ok-tdcs"><h3>Obrigado!</h3><p>Entraremos em contacto em breve.</p></div>
+      </div>
+
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+        <p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p>
+        <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--t3)">
+          <a href="mailto:geral@sereen.pt" style="color:var(--t3);text-decoration:none;display:block;margin-bottom:4px">geral@sereen.pt</a>
+          <a href="tel:+351932881800" style="color:var(--t3);text-decoration:none">+351 932 881 800</a>
+        </address>
+      </div>
+      <div class="ft-cols">
+        <div class="ft-col">
+          <h4>Condições</h4>
+          <a href="/depressao/">Depressão</a>
+          <a href="/ansiedade/">Ansiedade</a>
+          <a href="/insonia/">Insónia</a>
+          <a href="/dor-cronica/">Dor crónica</a>
+        </div>
+        <div class="ft-col">
+          <h4>Sereen</h4>
+          <a href="/">Início</a>
+          <a href="/tdcs/">O que é tDCS</a>
+          <a href="/faq/">FAQ</a>
+          <a href="mailto:geral@sereen.pt">Contacto</a>
+        </div>
+        <div class="ft-col">
+          <h4>Legal</h4>
+          <a href="/privacidade/">Privacidade</a>
+          <a href="/termos/">Termos</a>
+          <a href="/cookies/">Cookies</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">&copy; 2026 Sereen. Todos os direitos reservados.</span>
+      <span class="ft-crisis">Em crise? SNS 24: 808 24 24 24</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50),{passive:true});
+function toggleFaq(btn){
+  const item=btn.closest('.faq-i');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-i.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+  if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+}
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbyc9aBoM2YOpOx0h2yS9gCTZsNom92H7KTCmIPcFtNhkNkJzAUrCSD6z9WzgoH_8FucKQ/exec';
+function submitForm(e,formEl,okId){
+  e.preventDefault();
+  const btn=formEl.querySelector('button');
+  btn.textContent='A enviar...';btn.disabled=true;
+  const iframe=document.createElement('iframe');
+  iframe.name='sf'+Date.now();iframe.style.display='none';
+  document.body.appendChild(iframe);
+  const tmp=document.createElement('form');
+  tmp.method='POST';tmp.action=APPS_SCRIPT_URL;tmp.target=iframe.name;tmp.style.display='none';
+  ['name','email','phone'].forEach(f=>{
+    const el=formEl.querySelector('[name='+f+']');
+    if(el){const i=document.createElement('input');i.name=f;i.value=el.value;tmp.appendChild(i)}
+  });
+  document.body.appendChild(tmp);tmp.submit();
+  setTimeout(()=>{formEl.style.display='none';document.getElementById(okId).style.display='block';tmp.remove();iframe.remove()},1500);
+  return false;
+}
+</script>
+</body>
+</html>

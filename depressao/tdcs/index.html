@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>tDCS para Depressão: Como Funciona e o que Diz a Ciência | Sereen</title>
+<meta name="description" content="tDCS para depressão — mecanismo de ação, protocolo clínico, resultados de estudos e quem pode beneficiar. Baseado em 200+ ensaios clínicos.">
+<link rel="canonical" href="https://sereen.pt/depressao/tdcs/">
+<meta property="og:title" content="tDCS para Depressão: Como Funciona e o que Diz a Ciência | Sereen">
+<meta property="og:description" content="tDCS para depressão — mecanismo de ação, protocolo clínico, resultados de estudos e quem pode beneficiar. Baseado em 200+ ensaios clínicos.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sereen.pt/depressao/tdcs/">
+<meta property="og:site_name" content="Sereen">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fff;--bg2:#F7F8FA;--dark:#0B1120;--accent:#3D8B6E;--accent-l:#E8F5EE;--accent-d:#2D6B52;--t:#0B1120;--t2:#4A5568;--t3:#8896AB;--t4:#B0BCCD;--brd:#E8ECF1}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:var(--t);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.skip-link{position:absolute;top:-100%;left:0;padding:12px 24px;background:var(--accent);color:#fff;font-weight:600;font-size:14px;text-decoration:none;z-index:9999;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--brd);transition:all .3s}
+nav.s{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.ni{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:700;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:14px;color:var(--t2);text-decoration:none;font-weight:500;transition:color .2s}
+.nr a:hover{color:var(--t)}
+.btn{display:inline-flex;align-items:center;border-radius:100px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s;text-decoration:none;border:none;padding:12px 28px}
+.bp{background:var(--accent);color:#fff}.bp:hover{background:var(--accent-d);transform:translateY(-1px)}
+.bc{padding:88px 40px 0;max-width:1240px;margin:0 auto}
+.bc-list{display:flex;align-items:center;gap:8px;list-style:none;flex-wrap:wrap}
+.bc-list li{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t3)}
+.bc-list a{color:var(--accent);text-decoration:none}
+.bc-list a:hover{text-decoration:underline}
+.bc-sep{color:var(--t4)}
+.pg-hero{padding:24px 40px 60px;max-width:1240px;margin:0 auto}
+.pg-hero h1{font-size:clamp(28px,3.5vw,48px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px;max-width:760px}
+.pg-hero .sub{font-size:18px;color:var(--t2);max-width:640px;line-height:1.65;margin-bottom:40px}
+.stats-bar{display:flex;gap:0;border:1px solid var(--brd);border-radius:16px;overflow:hidden;margin-bottom:0}
+.stat{flex:1;padding:24px 28px;text-align:center;border-right:1px solid var(--brd);background:var(--bg)}
+.stat:last-child{border-right:0}
+.stat-n{font-size:clamp(28px,3vw,40px);font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.stat-l{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.4}
+.stat-src{font-size:11px;color:var(--t3);margin-top:4px}
+.pg-layout{max-width:1240px;margin:0 auto;padding:48px 40px 80px;display:grid;grid-template-columns:1fr 280px;gap:60px;align-items:start}
+.content h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin:48px 0 16px;color:var(--t)}
+.content h2:first-child{margin-top:0}
+.content h3{font-size:19px;font-weight:600;margin:28px 0 10px;color:var(--t)}
+.content p{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:16px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{font-size:16px;color:var(--t2);line-height:1.75;margin-bottom:6px}
+.content a{color:var(--accent)}
+.content strong{color:var(--t);font-weight:600}
+.content table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.content table th{padding:12px 16px;background:var(--bg2);font-weight:600;text-align:left;border-bottom:2px solid var(--brd)}
+.content table td{padding:12px 16px;border-bottom:1px solid var(--brd);color:var(--t2)}
+.content table tr:hover td{background:var(--bg2)}
+.ok{color:#2D6B52;font-weight:600}.no{color:#E53E3E;font-weight:600}
+.info-box{background:var(--accent-l);border-left:3px solid var(--accent);padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.info-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.warn-box{background:#FFF8E6;border-left:3px solid #E5A530;padding:20px 24px;border-radius:0 12px 12px 0;margin:24px 0}
+.warn-box p{color:var(--t);margin-bottom:0;font-size:15px}
+.study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0}
+.study-card{background:var(--bg2);border-radius:12px;padding:20px 24px;border-left:3px solid var(--accent)}
+.study-card .s-title{font-size:13px;font-weight:600;color:var(--t3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.study-card .s-stat{font-size:32px;font-weight:700;color:var(--accent);letter-spacing:-1px;line-height:1}
+.study-card .s-desc{font-size:13px;color:var(--t2);margin-top:6px;line-height:1.5}
+.sidebar{position:sticky;top:96px}
+.sidebar-nav{background:var(--bg2);border-radius:16px;padding:24px;margin-bottom:20px}
+.sidebar-nav h3{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:16px}
+.sidebar-nav a{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--t2);text-decoration:none;padding:10px 12px;border-radius:8px;transition:all .2s;margin-bottom:2px}
+.sidebar-nav a:hover,.sidebar-nav a.active{background:var(--accent-l);color:var(--accent-d);font-weight:500}
+.sidebar-cta{background:var(--dark);border-radius:16px;padding:24px;text-align:center}
+.sidebar-cta h3{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
+.sidebar-cta p{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:16px;line-height:1.5}
+.sidebar-cta a{display:block;background:var(--accent);color:#fff;text-decoration:none;border-radius:100px;padding:12px 20px;font-size:14px;font-weight:600;transition:all .2s;margin-bottom:8px}
+.sidebar-cta a:hover{background:var(--accent-d)}
+.faq-sec{margin:60px 0 0}
+.faq-sec h2{font-size:clamp(22px,2.5vw,30px);font-weight:700;letter-spacing:-.5px;margin-bottom:32px;color:var(--t)}
+.faq-list{display:flex;flex-direction:column}
+.faq-i{border-bottom:1px solid var(--brd)}
+.faq-q{padding:20px 0;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color .2s;background:0;border:0;width:100%;text-align:left;font-family:inherit;color:var(--t)}
+.faq-q:hover{color:var(--accent)}
+.faq-ic{width:28px;height:28px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.faq-i.open .faq-ic{background:var(--accent);transform:rotate(180deg)}
+.faq-i.open .faq-ic svg{stroke:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .4s}
+.faq-i.open .faq-a{max-height:500px;padding-bottom:20px}
+.faq-a p{font-size:14px;color:var(--t2);line-height:1.7}
+.cta-sec{background:var(--dark);border-radius:24px;padding:60px 40px;text-align:center;margin:60px 0;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(61,139,110,.12),transparent 70%);bottom:-200px;left:-100px;pointer-events:none}
+.cta-sec h2{font-size:clamp(24px,3vw,36px);font-weight:700;color:#fff;letter-spacing:-1px;margin-bottom:12px;position:relative}
+.cta-sec > p{font-size:16px;color:rgba(255,255,255,.5);max-width:420px;margin:0 auto 32px;position:relative}
+.cta-form{display:flex;flex-direction:column;gap:10px;max-width:380px;margin:0 auto;position:relative}
+.cta-form input{padding:14px 20px;border:1.5px solid rgba(255,255,255,.12);border-radius:12px;font-size:15px;font-family:inherit;background:rgba(255,255,255,.06);color:#fff;outline:none;transition:all .3s}
+.cta-form input::placeholder{color:rgba(255,255,255,.5)}
+.cta-form input:focus{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
+.cta-form button{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:14px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .3s;width:100%}
+.cta-form button:hover{background:var(--accent-d)}
+.cta-ok{display:none;text-align:center;padding:20px;color:#fff}
+.cta-ok h3{font-size:20px;margin-bottom:8px}
+.cta-ok p{font-size:14px;opacity:.6}
+.gdpr-note{font-size:11px;color:rgba(255,255,255,.35);margin-top:8px;line-height:1.5}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+footer{padding:48px 40px;border-top:1px solid var(--brd)}
+.ft-in{max-width:1240px;margin:0 auto}
+.ft-top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:32px;flex-wrap:wrap;gap:32px}
+.ft-brand p{font-size:13px;color:var(--t3);margin-top:8px;max-width:260px}
+.ft-cols{display:flex;gap:56px}
+.ft-col h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:14px}
+.ft-col a{display:block;font-size:13px;color:var(--t2);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.ft-col a:hover{color:var(--t)}
+.ft-bot{padding-top:24px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:12px;color:var(--t3)}
+.ft-crisis{font-size:12px;color:var(--accent-d);background:var(--accent-l);padding:6px 14px;border-radius:8px;font-weight:500}
+.protocol-steps{display:flex;flex-direction:column;gap:0;margin:24px 0;border:1px solid var(--brd);border-radius:16px;overflow:hidden}
+.pstep{display:flex;align-items:flex-start;gap:20px;padding:20px 24px;border-bottom:1px solid var(--brd);background:var(--bg)}
+.pstep:last-child{border-bottom:0}
+.pstep-num{width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.pstep-content strong{font-size:15px;font-weight:600;color:var(--t);display:block;margin-bottom:4px}
+.pstep-content span{font-size:14px;color:var(--t2);line-height:1.6}
+@media(max-width:900px){.pg-layout{grid-template-columns:1fr}.sidebar{position:static}.study-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.nr a:not(.btn){display:none}.ni{padding:16px 24px}.pg-hero{padding:16px 24px 40px}.bc{padding:80px 24px 0}.pg-layout{padding:32px 24px 60px}.stats-bar{flex-direction:column}.stat{border-right:0;border-bottom:1px solid var(--brd)}.stat:last-child{border-bottom:0}footer{padding:40px 24px}.ft-top{flex-direction:column}.ft-cols{flex-direction:column;gap:24px}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "name": "tDCS para Depressão: Como Funciona e Resultados Esperados",
+      "description": "tDCS para depressão — mecanismo de ação, protocolo clínico, resultados de estudos e quem pode beneficiar.",
+      "url": "https://sereen.pt/depressao/tdcs/",
+      "specialty": "Psychiatry",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Depressão Major"
+      },
+      "datePublished": "2026-07-30",
+      "dateModified": "2026-07-30"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sereen.pt/depressao/tdcs/#article",
+      "headline": "tDCS para Depressão: Como Funciona e Resultados Esperados",
+      "datePublished": "2026-07-30",
+      "dateModified": "2026-07-30",
+      "author": {
+        "@type": "Organization",
+        "name": "Sereen",
+        "url": "https://sereen.pt"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sereen",
+        "url": "https://sereen.pt"
+      },
+      "mainEntityOfPage": "https://sereen.pt/depressao/tdcs/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://sereen.pt/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Depressão",
+          "item": "https://sereen.pt/depressao/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "tDCS para depressão",
+          "item": "https://sereen.pt/depressao/tdcs/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O tDCS para depressão está aprovado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Na Europa, existem dispositivos tDCS com marcação CE classe IIa aprovados para depressão. Em Portugal, o uso é enquadrado por psiquiatras como tratamento complementar. A FDA americana ainda não aprovou para uso clínico de marketing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quantas sessões são necessárias para a depressão?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O protocolo padrão é 5 sessões por semana durante 4–6 semanas (20–30 sessões no total na fase aguda), seguido de sessões de manutenção mensais. O efeito começa a notar-se geralmente entre a 3.ª e 4.ª semana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O tDCS é mais eficaz que os antidepressivos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os dados mais robustos (ELECT-TDCS, 2017) mostram eficácia comparável ao escitalopram para depressão moderada. A combinação tDCS + antidepressivo pode ser mais eficaz do que qualquer um isolado. A escolha depende do historial individual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso fazer tDCS sem psicoterapia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pode, mas a combinação é mais eficaz. A psicoterapia (particularmente TCC) e o tDCS atuam por vias complementares. Na Sereen, recomendamos sempre suporte psicológico durante o protocolo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O efeito do tDCS é duradouro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estudos de follow-up a 1–6 meses mostram que os benefícios se mantêm em muitos pacientes, especialmente com sessões de manutenção. A durabilidade é comparável à medicação."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso fazer tDCS em casa com equipamento próprio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não recomendamos. O tDCS domiciliário eficaz requer dispositivos CE certificados, posicionamento correto dos elétrodos, e monitorização clínica regular. Dispositivos de qualidade variável vendidos online não têm a mesma segurança ou eficácia."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+<header>
+<nav id="nav">
+  <div class="ni">
+    <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+    <div class="nr" aria-label="Navegação principal">
+      <a href="/#como">Como funciona</a>
+      <a href="/depressao/" class="active">Condições</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/" class="btn bp">Lista de espera</a>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main-content">
+  <div class="bc">
+    <nav aria-label="Breadcrumb">
+      <ol class="bc-list">
+        <li><a href="/">Início</a></li>
+        <li><span class="bc-sep" aria-hidden="true">›</span></li>
+        <li><a href="/depressao/">Depressão</a></li>
+        <li><span class="bc-sep" aria-hidden="true">›</span></li>
+        <li aria-current="page">tDCS para depressão</li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="pg-hero">
+    <h1>tDCS para Depressão: Como Funciona e Resultados Esperados</h1>
+    <p class="sub">A estimulação transcraniana por corrente direta é uma das abordagens não-farmacológicas com mais evidência para depressão. Aqui está o que a ciência diz.</p>
+    <div class="stats-bar" role="list">
+      <div class="stat" role="listitem">
+        <div class="stat-n">58%</div>
+        <div class="stat-l">Taxa de remissão após 10 semanas</div>
+        <div class="stat-src">JAMA Network Open, 2025</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-n">200+</div>
+        <div class="stat-l">Ensaios clínicos com tDCS</div>
+        <div class="stat-src">PubMed, 2024</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-n">90%</div>
+        <div class="stat-l">Completam o protocolo com sucesso</div>
+        <div class="stat-src">Brain Stimulation, 2024</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pg-layout">
+    <article class="content">
+
+      <h2>O mecanismo: por que o tDCS funciona na depressão</h2>
+      <p>Para compreender por que o tDCS é eficaz na depressão, é necessário perceber o que acontece no cérebro deprimido. Estudos de neuroimagem (fMRI, PET) mostram consistentemente que a <strong>depressão major está associada à hipoatividade do córtex pré-frontal dorsolateral esquerdo (DLPFC)</strong> — a região que regula o humor, a motivação e o processamento emocional de cima para baixo (top-down).</p>
+
+      <p>Esta hipoatividade traduz-se numa conectividade perturbada entre o DLPFC e o sistema límbico (amígdala, hipocampo), resultando numa amplificação excessiva das emoções negativas e numa dificuldade de regulação emocional.</p>
+
+      <h3>O que o tDCS faz a este circuito</h3>
+      <p>O protocolo de tDCS para depressão coloca o <strong>elétrodo anódico na posição F3</strong> (DLPFC esquerdo, segundo o sistema 10–20 do EEG) e o elétrodo catódico em F4 ou Fp2 (hemisfério direito). A corrente anódica depolariza parcialmente as membranas neuronais, reduzindo o limiar de disparo e aumentando a excitabilidade do DLPFC hipoativo.</p>
+
+      <p>Com sessões repetidas, o tDCS induz plasticidade sináptica de longa duração:</p>
+      <ul>
+        <li><strong>Modulação de recetores NMDA:</strong> facilitação da potenciação de longa duração (LTP) no DLPFC</li>
+        <li><strong>Libertação de BDNF:</strong> o fator neurotrófico derivado do cérebro promove a sobrevivência neuronal, a sinaptogénese e a neuroplasticidade — todos comprometidos na depressão crónica</li>
+        <li><strong>Normalização da conectividade pré-frontal-límbica:</strong> estudos de fMRI pós-tratamento mostram restauração da conectividade entre DLPFC e amígdala</li>
+        <li><strong>Modulação serotoninérgica e dopaminérgica:</strong> evidência crescente de que o tDCS influencia indiretamente estes sistemas, explicando parte do seu efeito antidepressivo</li>
+      </ul>
+
+      <div class="info-box">
+        <p><strong>Em termos simples:</strong> o tDCS "acorda" a parte do cérebro que está demasiado quieta na depressão — o pré-frontal esquerdo — e, ao fazê-lo repetidamente, cria mudanças duradouras na forma como este circuito funciona.</p>
+      </div>
+
+      <h2>O protocolo clínico</h2>
+      <p>O protocolo de tDCS para depressão está bem estabelecido na literatura e segue parâmetros consistentes entre os principais centros de investigação:</p>
+
+      <div class="protocol-steps">
+        <div class="pstep">
+          <div class="pstep-num">1</div>
+          <div class="pstep-content">
+            <strong>Intensidade de corrente</strong>
+            <span>1–2 mA (miliamperes). A maioria dos estudos usa 2 mA. A corrente é constante durante toda a sessão, com ramp-up e ramp-down de 15–30 segundos no início e fim.</span>
+          </div>
+        </div>
+        <div class="pstep">
+          <div class="pstep-num">2</div>
+          <div class="pstep-content">
+            <strong>Duração da sessão</strong>
+            <span>30 minutos por sessão. Estudos com 20 minutos existem, mas 30 minutos é o padrão atual para depressão — maior duração correlaciona com maior plasticidade sináptica.</span>
+          </div>
+        </div>
+        <div class="pstep">
+          <div class="pstep-num">3</div>
+          <div class="pstep-content">
+            <strong>Posicionamento dos elétrodos</strong>
+            <span>Ânodo em F3 (DLPFC esquerdo), cátodo em Fp2 ou F4 (região frontal direita ou DLPFC direito). Área de elétrodo: 25–35 cm². Contato com esponja embebida em solução salina ou gel condutor.</span>
+          </div>
+        </div>
+        <div class="pstep">
+          <div class="pstep-num">4</div>
+          <div class="pstep-content">
+            <strong>Frequência — fase aguda</strong>
+            <span>5 sessões por semana durante 4–6 semanas (20–30 sessões totais). Este é o protocolo padrão para depressão moderada. Para casos mais graves, alguns protocolos usam 2 sessões diárias nas primeiras 2 semanas.</span>
+          </div>
+        </div>
+        <div class="pstep">
+          <div class="pstep-num">5</div>
+          <div class="pstep-content">
+            <strong>Frequência — manutenção</strong>
+            <span>Após a fase aguda, sessões de manutenção 1–2 vezes por semana para preservar os ganhos. A duração do período de manutenção é definida pelo psiquiatra com base na resposta individual.</span>
+          </div>
+        </div>
+        <div class="pstep">
+          <div class="pstep-num">6</div>
+          <div class="pstep-content">
+            <strong>Monitorização clínica remota (Sereen)</strong>
+            <span>A equipa clínica da Sereen monitoriza os dados das sessões em tempo real através da aplicação. Consultas de acompanhamento por videochamada em semanas 2, 4, 6, 10 e 12 avaliam a resposta e ajustam o protocolo.</span>
+          </div>
+        </div>
+      </div>
+
+      <h2>O que os estudos dizem</h2>
+      <p>A base de evidência do tDCS para depressão é extensa e crescente. Destacamos os estudos mais relevantes:</p>
+
+      <div class="study-grid">
+        <div class="study-card">
+          <div class="s-title">ELECT-TDCS — Brunoni et al., 2017 (NEJM)</div>
+          <div class="s-stat">Não-inferior</div>
+          <div class="s-desc">Maior RCT de tDCS para depressão (n=245). tDCS não-inferior ao escitalopram. 36% remissão tDCS vs 40% escitalopram vs 21% placebo. Combinação: 61% resposta.</div>
+        </div>
+        <div class="study-card">
+          <div class="s-title">JAMA Network Open, 2025</div>
+          <div class="s-stat">58%</div>
+          <div class="s-desc">Taxa de remissão com protocolo domiciliário supervisionado de 10 semanas. Maior estudo de tDCS domiciliário com supervisão clínica remota.</div>
+        </div>
+        <div class="study-card">
+          <div class="s-title">Moffa et al., 2020 (meta-análise)</div>
+          <div class="s-stat">~35%</div>
+          <div class="s-desc">Taxa de resposta pooled vs 12% placebo. NNT (número necessário a tratar) ~4. Inclui dados de 17 estudos controlados.</div>
+        </div>
+        <div class="study-card">
+          <div class="s-title">Brain Stimulation, 2024</div>
+          <div class="s-stat">90%</div>
+          <div class="s-desc">Taxa de conclusão do protocolo em contexto domiciliário. Revisão de 55.000+ pacientes europeus. Segurança confirmada em ambiente não-clínico.</div>
+        </div>
+      </div>
+
+      <p>A combinação de tDCS com antidepressivos merece destaque especial: no estudo ELECT-TDCS, a combinação tDCS + escitalopram produziu 61% de taxa de resposta — substancialmente superior a qualquer tratamento isolado. Este dado é particularmente relevante para quem já toma medicação com resposta parcial.</p>
+
+      <h2>tDCS domiciliário vs clínico — há diferença?</h2>
+      <p>Esta é uma das questões mais práticas para quem considera o tratamento. A resposta curta é: <strong>não, quando o tDCS domiciliário é adequadamente supervisionado</strong>.</p>
+      <p>O estudo publicado no <em>JAMA Network Open</em> em 2025 — especificamente desenhado para avaliar o tDCS domiciliário supervisionado — mostrou uma taxa de remissão de 58%, superior à maioria dos estudos em contexto clínico. Os fatores chave para este resultado foram:</p>
+      <ul>
+        <li>Dispositivos CE certificados com posicionamento padronizado de elétrodos (headset com posições fixas, eliminando variabilidade manual)</li>
+        <li>Monitorização clínica remota em tempo real com feedback imediato</li>
+        <li>Consultas de acompanhamento regulares para ajuste do protocolo</li>
+        <li>Adesão elevada (90% de conclusão) — possível porque o tratamento ocorre em casa, sem deslocações diárias</li>
+      </ul>
+
+      <p>Este é precisamente o modelo da Sereen. A comodidade do domicílio, combinada com o rigor clínico da monitorização remota, produz resultados comparáveis ou superiores ao tratamento em clínica — com significativamente mais conveniência e menor custo.</p>
+
+      <h2>Quem beneficia mais do tDCS para depressão</h2>
+      <p>Nem todos os perfis de doente respondem igualmente. Com base na literatura disponível, o tDCS para depressão mostra melhores resultados em:</p>
+      <ul>
+        <li><strong>Depressão unipolar moderada sem características psicóticas</strong> — o subgrupo melhor estudado e com maior resposta consistente</li>
+        <li><strong>Pessoas que não responderam a 1–2 antidepressivos</strong> (mas não múltiplos fracassos — ver secção abaixo)</li>
+        <li><strong>Quem prefere ou necessita evitar medicação</strong> — por efeitos secundários, gravidez planeada, ou preferência pessoal</li>
+        <li><strong>Tratamento combinado com antidepressivos</strong> — a combinação é mais eficaz do que qualquer tratamento isolado</li>
+        <li><strong>Depressão com componente ansiosa</strong> — o DLPFC esquerdo está também implicado na regulação da ansiedade</li>
+        <li><strong>Doentes mais jovens</strong> — alguns estudos mostram melhor resposta em adultos abaixo dos 50 anos, possivelmente por maior neuroplasticidade</li>
+      </ul>
+
+      <h2>Limitações honestas</h2>
+      <p>Não queremos vender uma solução milagrosa. O tDCS tem limitações reais que qualquer doente deve conhecer antes de decidir:</p>
+      <ul>
+        <li><strong>Não funciona para toda a gente:</strong> 30–40% dos participantes em estudos controlados não mostram resposta clínica significativa</li>
+        <li><strong>Requer consistência:</strong> sessões diárias durante semanas. Quem não consegue manter a regularidade terá resultados comprometidos</li>
+        <li><strong>Não é adequado para todos os subtipos:</strong> depressão psicótica, episódios maníacos em doentes bipolares, e depressão muito grave com risco suicidário imediato são contraindicações</li>
+        <li><strong>Melhor com psicoterapia:</strong> estudos combinados mostram superioridade da abordagem integrada — o tDCS não substitui o trabalho psicológico</li>
+        <li><strong>Não é tratamento de emergência:</strong> em crises agudas com risco de vida, a ECT e a hospitalização são as prioridades</li>
+        <li><strong>Efeito não imediato:</strong> ao contrário de alguns medicamentos de ação rápida (ketamina), o tDCS acumula efeito ao longo de semanas</li>
+      </ul>
+
+      <div class="warn-box">
+        <p><strong>Nota clínica:</strong> Se tiver pensamentos de suicídio ou auto-lesão, procure ajuda imediatamente — o tDCS não é o tratamento adequado para crises agudas. SNS 24: 808 24 24 24 | SOS Voz Amiga: 213 544 545</p>
+      </div>
+
+      <section class="faq-sec">
+        <h2>Perguntas frequentes sobre tDCS para depressão</h2>
+        <div class="faq-list" role="list">
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdep-1" onclick="toggleFaq(this)">
+              O tDCS para depressão está aprovado?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdep-1"><p>Na Europa, existem dispositivos tDCS com marcação CE classe IIa aprovados para depressão. Em Portugal, o uso é enquadrado por psiquiatras como tratamento complementar, dentro do quadro legal do Regulamento MDR 2017/745. A FDA americana ainda não aprovou para uso clínico de marketing — o quadro regulatório europeu é mais avançado nesta área específica.</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdep-2" onclick="toggleFaq(this)">
+              Quantas sessões são necessárias para a depressão?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdep-2"><p>O protocolo padrão é 5 sessões por semana durante 4–6 semanas (20–30 sessões no total na fase aguda), seguido de sessões de manutenção mensais. O efeito começa a notar-se geralmente entre a 3.ª e 4.ª semana. No protocolo Sereen, o acompanhamento clínico avalia a resposta a cada duas semanas e pode ajustar a duração.</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdep-3" onclick="toggleFaq(this)">
+              O tDCS é mais eficaz que os antidepressivos?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdep-3"><p>Os dados mais robustos (ELECT-TDCS, 2017) mostram eficácia comparável ao escitalopram para depressão moderada — não superior, mas não inferior. A combinação tDCS + antidepressivo (61% de resposta no ELECT-TDCS) é superior a qualquer tratamento isolado. A escolha entre tDCS e medicação depende do historial individual, preferências e contraindicações — não há uma resposta única.</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdep-4" onclick="toggleFaq(this)">
+              Posso fazer tDCS sem psicoterapia?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdep-4"><p>Pode — há estudos com tDCS isolado que mostram eficácia. Mas a combinação com psicoterapia é consistentemente mais eficaz. A TCC (Terapia Cognitivo-Comportamental) e o tDCS atuam por vias complementares: a psicoterapia muda padrões de pensamento e comportamento, o tDCS muda a excitabilidade neural. Na Sereen, recomendamos sempre suporte psicológico durante o protocolo, e podemos indicar psicólogos parceiros.</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdep-5" onclick="toggleFaq(this)">
+              O efeito do tDCS é duradouro?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdep-5"><p>Estudos de follow-up a 1–6 meses mostram que os benefícios se mantêm em muitos pacientes, especialmente com sessões de manutenção regulares. A durabilidade é comparável à medicação antidepressiva — ou seja, a descontinuação abrupta aumenta o risco de recaída. Por isso, o protocolo Sereen inclui um plano de manutenção individual após a fase aguda.</p></div>
+          </div>
+
+          <div class="faq-i" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-tdep-6" onclick="toggleFaq(this)">
+              Posso fazer tDCS em casa com equipamento próprio?
+              <span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span>
+            </button>
+            <div class="faq-a" id="faq-tdep-6"><p>Não recomendamos. O tDCS domiciliário eficaz requer: dispositivos CE certificados com parâmetros controlados, posicionamento correto dos elétrodos (erros de posição reduzem drasticamente a eficácia), e monitorização clínica regular para ajuste do protocolo e deteção de problemas. Dispositivos de qualidade variável vendidos online — muitas vezes sem marcação CE — não têm a mesma segurança, eficácia, ou suporte para garantir o protocolo correto.</p></div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="cta-sec">
+        <h2>Dê o primeiro passo</h2>
+        <p>Junte-se à lista de espera e seja contactado pela nossa equipa clínica.</p>
+        <form class="cta-form" id="cta-tdep" onsubmit="return submitForm(event,this,'ok-tdep')">
+          <label class="sr-only" for="name-tdep">Nome</label>
+          <input type="text" name="name" id="name-tdep" placeholder="O seu nome" required aria-required="true">
+          <label class="sr-only" for="email-tdep">Email</label>
+          <input type="email" name="email" id="email-tdep" placeholder="Email" required aria-required="true">
+          <label class="sr-only" for="phone-tdep">Telefone</label>
+          <input type="tel" name="phone" id="phone-tdep" placeholder="Telefone (opcional)">
+          <button type="submit">Juntar-me à lista de espera</button>
+          <p class="gdpr-note">Ao submeter, aceita o tratamento dos seus dados nos termos da nossa <a href="/privacidade/" style="color:rgba(255,255,255,.5)">Política de Privacidade</a>.</p>
+        </form>
+        <div class="cta-ok" id="ok-tdep"><h3>Obrigado!</h3><p>Entraremos em contacto em breve.</p></div>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <nav class="sidebar-nav" aria-label="Navegação depressão">
+        <h3>Depressão &amp; tDCS</h3>
+        <a href="/depressao/">Visão geral</a>
+        <a href="/depressao/tdcs/" class="active">tDCS para depressão</a>
+        <a href="/depressao/funciona/">Funciona?</a>
+        <a href="/depressao/resultados/">Resultados</a>
+        <a href="/depressao/estudos/">Estudos científicos</a>
+        <a href="/depressao/efeitos-secundarios/">Efeitos secundários</a>
+        <a href="/depressao/contraindicacoes/">Contraindicações</a>
+        <a href="/depressao/quem-pode/">Quem pode fazer</a>
+        <a href="/depressao/custo/">Quanto custa</a>
+        <a href="/depressao/duracao/">Quanto demora</a>
+        <a href="/depressao/vs-antidepressivos/">vs Antidepressivos</a>
+        <a href="/depressao/vs-tms/">vs TMS</a>
+      </nav>
+      <div class="sidebar-cta">
+        <h3>Pronto para começar?</h3>
+        <p>Avaliação gratuita com psiquiatra. Sem compromisso.</p>
+        <a href="/">Lista de espera</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+        <p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p>
+        <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--t3)">
+          <a href="mailto:geral@sereen.pt" style="color:var(--t3);text-decoration:none;display:block;margin-bottom:4px">geral@sereen.pt</a>
+          <a href="tel:+351932881800" style="color:var(--t3);text-decoration:none">+351 932 881 800</a>
+        </address>
+      </div>
+      <div class="ft-cols">
+        <div class="ft-col">
+          <h4>Condições</h4>
+          <a href="/depressao/">Depressão</a>
+          <a href="/ansiedade/">Ansiedade</a>
+          <a href="/insonia/">Insónia</a>
+          <a href="/dor-cronica/">Dor crónica</a>
+        </div>
+        <div class="ft-col">
+          <h4>Sereen</h4>
+          <a href="/">Início</a>
+          <a href="/tdcs/">O que é tDCS</a>
+          <a href="/faq/">FAQ</a>
+          <a href="mailto:geral@sereen.pt">Contacto</a>
+        </div>
+        <div class="ft-col">
+          <h4>Legal</h4>
+          <a href="/privacidade/">Privacidade</a>
+          <a href="/termos/">Termos</a>
+          <a href="/cookies/">Cookies</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">&copy; 2026 Sereen. Todos os direitos reservados.</span>
+      <span class="ft-crisis">Em crise? SNS 24: 808 24 24 24</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50),{passive:true});
+function toggleFaq(btn){
+  const item=btn.closest('.faq-i');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-i.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+  if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+}
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbyc9aBoM2YOpOx0h2yS9gCTZsNom92H7KTCmIPcFtNhkNkJzAUrCSD6z9WzgoH_8FucKQ/exec';
+function submitForm(e,formEl,okId){
+  e.preventDefault();
+  const btn=formEl.querySelector('button');
+  btn.textContent='A enviar...';btn.disabled=true;
+  const iframe=document.createElement('iframe');
+  iframe.name='sf'+Date.now();iframe.style.display='none';
+  document.body.appendChild(iframe);
+  const tmp=document.createElement('form');
+  tmp.method='POST';tmp.action=APPS_SCRIPT_URL;tmp.target=iframe.name;tmp.style.display='none';
+  ['name','email','phone'].forEach(f=>{
+    const el=formEl.querySelector('[name='+f+']');
+    if(el){const i=document.createElement('input');i.name=f;i.value=el.value;tmp.appendChild(i)}
+  });
+  document.body.appendChild(tmp);tmp.submit();
+  setTimeout(()=>{formEl.style.display='none';document.getElementById(okId).style.display='block';tmp.remove();iframe.remove()},1500);
+  return false;
+}
+</script>
+</body>
+</html>

@@ -13,7 +13,7 @@
 //  6. Copia o URL gerado e substitui APPS_SCRIPT_URL em contacto/index.html
 // ─────────────────────────────────────────────────────────────
 
-const SHEET_ID    = 'SUBSTITUI_PELO_ID_DA_TUA_SHEET'; // ex: '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgVE2upms'
+const SHEET_ID    = '1LRpnq8a-U6OWEXWe4u0zO7l9y1_CaiBjF-oi5W-RA-U';
 const SHEET_NAME  = 'Contactos';                        // nome do separador na Sheet
 const NOTIFY_EMAIL = 'geral@sereen.pt';                 // email para notificações
 

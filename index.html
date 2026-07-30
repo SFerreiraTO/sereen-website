@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +12,28 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_PT">
 <meta property="og:site_name" content="Sereen">
-<meta property="og:title" content="Sereen — Tratamento de depressão em casa">
+<meta property="og:title" content="tDCS para Depressão em Casa | Sereen">
 <meta property="og:description" content="Neuroestimulação cerebral (tDCS) com acompanhamento clínico remoto. 58% taxa de remissão. Programa piloto aberto em Portugal.">
 <meta property="og:url" content="https://sereen.pt/">
 <meta property="og:image" content="https://sereen.pt/og-image.jpg">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sereen — Tratamento de depressão em casa">
+<meta name="twitter:title" content="tDCS para Depressão em Casa | Sereen">
 <meta name="twitter:description" content="Neuroestimulação cerebral (tDCS) com acompanhamento clínico remoto. 58% taxa de remissão. Programa piloto em Portugal.">
 <meta name="twitter:image" content="https://sereen.pt/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233D8B6E'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>S</text></svg>">
+<link rel="apple-touch-icon" href="/og-image.jpg">
+
+<!-- Brand & Geo -->
+<meta name="theme-color" content="#3D8B6E">
+<meta name="geo.region" content="PT-11">
+<meta name="geo.country" content="Portugal">
+<meta name="geo.placename" content="Lisboa">
+<meta name="ICBM" content="38.7169, -9.1395">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -633,7 +645,14 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
       </div>
     </div>
     <div class="hero-right">
-      <img src="hero-device.png" alt="Paciente com dispositivo de neuroestimulação" class="hero-img">
+      <picture>
+        <source srcset="hero-device.webp" type="image/webp">
+        <img src="hero-device.jpg"
+             alt="Paciente com dispositivo de neuroestimulação"
+             class="hero-img"
+             width="2390" height="1792"
+             fetchpriority="high" decoding="async">
+      </picture>
     </div>
   </div>
 </div>
@@ -896,7 +915,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
   </div>
   
   <p style="text-align:center;margin-top:40px;font-size:14px;color:var(--t3)">
-    Publicações recolhidas de <a href="" target="_blank" style="color:var(--accent)">revistas peer-reviewed</a>. A Sereen não é autora destes estudos.
+    Publicações recolhidas de <span style="color:var(--accent)">revistas peer-reviewed</span>. A Sereen não é autora destes estudos.
   </p>
 </div>
 
@@ -1015,7 +1034,7 @@ function submitWaitlist(e, form) {
 }
 </script>
 
-<script>
+<script defer>
 // WebMCP — expose site tools to AI agents
 // https://webmachinelearning.github.io/webmcp/
 if ('modelContext' in navigator) {

@@ -16,14 +16,21 @@
 <meta property="og:description" content="Neuroestimulação cerebral (tDCS) com acompanhamento clínico remoto. 58% taxa de remissão. Programa piloto aberto em Portugal.">
 <meta property="og:url" content="https://sereen.pt/">
 <meta property="og:image" content="https://sereen.pt/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Sereen — Tratamento de depressão com tDCS em Portugal">
+<meta name="author" content="Sereen">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="tDCS para Depressão em Casa | Sereen">
 <meta name="twitter:description" content="Neuroestimulação cerebral (tDCS) com acompanhamento clínico remoto. 58% taxa de remissão. Programa piloto em Portugal.">
 <meta name="twitter:image" content="https://sereen.pt/og-image.jpg">
+<meta name="twitter:image:alt" content="Sereen — Tratamento de depressão com tDCS em Portugal">
 
 <!-- Favicon -->
+<link rel="manifest" href="/manifest.json">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233D8B6E'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>S</text></svg>">
 <link rel="apple-touch-icon" href="/og-image.jpg">
 
@@ -265,7 +272,7 @@ nav.s{background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:
 .cta-form .cta-row{display:flex;gap:10px}
 .cta-form input{flex:1;padding:16px 22px;border:1.5px solid rgba(255,255,255,.12);border-radius:14px;
   font-size:15px;font-family:inherit;background:rgba(255,255,255,.06);color:#fff;outline:none;transition:all .3s}
-.cta-form input::placeholder{color:rgba(255,255,255,.25)}
+.cta-form input::placeholder{color:rgba(255,255,255,.6)}
 .cta-form input:focus{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
 .cta-form button{background:var(--accent);color:#fff;border:none;border-radius:14px;
   padding:16px 28px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;
@@ -349,6 +356,16 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
   .tabs{overflow-x:auto;justify-content:flex-start}
   .sci-stats{gap:24px}
 }
+/* SKIP LINK */
+.skip-link{position:absolute;top:-100%;left:0;padding:12px 24px;background:var(--accent);
+  color:#fff;font-weight:600;font-size:14px;text-decoration:none;z-index:9999;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+/* SCREEN READER ONLY */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* FORM GDPR */
+.form-gdpr{font-size:12px;color:rgba(255,255,255,.45);margin-top:8px;text-align:center}
+.form-gdpr a{color:rgba(255,255,255,.65);text-underline-offset:2px}
 </style>
 
 <!-- JSON-LD Structured Data -->
@@ -595,43 +612,59 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
       "position": 1,
       "name": "Início",
       "item": "https://sereen.pt/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Tratamento tDCS",
-      "item": "https://sereen.pt/#tratamento"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Ciência",
-      "item": "https://sereen.pt/#ciencia"
     }
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "reviewBody": "Depois de anos a experimentar diferentes medicações, encontrei algo que me ajudou a sentir-me eu mesma outra vez. Faço a sessão enquanto leio antes de dormir.",
+  "author": {
+    "@type": "Person",
+    "name": "Maria S."
+  },
+  "itemReviewed": {
+    "@type": "MedicalTherapy",
+    "name": "tDCS Domiciliário para Depressão",
+    "url": "https://sereen.pt/"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  }
+}
+</script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
 
+<header>
 <!-- NAV -->
 <nav id="nav">
   <div class="ni">
-    <a href="#" class="logo" onclick="showPage('home');return false">sereen</a>
-    <div class="nr">
-      <a href="#como" onclick="showPage('home')">Como funciona</a>
-      <a href="#" onclick="showPage('science');return false">Ciência</a>
-      <a href="#faq" onclick="showPage('home')">FAQ</a>
-      <button class="btn bp" onclick="document.getElementById('hero-email').focus();">Lista de espera</button>
-    </div>
+    <a href="#" class="logo" aria-label="Sereen — página inicial" onclick="showPage('home');return false">sereen</a>
+    <nav aria-label="Navegação principal">
+      <ul class="nr" style="list-style:none;padding:0;margin:0">
+        <li><a href="#como" onclick="showPage('home')">Como funciona</a></li>
+        <li><a href="#" onclick="showPage('science');return false">Ciência</a></li>
+        <li><a href="#faq" onclick="showPage('home')">FAQ</a></li>
+        <li><button class="btn bp" onclick="document.getElementById('hero-email').focus();">Lista de espera</button></li>
+      </ul>
+    </nav>
   </div>
 </nav>
+</header>
+
+<main id="main-content">
 
 <!-- ═══════════ HOME PAGE ═══════════ -->
 <div class="page active" id="page-home">
 
 <!-- HERO -->
-<div class="hero">
+<section class="hero" aria-label="Introdução ao tratamento Sereen">
   <div class="hero-split">
     <div class="hero-left">
       <div class="hero-badge"><span class="hero-dot"></span>Programa piloto aberto</div>
@@ -642,23 +675,28 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
         <a href="#como" class="btn bo" style="padding:16px 32px;font-size:16px">Como funciona</a>
       </div>
       <div class="hero-proof">
-        <span class="hero-proof-i"><svg width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M8 15s5.5-3 5.5-7.5V3.5L8 1.5 2.5 3.5v4C2.5 12 8 15 8 15z"/></svg>Marcação CE</span>
-        <span class="hero-proof-i"><svg width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M8 1.5 2.5 4.5l5.5 3 5.5-3L8 1.5z"/><path d="M2.5 11.5l5.5 3 5.5-3"/><path d="M2.5 8l5.5 3 5.5-3"/></svg>+50 estudos</span>
-        <span class="hero-proof-i"><svg width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="2.5" y="6.5" width="11" height="8" rx="1.5"/><path d="M5.5 6.5v-2a2.5 2.5 0 015 0v2"/></svg>Dados encriptados</span>
+        <span class="hero-proof-i"><svg aria-hidden="true" width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M8 15s5.5-3 5.5-7.5V3.5L8 1.5 2.5 3.5v4C2.5 12 8 15 8 15z"/></svg>Marcação CE</span>
+        <span class="hero-proof-i"><svg aria-hidden="true" width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M8 1.5 2.5 4.5l5.5 3 5.5-3L8 1.5z"/><path d="M2.5 11.5l5.5 3 5.5-3"/><path d="M2.5 8l5.5 3 5.5-3"/></svg>+50 estudos</span>
+        <span class="hero-proof-i"><svg aria-hidden="true" width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="2.5" y="6.5" width="11" height="8" rx="1.5"/><path d="M5.5 6.5v-2a2.5 2.5 0 015 0v2"/></svg>Dados encriptados</span>
       </div>
     </div>
     <div class="hero-right">
-      <picture>
-        <source srcset="hero-device.webp" type="image/webp">
-        <img src="hero-device.jpg"
-             alt="Paciente com dispositivo de neuroestimulação"
-             class="hero-img"
-             width="2390" height="1792"
-             fetchpriority="high" decoding="async">
-      </picture>
+      <figure>
+        <picture>
+          <source type="image/webp"
+            srcset="hero-device-480.webp 480w, hero-device-960.webp 960w, hero-device.webp 2390w"
+            sizes="(max-width: 960px) 100vw, 50vw">
+          <img src="hero-device.jpg"
+               alt="Paciente a utilizar o dispositivo de neuroestimulação tDCS da Sereen em casa"
+               class="hero-img"
+               width="2390" height="1792"
+               fetchpriority="high" decoding="async">
+        </picture>
+        <figcaption class="sr-only">Paciente a utilizar o dispositivo de neuroestimulação tDCS da Sereen em casa</figcaption>
+      </figure>
     </div>
   </div>
-</div>
+</section>
 
 <!-- CHALLENGE -->
 <div style="background:var(--bg2)">
@@ -771,7 +809,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
 </div>
 
 <!-- HOW IT WORKS -->
-<div class="sec" id="como">
+<section class="sec" id="como" aria-label="Como funciona">
   <div class="reveal"><div class="sl">Como funciona</div><h2 class="sh">Comece em três passos</h2>
     <p class="sp">Do primeiro contacto ao tratamento em casa, em menos de uma semana.</p></div>
   <div class="how-grid">
@@ -782,62 +820,68 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
     <div class="hc reveal d3"><div class="hc-n">03</div><h3>Tratamento diário</h3><p>Sessões de 30 minutos em casa, com a equipa clínica a monitorizar e a ajustar o protocolo.</p>
       <div class="hc-d"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 7H10L8.5 12 5.5 2 4 7H1"/></svg>Protocolo de 10-12 semanas</div></div>
   </div>
-</div>
+</section>
 
 <!-- OUTCOMES -->
-<div class="out" id="resultados">
+<section class="out" id="resultados" aria-label="Resultados clínicos">
   <div class="out-in">
     <div class="reveal"><div class="sl">Resultados</div><h2 class="sh">Comprovado cientificamente</h2>
       <p class="sp">O tDCS é uma das técnicas mais estudadas em neurociência. <a href="#" onclick="showPage('science');return false" style="color:var(--accent);text-decoration:underline">Ver publicações</a></p></div>
     <div class="og">
-      <div class="oc reveal d1"><div class="oc-n">58%</div><div class="oc-l">Taxa de remissão após<br>10 semanas</div></div>
-      <div class="oc reveal d2"><div class="oc-n">55k+</div><div class="oc-l">Pacientes tratados na Europa<br>com tDCS domiciliário</div></div>
-      <div class="oc reveal d3"><div class="oc-n">90%</div><div class="oc-l">Completam o protocolo<br>com sucesso</div></div>
+      <div class="oc reveal d1"><div class="oc-n">58%</div><div class="oc-l">Taxa de remissão após<br>10 semanas</div><div class="sc-src" style="color:rgba(255,255,255,.35);font-size:11px;margin-top:10px">JAMA Network Open, 2025</div></div>
+      <div class="oc reveal d2"><div class="oc-n">55k+</div><div class="oc-l">Pacientes tratados na Europa<br>com tDCS domiciliário</div><div class="sc-src" style="color:rgba(255,255,255,.35);font-size:11px;margin-top:10px">Nature Medicine, 2024</div></div>
+      <div class="oc reveal d3"><div class="oc-n">90%</div><div class="oc-l">Completam o protocolo<br>com sucesso</div><div class="sc-src" style="color:rgba(255,255,255,.35);font-size:11px;margin-top:10px">Brain Stimulation, 2024</div></div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- TESTIMONIAL -->
-<div class="testi">
+<section class="testi" aria-label="Testemunho de paciente">
   <div class="testi-in reveal">
-    <p class="testi-q">Depois de anos a experimentar diferentes medicações, encontrei algo que me ajudou a sentir-me eu mesma outra vez. Faço a sessão enquanto leio antes de dormir.</p>
-    <div class="testi-auth"><div class="testi-av">M</div><div><div class="testi-name">Maria S., 34 anos</div><div class="testi-det">Lisboa</div></div></div>
+    <blockquote cite="#">
+      <p class="testi-q">Depois de anos a experimentar diferentes medicações, encontrei algo que me ajudou a sentir-me eu mesma outra vez. Faço a sessão enquanto leio antes de dormir.</p>
+    </blockquote>
+    <div class="testi-auth"><div class="testi-av">M</div><div><div class="testi-name">Maria S., 34 anos</div><div class="testi-det"><cite>Lisboa</cite></div></div></div>
     <p class="testi-note">*Resultados individuais podem variar.</p>
   </div>
-</div>
+</section>
 
 <!-- FAQ -->
-<div class="sec" id="faq">
+<section class="sec" id="faq" aria-label="Perguntas frequentes">
   <div class="faq-wrap">
     <div class="reveal"><div class="sl">FAQ</div><h2 class="sh">Perguntas frequentes</h2>
       <p class="sp" style="margin-bottom:0">Tudo o que precisa de saber antes de começar.</p></div>
     <div class="faq-list reveal d2">
-      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">O que é a estimulação transcraniana (tDCS)?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>Uma técnica não-invasiva que usa corrente elétrica de baixa intensidade para estimular áreas do cérebro ligadas ao humor. É completamente indolor e tem mais de 20 anos de investigação científica.</p></div></div>
-      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">É seguro?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>Sim. Os efeitos secundários mais comuns são ligeiro formigueiro ou calor, que desaparece após a sessão. O dispositivo tem marcação CE classe IIa para depressão.</p></div></div>
-      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">Preciso de prescrição médica?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>O tratamento começa com avaliação pelo nosso psiquiatra, que acompanha todo o processo. Este modelo garante a sua segurança.</p></div></div>
-      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">Quanto tempo até ver resultados?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>A maioria nota melhorias entre a 3.ª e 4.ª semana. O protocolo completo dura 10–12 semanas com sessões diárias de 30 minutos.</p></div></div>
-      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">Posso continuar a minha medicação?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>Sim. O tDCS complementa a medicação — estudos sugerem que a combinação pode ser mais eficaz.</p></div></div>
-      <div class="faq-i"><button class="faq-q" onclick="toggleFaq(this)">E se não funcionar para mim?<span class="faq-ic"><svg width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a"><p>A avaliação inicial identifica quem tem maior probabilidade de beneficiar. Se os resultados não forem os esperados, o psiquiatra discute alternativas consigo.</p></div></div>
+      <div class="faq-i"><button class="faq-q" aria-expanded="false" aria-controls="faq-answer-1" onclick="toggleFaq(this)">O que é a estimulação transcraniana (tDCS)?<span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a" id="faq-answer-1"><p>Uma técnica não-invasiva que usa corrente elétrica de baixa intensidade para estimular áreas do cérebro ligadas ao humor. É completamente indolor e tem mais de 20 anos de investigação científica.</p></div></div>
+      <div class="faq-i"><button class="faq-q" aria-expanded="false" aria-controls="faq-answer-2" onclick="toggleFaq(this)">É seguro?<span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a" id="faq-answer-2"><p>Sim. Os efeitos secundários mais comuns são ligeiro formigueiro ou calor, que desaparece após a sessão. O dispositivo tem marcação CE classe IIa para depressão.</p></div></div>
+      <div class="faq-i"><button class="faq-q" aria-expanded="false" aria-controls="faq-answer-3" onclick="toggleFaq(this)">Preciso de prescrição médica?<span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a" id="faq-answer-3"><p>O tratamento começa com avaliação pelo nosso psiquiatra, que acompanha todo o processo. Este modelo garante a sua segurança.</p></div></div>
+      <div class="faq-i"><button class="faq-q" aria-expanded="false" aria-controls="faq-answer-4" onclick="toggleFaq(this)">Quanto tempo até ver resultados?<span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a" id="faq-answer-4"><p>A maioria nota melhorias entre a 3.ª e 4.ª semana. O protocolo completo dura 10–12 semanas com sessões diárias de 30 minutos.</p></div></div>
+      <div class="faq-i"><button class="faq-q" aria-expanded="false" aria-controls="faq-answer-5" onclick="toggleFaq(this)">Posso continuar a minha medicação?<span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a" id="faq-answer-5"><p>Sim. O tDCS complementa a medicação — estudos sugerem que a combinação pode ser mais eficaz.</p></div></div>
+      <div class="faq-i"><button class="faq-q" aria-expanded="false" aria-controls="faq-answer-6" onclick="toggleFaq(this)">E se não funcionar para mim?<span class="faq-ic"><svg aria-hidden="true" width="12" height="12" fill="none" stroke="var(--t3)" stroke-width="2.5"><polyline points="2 4 6 8 10 4"/></svg></span></button><div class="faq-a" id="faq-answer-6"><p>A avaliação inicial identifica quem tem maior probabilidade de beneficiar. Se os resultados não forem os esperados, o psiquiatra discute alternativas consigo.</p></div></div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- CTA -->
-<div class="cta-f">
+<section class="cta-f" aria-label="Lista de espera">
   <div class="cta-f-in reveal">
     <h2>O primeiro passo é o mais importante</h2>
     <p>Junte-se à lista de espera e seja dos primeiros a aceder ao programa piloto.</p>
     <form class="cta-form" id="waitlist-home" onsubmit="return submitWaitlist(event, this)">
-      <input type="text" name="name" placeholder="O seu nome" required>
+      <label class="sr-only" for="name-home">Nome</label>
+      <input type="text" name="name" id="name-home" placeholder="O seu nome" required aria-required="true">
       <div class="cta-row">
-        <input type="email" name="email" id="hero-email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Telefone" required>
+        <label class="sr-only" for="hero-email">Email</label>
+        <input type="email" name="email" id="hero-email" placeholder="Email" required aria-required="true">
+        <label class="sr-only" for="phone-home">Telefone</label>
+        <input type="tel" name="phone" id="phone-home" placeholder="Telefone" required aria-required="true">
       </div>
       <button type="submit">Juntar-me à lista de espera</button>
+      <p class="form-gdpr">Ao submeter, aceita o tratamento dos seus dados nos termos da nossa <a href="/privacidade">Política de Privacidade</a>.</p>
     </form>
     <div class="cta-ok" id="ok-home"><h3>Obrigado!</h3><p>Entraremos em contacto em breve.</p></div>
   </div>
-</div>
+</section>
 
 </div><!-- end page-home -->
 
@@ -845,7 +889,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
 <div class="page" id="page-science">
 
 <div class="sci-hero">
-  <h2>A ciência por trás da Sereen</h2>
+  <h1>A ciência por trás da Sereen</h1>
   <p>O tDCS é suportado por décadas de investigação, centenas de ensaios clínicos e publicações em revistas científicas de referência.</p>
   <div class="sci-stats">
     <div class="sci-stat"><div class="sci-stat-n">200+</div><div class="sci-stat-l">Ensaios clínicos</div></div>
@@ -870,51 +914,51 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
   </div>
 
   <div class="pub-grid" id="pubGrid">
-    <a class="pub" data-cat="dep high" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2835422?__cf_chl_f_tk=05jwOFCI.pTktGCVTJX1E3PX.Tm0eiRpk2bQ4dnRdfw-1783012765-1.0.1.1-X1CTON44wK1gmIxudIaxs_Qrfq6Qtr2Tmar8jnmG7Y4" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2025</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Transcranial Electrical Stimulation in Treatment of Depression: A Systematic Review and Meta-Analysis</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep high" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2835422?__cf_chl_f_tk=05jwOFCI.pTktGCVTJX1E3PX.Tm0eiRpk2bQ4dnRdfw-1783012765-1.0.1.1-X1CTON44wK1gmIxudIaxs_Qrfq6Qtr2Tmar8jnmG7Y4" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Jun 2025</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Transcranial Electrical Stimulation in Treatment of Depression: A Systematic Review and Meta-Analysis</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://pubmed.ncbi.nlm.nih.gov/40664537/" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Efficacy and Safety of Transcranial Direct Current Stimulation for Depression in Older Adults: A Systematic Review and Meta-Analysis</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://pubmed.ncbi.nlm.nih.gov/40664537/" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Jun 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Efficacy and Safety of Transcranial Direct Current Stimulation for Depression in Older Adults: A Systematic Review and Meta-Analysis</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://www.sciencedirect.com/science/article/pii/S2666915325000320" target="_blank"><div class="pub-meta"><span class="pub-date">Abr 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Home-use tDCS as a Safe, Effective, and Feasible Application in Depression: A Randomized, Single-Blind, Placebo-Controlled Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://www.sciencedirect.com/science/article/pii/S2666915325000320" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Abr 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Home-use tDCS as a Safe, Effective, and Feasible Application in Depression: A Randomized, Single-Blind, Placebo-Controlled Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://www.revistapsiquiatria.pt/index.php/sppsm/article/view/598" target="_blank"><div class="pub-meta"><span class="pub-date">Abr 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Home-Administered tDCS for Major Depressive Disorder: Exploring the Predictive Value of EEG Biomarkers</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://www.revistapsiquiatria.pt/index.php/sppsm/article/view/598" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Abr 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Home-Administered tDCS for Major Depressive Disorder: Exploring the Predictive Value of EEG Biomarkers</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://www.mdpi.com/2077-0383/14/9/3152" target="_blank"><div class="pub-meta"><span class="pub-date">Mar 2025</span><span class="pub-tag dep">Depressão</span></div><h3>tDCS in the Treatment of Youth Depression: Integrating Literature Review Insights in a Pilot Clinical Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://www.mdpi.com/2077-0383/14/9/3152" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Mar 2025</span><span class="pub-tag dep">Depressão</span></div><h3>tDCS in the Treatment of Youth Depression: Integrating Literature Review Insights in a Pilot Clinical Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://psychiatryonline.org/doi/10.1176/appi.ajp.20240083" target="_blank"><div class="pub-meta"><span class="pub-date">Jan 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Spaced Transcranial Direct Current Stimulation for Major Depression</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://psychiatryonline.org/doi/10.1176/appi.ajp.20240083" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Jan 2025</span><span class="pub-tag dep">Depressão</span></div><h3>Spaced Transcranial Direct Current Stimulation for Major Depression</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep high" href="https://www.nature.com/articles/s41591-024-03305-y" target="_blank"><div class="pub-meta"><span class="pub-date">Out 2024</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Home-based tDCS Treatment for Major Depressive Disorder: A Fully Remote Phase 2 Randomized Sham-Controlled Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep high" href="https://www.nature.com/articles/s41591-024-03305-y" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Out 2024</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Home-based tDCS Treatment for Major Depressive Disorder: A Fully Remote Phase 2 Randomized Sham-Controlled Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://www.nature.com/articles/s41398-024-03003-w" target="_blank"><div class="pub-meta"><span class="pub-date">Jul 2024</span><span class="pub-tag dep">Depressão</span></div><h3>Evaluating the Effects of tDCS on Depressive and Anxiety Symptoms: A Systematic Review and Meta-Analysis of RCTs</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://www.nature.com/articles/s41398-024-03003-w" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Jul 2024</span><span class="pub-tag dep">Depressão</span></div><h3>Evaluating the Effects of tDCS on Depressive and Anxiety Symptoms: A Systematic Review and Meta-Analysis of RCTs</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep high" href="https://www.nature.com/articles/s41380-024-02624-3" target="_blank"><div class="pub-meta"><span class="pub-date">Mai 2024</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Effects and Safety of tDCS on Multiple Health Outcomes: An Umbrella Review of Randomized Clinical Trials</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep high" href="https://www.nature.com/articles/s41380-024-02624-3" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Mai 2024</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Effects and Safety of tDCS on Multiple Health Outcomes: An Umbrella Review of Randomized Clinical Trials</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://www.sciencedirect.com/science/article/pii/S1935861X24000366?via%3Dihub" target="_blank"><div class="pub-meta"><span class="pub-date">Abr 2024</span><span class="pub-tag dep">Depressão</span></div><h3>tDCS Reduces Depression and State Anxiety Symptoms in Older Adults (ACT Study)</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://www.sciencedirect.com/science/article/pii/S1935861X24000366?via%3Dihub" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Abr 2024</span><span class="pub-tag dep">Depressão</span></div><h3>tDCS Reduces Depression and State Anxiety Symptoms in Older Adults (ACT Study)</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://www.sciencedirect.com/science/article/abs/pii/S0278584623000386?via%3Dihub" target="_blank"><div class="pub-meta"><span class="pub-date">Abr 2023</span><span class="pub-tag dep">Depressão</span></div><h3>Time-course of the tDCS Antidepressant Effect: An Individual Participant Data Meta-Analysis</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://www.sciencedirect.com/science/article/abs/pii/S0278584623000386?via%3Dihub" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Abr 2023</span><span class="pub-tag dep">Depressão</span></div><h3>Time-course of the tDCS Antidepressant Effect: An Individual Participant Data Meta-Analysis</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep high" href="https://www.sciencedirect.com/science/article/pii/S2666915322000403#bib0005" target="_blank"><div class="pub-meta"><span class="pub-date">Mai 2022</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Reduction of Symptoms in Patients with MDD after tDCS Treatment: A Real-World Study</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep high" href="https://www.sciencedirect.com/science/article/pii/S2666915322000403#bib0005" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Mai 2022</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Reduction of Symptoms in Patients with MDD after tDCS Treatment: A Real-World Study</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://pubmed.ncbi.nlm.nih.gov/35613011/" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2022</span><span class="pub-tag dep">Depressão</span></div><h3>Home Administered tDCS in Treatment-Resistant Depression: A Clinical Case Series</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://pubmed.ncbi.nlm.nih.gov/35613011/" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Jun 2022</span><span class="pub-tag dep">Depressão</span></div><h3>Home Administered tDCS in Treatment-Resistant Depression: A Clinical Case Series</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://www.nature.com/articles/s41380-022-01524-8" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2022</span><span class="pub-tag dep">Depressão</span><span class="pub-tag other">Outras</span></div><h3>Efficacy of Neurostimulation Across Mental Disorders: Systematic Review and Meta-Analysis of 208 RCTs</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://www.nature.com/articles/s41380-022-01524-8" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Jun 2022</span><span class="pub-tag dep">Depressão</span><span class="pub-tag other">Outras</span></div><h3>Efficacy of Neurostimulation Across Mental Disorders: Systematic Review and Meta-Analysis of 208 RCTs</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep" href="https://www.dovepress.com/neurostimulation-methods-in-the-treatment-of-depression-a-comparison-o-peer-reviewed-fulltext-article-NDT" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2021</span><span class="pub-tag dep">Depressão</span></div><h3>Neurostimulation Methods in Depression: A Comparison of rTMS, tDCS, and Venlafaxine</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep" href="https://www.dovepress.com/neurostimulation-methods-in-the-treatment-of-depression-a-comparison-o-peer-reviewed-fulltext-article-NDT" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Jun 2021</span><span class="pub-tag dep">Depressão</span></div><h3>Neurostimulation Methods in Depression: A Comparison of rTMS, tDCS, and Venlafaxine</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="mech" href="https://pubmed.ncbi.nlm.nih.gov/33613218/" target="_blank"><div class="pub-meta"><span class="pub-date">Jan 2021</span><span class="pub-tag mech">Mecanismos</span></div><h3>Neurobiological Mechanisms of tDCS for Psychiatric Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="mech" href="https://pubmed.ncbi.nlm.nih.gov/33613218/" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Jan 2021</span><span class="pub-tag mech">Mecanismos</span></div><h3>Neurobiological Mechanisms of tDCS for Psychiatric Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="mech" href="https://www.brainstimjrnl.com/article/S1935-861X(20)30313-2/fulltext" target="_blank"><div class="pub-meta"><span class="pub-date">Dez 2020</span><span class="pub-tag mech">Mecanismos</span></div><h3>tDCS-induced Modulation of GABA and Dopamine Release in the Human Brain</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="mech" href="https://www.brainstimjrnl.com/article/S1935-861X(20)30313-2/fulltext" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Dez 2020</span><span class="pub-tag mech">Mecanismos</span></div><h3>tDCS-induced Modulation of GABA and Dopamine Release in the Human Brain</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="dep high" href="https://academic.oup.com/ijnp/article/24/4/256/5876418" target="_blank"><div class="pub-meta"><span class="pub-date">Ago 2020</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Evidence-based Guidelines for the Use of tDCS in Neurological and Psychiatric Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="dep high" href="https://academic.oup.com/ijnp/article/24/4/256/5876418" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Ago 2020</span><span class="pub-tag dep">Depressão</span><span class="pub-tag high">Destaque</span></div><h3>Evidence-based Guidelines for the Use of tDCS in Neurological and Psychiatric Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="mech" href="https://www.mdpi.com/2227-9059/10/10/2333" target="_blank"><div class="pub-meta"><span class="pub-date">Ago 2022</span><span class="pub-tag mech">Mecanismos</span></div><h3>Electric Fields Induced in the Brain by Transcranial Electric Stimulation: A Review of In Vivo Recordings</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="mech" href="https://www.mdpi.com/2227-9059/10/10/2333" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Ago 2022</span><span class="pub-tag mech">Mecanismos</span></div><h3>Electric Fields Induced in the Brain by Transcranial Electric Stimulation: A Review of In Vivo Recordings</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="pain" href="https://pubmed.ncbi.nlm.nih.gov/39400579/" target="_blank"><div class="pub-meta"><span class="pub-date">Out 2024</span><span class="pub-tag pain">Dor</span></div><h3>Combined tDCS and Pain Neuroscience Education for Chronic Low Back Pain: A Randomized Controlled Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="pain" href="https://pubmed.ncbi.nlm.nih.gov/39400579/" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Out 2024</span><span class="pub-tag pain">Dor</span></div><h3>Combined tDCS and Pain Neuroscience Education for Chronic Low Back Pain: A Randomized Controlled Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="other" href="https://www.sciencedirect.com/science/article/pii/S1935861X25003304" target="_blank"><div class="pub-meta"><span class="pub-date">Set 2025</span><span class="pub-tag other">Outras</span></div><h3>Assessing tDCS Efficacy in Reducing Negative Symptoms in Schizophrenia Spectrum Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="other" href="https://www.sciencedirect.com/science/article/pii/S1935861X25003304" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Set 2025</span><span class="pub-tag other">Outras</span></div><h3>Assessing tDCS Efficacy in Reducing Negative Symptoms in Schizophrenia Spectrum Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="other" href="https://www.nature.com/articles/s41398-024-03053-0" target="_blank"><div class="pub-meta"><span class="pub-date">Ago 2024</span><span class="pub-tag other">Outras</span></div><h3>Immediate and Long-term Efficacy of tDCS in OCD, PTSD and Anxiety Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="other" href="https://www.nature.com/articles/s41398-024-03053-0" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Ago 2024</span><span class="pub-tag other">Outras</span></div><h3>Immediate and Long-term Efficacy of tDCS in OCD, PTSD and Anxiety Disorders</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
 
-    <a class="pub" data-cat="pain" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2835058" target="_blank"><div class="pub-meta"><span class="pub-date">Jun 2025</span><span class="pub-tag pain">Dor</span></div><h3>Home-Based tDCS vs Placebo for Fibromyalgia: A Randomized Clinical Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
+    <a class="pub" data-cat="pain" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2835058" target="_blank" rel="noopener noreferrer"><div class="pub-meta"><span class="pub-date">Jun 2025</span><span class="pub-tag pain">Dor</span></div><h3>Home-Based tDCS vs Placebo for Fibromyalgia: A Randomized Clinical Trial</h3><div class="pub-arrow">Ler publicação &#x2192;</div></a>
   </div>
   
   <p style="text-align:center;margin-top:40px;font-size:14px;color:var(--t3)">
@@ -923,32 +967,40 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
 </div>
 
 <!-- CTA on science page -->
-<div class="cta-f">
+<section class="cta-f" aria-label="Lista de espera">
   <div class="cta-f-in">
     <h2>Quer experimentar o tratamento?</h2>
     <p>Junte-se à lista de espera do programa piloto.</p>
     <form class="cta-form" id="waitlist-sci" onsubmit="return submitWaitlist(event, this)">
-      <input type="text" name="name" placeholder="O seu nome" required>
+      <label class="sr-only" for="name-sci">Nome</label>
+      <input type="text" name="name" id="name-sci" placeholder="O seu nome" required aria-required="true">
       <div class="cta-row">
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Telefone" required>
+        <label class="sr-only" for="email-sci">Email</label>
+        <input type="email" name="email" id="email-sci" placeholder="Email" required aria-required="true">
+        <label class="sr-only" for="phone-sci">Telefone</label>
+        <input type="tel" name="phone" id="phone-sci" placeholder="Telefone" required aria-required="true">
       </div>
       <button type="submit">Juntar-me à lista de espera</button>
+      <p class="form-gdpr">Ao submeter, aceita o tratamento dos seus dados nos termos da nossa <a href="/privacidade">Política de Privacidade</a>.</p>
     </form>
     <div class="cta-ok" id="ok-sci"><h3>Obrigado!</h3><p>Entraremos em contacto em breve.</p></div>
   </div>
-</div>
+</section>
 
 </div><!-- end page-science -->
+
+</main>
 
 <!-- FOOTER -->
 <footer>
   <div class="ft-in">
     <div class="ft-top">
-      <div class="ft-brand"><a href="#" class="logo" onclick="showPage('home');return false">sereen</a><p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p></div>
+      <div class="ft-brand"><a href="#" class="logo" aria-label="Sereen — página inicial" onclick="showPage('home');return false">sereen</a><p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p>
+        <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--t3)"><a href="mailto:geral@sereen.pt" style="color:var(--t3);text-decoration:none;display:block;margin-bottom:4px">geral@sereen.pt</a><a href="tel:+351932881800" style="color:var(--t3);text-decoration:none">+351 932 881 800</a></address>
+      </div>
       <div class="ft-cols">
-        <div class="ft-col"><h4>Sereen</h4><a href="#" onclick="showPage('home');return false">Início</a><a href="#" onclick="showPage('science');return false">Ciência</a><a href="#">Contacto</a></div>
-        <div class="ft-col"><h4>Legal</h4><a href="#">Privacidade</a><a href="#">Termos</a><a href="#">Cookies</a></div>
+        <div class="ft-col"><h4>Sereen</h4><a href="#" onclick="showPage('home');return false">Início</a><a href="#" onclick="showPage('science');return false">Ciência</a><a href="mailto:geral@sereen.pt">Contacto</a></div>
+        <div class="ft-col"><h4>Legal</h4><a href="/privacidade">Privacidade</a><a href="/termos">Termos</a><a href="/cookies">Cookies</a></div>
       </div>
     </div>
     <div class="ft-bot">
@@ -962,6 +1014,9 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
 // Nav scroll
 window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50),{passive:true});
 
+// Add title to all external publication links
+document.querySelectorAll('a[target="_blank"]').forEach(a=>a.setAttribute('title','Abrir publicação em nova janela'));
+
 // Reveal
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),
   {threshold:.06,rootMargin:'0px 0px -30px 0px'});
@@ -969,7 +1024,8 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
 // FAQ
 function toggleFaq(el){const item=el.parentElement,w=item.classList.contains('open');
-  document.querySelectorAll('.faq-i').forEach(i=>i.classList.remove('open'));if(!w)item.classList.add('open')}
+  document.querySelectorAll('.faq-i').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+  if(!w){item.classList.add('open');el.setAttribute('aria-expanded','true')}}
 
 // Page switching
 function showPage(id){

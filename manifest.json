@@ -1,0 +1,16 @@
+{
+  "name": "Sereen",
+  "short_name": "Sereen",
+  "description": "Tratamento de depressão com tDCS em casa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3D8B6E",
+  "icons": [
+    {
+      "src": "/og-image.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://sereen.pt/</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sereen.pt/hero-device.webp</image:loc>
+      <image:title>Dispositivo tDCS para tratamento de depressão em casa</image:title>
+      <image:caption>Paciente a utilizar o dispositivo de neuroestimulação tDCS da Sereen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sereen.pt/og-image.jpg</image:loc>
+      <image:title>Sereen — Tratamento de depressão com tDCS em Portugal</image:title>
+    </image:image>
   </url>
 </urlset>

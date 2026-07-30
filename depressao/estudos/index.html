@@ -150,6 +150,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
 .topics-cta p{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:10px;line-height:1.5}
 .topics-cta a{display:block;background:var(--accent);color:#fff;text-decoration:none;border-radius:100px;padding:9px 16px;font-size:13px;font-weight:600;transition:all .2s}
 .topics-cta a:hover{background:var(--accent-d)}
+.byline{font-size:13px;color:var(--t3);margin-bottom:20px}.byline a{color:var(--accent);text-decoration:none}
 </style>
 <script type="application/ld+json">
 {
@@ -164,7 +165,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
       "isPartOf": {"@id": "https://sereen.pt/#website"},
       "about": {"@type": "MedicalCondition", "name": "Depressão"},
       "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"},
-      "reviewedBy": {"@type": "Organization", "name": "Sereen"}
+      "reviewedBy": {"@type": "Person", "name": "Simão Ferreira, PhD", "url": "https://sereen.pt/equipa/"}
     },
     {
       "@type": "Article",
@@ -175,7 +176,12 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
       "publisher": {"@type": "Organization", "name": "Sereen", "url": "https://sereen.pt"},
       "datePublished": "2026-07-30",
       "dateModified": "2026-07-30",
-      "inLanguage": "pt-PT"
+      "inLanguage": "pt-PT",
+      "author": {
+        "@type": "Person",
+        "name": "Simão Ferreira, PhD",
+        "url": "https://sereen.pt/equipa/"
+      }
     },
     {
       "@type": "FAQPage",
@@ -255,6 +261,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
 
   <div class="pg-hero">
     <h1>A Ciência por Trás do tDCS para Depressão: Estudos e Evidência</h1>
+    <p class="byline">Revisto por <a href="/equipa/">Simão Ferreira, PhD</a> · 30 julho 2026</p>
     <p class="sub">Mais de 200 ensaios clínicos publicados, 1.200+ doentes em meta-análises. Aqui está o que a investigação científica diz — honestamente.</p>
     <div class="stats-bar" role="list">
       <div class="stat" role="listitem">
@@ -342,7 +349,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
           <div class="tl-dot" aria-hidden="true"></div>
           <div class="tl-year">2024–2025</div>
           <div class="tl-title">Dados de uso real em larga escala</div>
-          <div class="tl-desc">Com 55.000+ doentes tratados em contexto real na Europa (Brain Stimulation, 2024) e o estudo JAMA Network Open 2025 sobre protocolos domiciliários supervisionados com 58% de remissão, a evidência passou do laboratório para o mundo real.</div>
+          <div class="tl-desc">Com dados de uso real em larga escala na Europa (Brain Stimulation, 2024) e o estudo JAMA Network Open 2025 sobre protocolos domiciliários supervisionados com 58% de remissão (estudo open-label), a evidência passou do laboratório para o mundo real.</div>
         </div>
       </div>
 
@@ -383,7 +390,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
 
       <h2>Investigação em curso: o papel do tDCS domiciliário</h2>
       <p>A fronteira atual da investigação em tDCS para depressão é o <strong>uso domiciliário supervisionado</strong>. Os estudos clássicos foram todos feitos em contexto hospitalar, onde os doentes se deslocam à clínica para cada sessão. Esta logística limita a adesão e cria um viés de seleção (só chegam doentes com recursos e disponibilidade).</p>
-      <p>O estudo <strong>JAMA Network Open 2025</strong> sobre protocolo domiciliário supervisionado representa o estado da arte. Com supervisão remota em tempo real — incluindo verificação do posicionamento dos elétrodos por videochamada e monitorização da impedância do dispositivo — a taxa de remissão atingiu 58%. Este salto face aos 34% do ELECT-TDCS explica-se por: protocolos mais longos, maior adesão (sem necessidade de deslocação), correção imediata de erros de posicionamento, e uma relação terapêutica mais próxima.</p>
+      <p>O estudo <strong>JAMA Network Open 2025</strong> sobre protocolo domiciliário supervisionado representa o estado da arte. Trata-se de um estudo open-label (sem grupo placebo), o que deve ser tido em conta na interpretação dos resultados — ainda assim, a escala e a consistência com protocolos supervisionados tornam-no clinicamente relevante. Com supervisão remota em tempo real — incluindo verificação do posicionamento dos elétrodos por videochamada e monitorização da impedância do dispositivo — a taxa de remissão atingiu 58%. Este salto face aos 34% do ELECT-TDCS explica-se por: protocolos mais longos, maior adesão (sem necessidade de deslocação), correção imediata de erros de posicionamento, e uma relação terapêutica mais próxima.</p>
       <p>É exatamente este modelo — domiciliário supervisionado com acompanhamento clínico — que a Sereen implementa em Portugal.</p>
 
       <h2>O que a evidência não responde ainda</h2>
@@ -464,7 +471,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
       </section>
 
       <section class="cta-sec" aria-labelledby="cta-heading">
-        <h2 id="cta-heading">Fale com o nosso psiquiatra</h2>
+        <h2 id="cta-heading">Fale com o nosso clínico responsável</h2>
         <p>Avaliação gratuita para perceber se o seu caso tem indicação para tDCS.</p>
         <form class="cta-form" id="cta-form" onsubmit="submitForm(event,this,'cta-ok')" novalidate>
           <label class="sr-only" for="cta-name">Nome</label>
@@ -500,7 +507,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
       </div>
       <div class="ft-cols">
         <div class="ft-col"><h4>Condições</h4><a href="/depressao/">Depressão</a><a href="/ansiedade/">Ansiedade</a><a href="/insonia/">Insónia</a><a href="/dor-cronica/">Dor crónica</a></div>
-        <div class="ft-col"><h4>Sereen</h4><a href="/">Início</a><a href="/tdcs/">O que é tDCS</a><a href="/faq/">FAQ</a><a href="mailto:geral@sereen.pt">Contacto</a></div>
+        <div class="ft-col"><h4>Sereen</h4><a href="/">Início</a><a href="/equipa/">A Nossa Equipa</a><a href="/tdcs/">O que é tDCS</a><a href="/faq/">FAQ</a><a href="mailto:geral@sereen.pt">Contacto</a></div>
         <div class="ft-col"><h4>Legal</h4><a href="/privacidade/">Privacidade</a><a href="/termos/">Termos</a><a href="/cookies/">Cookies</a></div>
       </div>
     </div>

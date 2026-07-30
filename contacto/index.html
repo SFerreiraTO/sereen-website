@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Sereen</title>
+<meta name="description" content="Entre em contacto com a Sereen — programa piloto de tratamento de depressão com tDCS em Portugal.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sereen.pt/contacto/">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233D8B6E'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>S</text></svg>">
+<meta name="theme-color" content="#3D8B6E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=optional" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=optional"></noscript>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fff;--bg2:#F7F8FA;--dark:#0B1120;--accent:#3D8B6E;--accent-l:#E8F5EE;--accent-d:#2D6B52;--t:#0B1120;--t2:#4A5568;--t3:#8896AB;--brd:#E8ECF1}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:var(--t);background:var(--bg);-webkit-font-smoothing:antialiased}
+.skip-link{position:absolute;top:-100%;left:0;padding:12px 24px;background:var(--accent);color:#fff;font-weight:600;font-size:14px;text-decoration:none;z-index:9999;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--brd)}
+.ni{max-width:1240px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:700;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
+.nr{display:flex;align-items:center;gap:32px}
+.nr a{font-size:14px;color:var(--t2);text-decoration:none;font-weight:500;transition:color .2s}
+.nr a:hover{color:var(--t)}
+.btn{display:inline-flex;align-items:center;border-radius:100px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s;text-decoration:none;border:none;padding:12px 28px}
+.bp{background:var(--accent);color:#fff}.bp:hover{background:var(--accent-d)}
+main{max-width:1240px;margin:0 auto;padding:120px 40px 80px}
+.ct-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+main h1{font-size:clamp(28px,3.5vw,44px);font-weight:700;letter-spacing:-1px;margin-bottom:16px}
+.ct-sub{font-size:17px;color:var(--t2);line-height:1.65;margin-bottom:48px}
+.ct-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:32px}
+.ct-ic{width:44px;height:44px;border-radius:12px;background:var(--accent-l);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ct-ic svg{stroke:var(--accent)}
+.ct-item h3{font-size:15px;font-weight:600;margin-bottom:4px}
+.ct-item p,.ct-item a{font-size:15px;color:var(--t2);text-decoration:none;line-height:1.6}
+.ct-item a:hover{color:var(--accent)}
+.crisis{background:var(--accent-l);border-radius:16px;padding:24px;margin-top:8px}
+.crisis p{font-size:14px;color:var(--accent-d);line-height:1.6}
+.crisis strong{display:block;margin-bottom:4px;font-size:15px}
+/* form */
+.form-card{background:var(--bg2);border-radius:20px;padding:40px}
+.form-card h2{font-size:22px;font-weight:700;margin-bottom:8px}
+.form-card .fc-sub{font-size:15px;color:var(--t2);margin-bottom:32px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.field label{font-size:14px;font-weight:600;color:var(--t)}
+.field input,.field textarea,.field select{padding:14px 18px;border:1.5px solid var(--brd);border-radius:12px;font-size:15px;font-family:inherit;background:#fff;color:var(--t);outline:none;transition:border-color .2s;resize:vertical}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent)}
+.field textarea{min-height:120px}
+.submit-btn{width:100%;background:var(--accent);color:#fff;border:none;border-radius:14px;padding:16px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .3s;margin-top:8px}
+.submit-btn:hover{background:var(--accent-d);transform:translateY(-1px)}
+.form-gdpr{font-size:12px;color:var(--t3);margin-top:12px;text-align:center}
+.form-gdpr a{color:var(--accent)}
+.form-ok{display:none;text-align:center;padding:40px 0}
+.form-ok h3{font-size:22px;font-weight:700;margin-bottom:8px}
+.form-ok p{font-size:15px;color:var(--t2)}
+footer{padding:48px 40px;border-top:1px solid var(--brd)}
+.ft-in{max-width:1240px;margin:0 auto}
+.ft-top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:32px;flex-wrap:wrap;gap:32px}
+.ft-brand p{font-size:13px;color:var(--t3);margin-top:8px;max-width:260px}
+.ft-cols{display:flex;gap:56px}
+.ft-col h4{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);margin-bottom:14px}
+.ft-col a{display:block;font-size:13px;color:var(--t2);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.ft-col a:hover{color:var(--t)}
+.ft-bot{padding-top:24px;border-top:1px solid var(--brd);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-copy{font-size:12px;color:var(--t3)}
+.ft-crisis{font-size:12px;color:var(--accent-d);background:var(--accent-l);padding:6px 14px;border-radius:8px;font-weight:500}
+@media(max-width:960px){.ct-grid{grid-template-columns:1fr;gap:48px}main{padding:100px 24px 60px}.form-card{padding:28px 24px}.ft-top{flex-direction:column}.ft-cols{flex-direction:column;gap:24px}.nr a:not(.btn){display:none}.ni{padding:16px 24px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+<header>
+<nav id="nav">
+  <div class="ni">
+    <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+    <div class="nr" role="list">
+      <a href="/#como" role="listitem">Como funciona</a>
+      <a href="/" role="listitem">Ciência</a>
+      <a href="/#faq" role="listitem">FAQ</a>
+      <a href="/" class="btn bp" role="listitem">Lista de espera</a>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main-content">
+  <div class="ct-grid">
+    <div>
+      <h1>Fale connosco</h1>
+      <p class="ct-sub">Tem perguntas sobre o programa piloto, o dispositivo, ou quer simplesmente saber mais? Estamos aqui.</p>
+
+      <div class="ct-item">
+        <div class="ct-ic">
+          <svg width="20" height="20" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <a href="mailto:geral@sereen.pt">geral@sereen.pt</a>
+          <p>Respondemos em 1–2 dias úteis.</p>
+        </div>
+      </div>
+
+      <div class="ct-item">
+        <div class="ct-ic">
+          <svg width="20" height="20" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 011.99 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+        </div>
+        <div>
+          <h3>Telefone</h3>
+          <a href="tel:+351932881800">+351 932 881 800</a>
+          <p>Disponível nos dias úteis, das 9h às 18h.</p>
+        </div>
+      </div>
+
+      <div class="ct-item">
+        <div class="ct-ic">
+          <svg width="20" height="20" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <h3>Localização</h3>
+          <p>Lisboa, Portugal</p>
+        </div>
+      </div>
+
+      <div class="crisis">
+        <strong>Em crise? Não está sozinho.</strong>
+        <p>SNS 24: <a href="tel:808242424" style="color:var(--accent-d);font-weight:600">808 24 24 24</a> (24h/7 dias)<br>
+        SOS Voz Amiga: <a href="tel:213544545" style="color:var(--accent-d);font-weight:600">213 544 545</a><br>
+        Emergência: <a href="tel:112" style="color:var(--accent-d);font-weight:600">112</a></p>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h2>Envie uma mensagem</h2>
+      <p class="fc-sub">Preencha o formulário e entraremos em contacto em breve.</p>
+
+      <form id="contact-form" onsubmit="return submitContact(event, this)">
+        <div class="field">
+          <label for="ct-name">Nome <span aria-hidden="true">*</span></label>
+          <input type="text" id="ct-name" name="name" placeholder="O seu nome" required aria-required="true">
+        </div>
+        <div class="field">
+          <label for="ct-email">Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="ct-email" name="email" placeholder="email@exemplo.pt" required aria-required="true">
+        </div>
+        <div class="field">
+          <label for="ct-phone">Telefone</label>
+          <input type="tel" id="ct-phone" name="phone" placeholder="+351 9xx xxx xxx">
+        </div>
+        <div class="field">
+          <label for="ct-subject">Assunto <span aria-hidden="true">*</span></label>
+          <select id="ct-subject" name="subject" required aria-required="true">
+            <option value="" disabled selected>Selecione um assunto</option>
+            <option value="lista-espera">Lista de espera — programa piloto</option>
+            <option value="informacao">Informação sobre tDCS</option>
+            <option value="clinico">Questão clínica</option>
+            <option value="imprensa">Imprensa / parcerias</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ct-message">Mensagem <span aria-hidden="true">*</span></label>
+          <textarea id="ct-message" name="message" placeholder="Descreva a sua questão..." required aria-required="true"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Enviar mensagem</button>
+        <p class="form-gdpr">Ao submeter, aceita o tratamento dos seus dados nos termos da nossa <a href="/privacidade">Política de Privacidade</a>.</p>
+      </form>
+
+      <div class="form-ok" id="contact-ok">
+        <h3>Mensagem enviada!</h3>
+        <p>Recebemos o seu contacto e responderemos em breve.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="ft-in">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="/" class="logo" aria-label="Sereen — página inicial">sereen</a>
+        <p>Neuroestimulação cerebral com acompanhamento clínico, acessível a partir de casa.</p>
+        <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--t3)">
+          <a href="mailto:geral@sereen.pt" style="color:var(--t3);text-decoration:none;display:block;margin-bottom:4px">geral@sereen.pt</a>
+          <a href="tel:+351932881800" style="color:var(--t3);text-decoration:none">+351 932 881 800</a>
+        </address>
+      </div>
+      <div class="ft-cols">
+        <div class="ft-col"><h4>Sereen</h4><a href="/">Início</a><a href="/">Ciência</a><a href="/contacto">Contacto</a></div>
+        <div class="ft-col"><h4>Legal</h4><a href="/privacidade">Privacidade</a><a href="/termos">Termos</a><a href="/cookies">Cookies</a></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">&copy; 2026 Sereen. Todos os direitos reservados.</span>
+      <span class="ft-crisis">Em crise? SNS 24: 808 24 24 24</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50),{passive:true});
+
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyc9aBoM2YOpOx0h2yS9gCTZsNom92H7KTCmIPcFtNhkNkJzAUrCSD6z9WzgoH_8FucKQ/exec';
+
+function submitContact(e, form) {
+  e.preventDefault();
+  const btn = form.querySelector('button');
+  btn.textContent = 'A enviar...';
+  btn.disabled = true;
+
+  const iframe = document.createElement('iframe');
+  iframe.name = 'ct-frame-' + Date.now();
+  iframe.style.display = 'none';
+  document.body.appendChild(iframe);
+
+  const tmp = document.createElement('form');
+  tmp.method = 'POST';
+  tmp.action = APPS_SCRIPT_URL;
+  tmp.target = iframe.name;
+  tmp.style.display = 'none';
+
+  ['name','email','phone','subject','message'].forEach(field => {
+    const el = form.querySelector('[name=' + field + ']');
+    if (el) {
+      const input = document.createElement('input');
+      input.name = field;
+      input.value = el.value;
+      tmp.appendChild(input);
+    }
+  });
+
+  document.body.appendChild(tmp);
+  tmp.submit();
+
+  setTimeout(() => {
+    form.style.display = 'none';
+    document.getElementById('contact-ok').style.display = 'block';
+    tmp.remove();
+    iframe.remove();
+  }, 1500);
+
+  return false;
+}
+</script>
+</body>
+</html>

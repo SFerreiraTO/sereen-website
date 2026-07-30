@@ -604,5 +604,49 @@ function submitForm(e,formEl,okId){
   return false;
 }
 </script>
+
+<button class="topics-btn" id="topicsBtn" onclick="toggleTopics()" aria-expanded="false" aria-controls="topicsPanel" aria-label="Ver tópicos de depressão">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  Tópicos
+</button>
+<div class="topics-overlay" id="topicsOverlay" onclick="closeTopics()"></div>
+<div class="topics-panel" id="topicsPanel" role="dialog" aria-modal="true" aria-label="Tópicos de Depressão">
+  <div class="topics-head">
+    <span>Depressão &amp; tDCS</span>
+    <button class="topics-close" onclick="closeTopics()" aria-label="Fechar">&#x2715;</button>
+  </div>
+  <nav class="topics-nav" aria-label="Sub-páginas de depressão">
+    <a href="/depressao/">Visão geral</a>
+    <a href="/depressao/tdcs/">tDCS para depressão</a>
+    <a href="/depressao/funciona/" class="active" aria-current="page">Funciona?</a>
+    <a href="/depressao/resultados/">Resultados</a>
+    <a href="/depressao/estudos/">Estudos científicos</a>
+    <a href="/depressao/efeitos-secundarios/">Efeitos secundários</a>
+    <a href="/depressao/contraindicacoes/">Contraindicações</a>
+    <a href="/depressao/quem-pode/">Quem pode fazer</a>
+    <a href="/depressao/custo/">Quanto custa</a>
+    <a href="/depressao/duracao/">Quanto demora</a>
+    <a href="/depressao/vs-antidepressivos/">vs Antidepressivos</a>
+    <a href="/depressao/vs-tms/">vs TMS</a>
+  </nav>
+  <div class="topics-cta">
+    <p>Pronto para começar?</p>
+    <a href="/">Lista de espera</a>
+  </div>
+</div>
+<script>
+function toggleTopics(){
+  var panel=document.getElementById('topicsPanel');
+  var open=panel.classList.toggle('open');
+  document.getElementById('topicsOverlay').classList.toggle('open',open);
+  document.getElementById('topicsBtn').setAttribute('aria-expanded',String(open));
+}
+function closeTopics(){
+  document.getElementById('topicsPanel').classList.remove('open');
+  document.getElementById('topicsOverlay').classList.remove('open');
+  document.getElementById('topicsBtn').setAttribute('aria-expanded','false');
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeTopics();});
+</script>
 </body>
 </html>

@@ -617,7 +617,7 @@ footer{padding:48px 40px;border-top:1px solid var(--brd)}
   </div>
   
   <p style="text-align:center;margin-top:40px;font-size:14px;color:var(--t3)">
-    Publicações recolhidas de <a href="https://soomamedical.com/publications/" target="_blank" style="color:var(--accent)">revistas peer-reviewed</a>. A Sereen não é autora destes estudos.
+    Publicações recolhidas de <a href="" target="_blank" style="color:var(--accent)">revistas peer-reviewed</a>. A Sereen não é autora destes estudos.
   </p>
 </div>
 
@@ -733,6 +733,95 @@ function submitWaitlist(e, form) {
   }, 1500);
 
   return false;
+}
+</script>
+
+<script>
+// WebMCP — expose site tools to AI agents
+// https://webmachinelearning.github.io/webmcp/
+if ('modelContext' in navigator) {
+  navigator.modelContext.registerTool({
+    name: 'get-site-info',
+    description: 'Returns structured information about Sereen — a home-based tDCS brain stimulation service for depression in Portugal — including treatment details, clinical evidence, and how to start.',
+    inputSchema: { type: 'object', properties: {}, required: [] },
+    execute: async () => ({
+      name: 'Sereen',
+      url: 'https://sereen.pt',
+      language: 'pt',
+      description: 'Home-based tDCS brain stimulation for depression with remote clinical monitoring.',
+      treatment: {
+        technique: 'tDCS — Transcranial Direct Current Stimulation',
+        sessionDuration: '30 min/day',
+        protocolDuration: '10–12 weeks',
+        certification: 'CE Class IIa',
+        compatibleWithMedication: true,
+        painless: true,
+        setting: 'At home, guided by app'
+      },
+      clinicalEvidence: {
+        remissionRate: '58%',
+        patientsTreated: '55,000+ in Europe',
+        completionRate: '90%',
+        clinicalTrials: '200+',
+        yearsOfResearch: '20+'
+      },
+      steps: [
+        'Online psychiatric evaluation (45-min video call)',
+        'Kit delivered to your door in 48h',
+        'Daily 30-min sessions with remote clinical monitoring'
+      ],
+      status: 'Pilot program open — waitlist available'
+    })
+  });
+
+  navigator.modelContext.registerTool({
+    name: 'get-faq',
+    description: 'Returns the full list of frequently asked questions about Sereen and tDCS treatment for depression.',
+    inputSchema: { type: 'object', properties: {}, required: [] },
+    execute: async () => ({
+      faq: [
+        { q: 'O que é a estimulação transcraniana (tDCS)?', a: 'Uma técnica não-invasiva que usa corrente elétrica de baixa intensidade para estimular áreas do cérebro ligadas ao humor. É completamente indolor e tem mais de 20 anos de investigação científica.' },
+        { q: 'É seguro?', a: 'Sim. Os efeitos secundários mais comuns são ligeiro formigueiro ou calor, que desaparece após a sessão. O dispositivo tem marcação CE classe IIa para depressão.' },
+        { q: 'Preciso de prescrição médica?', a: 'O tratamento começa com avaliação pelo nosso psiquiatra, que acompanha todo o processo. Este modelo garante a sua segurança.' },
+        { q: 'Quanto tempo até ver resultados?', a: 'A maioria nota melhorias entre a 3.ª e 4.ª semana. O protocolo completo dura 10–12 semanas com sessões diárias de 30 minutos.' },
+        { q: 'Posso continuar a minha medicação?', a: 'Sim. O tDCS complementa a medicação — estudos sugerem que a combinação pode ser mais eficaz.' },
+        { q: 'E se não funcionar para mim?', a: 'A avaliação inicial identifica quem tem maior probabilidade de beneficiar. Se os resultados não forem os esperados, o psiquiatra discute alternativas consigo.' }
+      ]
+    })
+  });
+
+  navigator.modelContext.registerTool({
+    name: 'navigate-to',
+    description: 'Navigates to a section of the Sereen website. Sections: home, science (research publications), como (how it works), faq, waitlist.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        section: { type: 'string', enum: ['home', 'science', 'como', 'faq', 'waitlist'], description: 'Section to navigate to.' }
+      },
+      required: ['section']
+    },
+    execute: async ({ section }) => {
+      if (section === 'science') { showPage('science'); return { navigated: 'science' }; }
+      showPage('home');
+      if (section === 'como' || section === 'faq') {
+        setTimeout(() => { const el = document.getElementById(section); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 150);
+      } else if (section === 'waitlist') {
+        setTimeout(() => { const el = document.getElementById('hero-email'); if (el) { el.scrollIntoView({ behavior: 'smooth' }); el.focus(); } }, 150);
+      }
+      return { navigated: section };
+    }
+  });
+
+  navigator.modelContext.registerTool({
+    name: 'join-waitlist',
+    description: 'Scrolls to and focuses the Sereen pilot program waitlist form so the user can sign up.',
+    inputSchema: { type: 'object', properties: {}, required: [] },
+    execute: async () => {
+      showPage('home');
+      setTimeout(() => { const el = document.getElementById('hero-email'); if (el) { el.scrollIntoView({ behavior: 'smooth' }); el.focus(); } }, 150);
+      return { action: 'focused waitlist form' };
+    }
+  });
 }
 </script>
 

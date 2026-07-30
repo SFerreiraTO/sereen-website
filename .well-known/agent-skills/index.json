@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "sereen-info",
+      "type": "skill-md",
+      "description": "Information about Sereen's home-based tDCS depression treatment service in Portugal, including clinical evidence, how it works, and how to get started.",
+      "url": "https://sereen.pt/.well-known/agent-skills/sereen-info/SKILL.md",
+      "digest": "sha256:66088de908ef3cb17aac431b98dafab417244bece2b803b9f17bcea32fbbffa7"
+    },
+    {
+      "name": "sereen-waitlist",
+      "type": "skill-md",
+      "description": "Guide for AI agents to help users join Sereen's pilot program waitlist, including form fields and next steps.",
+      "url": "https://sereen.pt/.well-known/agent-skills/sereen-waitlist/SKILL.md",
+      "digest": "sha256:bcd25a99d80b5b70f02e8f222c247459b47216a45d337779ebdbd8e99f7ecfcd"
+    }
+  ]
+}
